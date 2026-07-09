@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Symposium — Design Mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --linen: #EFE8D8;
+    --linen-deep: #E5DCC7;
+    --ink: #2B2620;
+    --ink-soft: #5C5347;
+    --wine: #7A2E2E;
+    --wine-deep: #5E2222;
+    --olive: #6B7353;
+    --gold: #B08D3E;
+    --card: #F7F3E8;
+    --line: rgba(43,38,32,0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #d8d0bc;
+    font-family: 'Source Serif 4', serif;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 48px 16px 96px;
+  }
+
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .phone {
+    width: 375px;
+    max-width: 100%;
+    background: var(--linen);
+    border-radius: 32px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.25), 0 0 0 8px #1a1712;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .status-bar {
+    height: 28px;
+    background: var(--linen);
+  }
+
+  .screen {
+    min-height: 700px;
+    padding: 20px 22px 32px;
+  }
+
+  /* ---------- Header / wordmark ---------- */
+  .wordmark {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .tagline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    color: var(--wine);
+    margin-top: 2px;
+  }
+
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+
+  /* ---------- Kylix ring (signature element) ---------- */
+  .kylix {
+    width: 46px;
+    height: 46px;
+    position: relative;
+  }
+  .kylix svg { width: 100%; height: 100%; }
+  .kylix-bg { fill: none; stroke: var(--line); stroke-width: 3; }
+  .kylix-fill { fill: none; stroke: var(--wine); stroke-width: 3; stroke-linecap: round; transform: rotate(-90deg); transform-origin: center; }
+  .kylix-center { fill: var(--linen-deep); }
+
+  /* ---------- Curriculum list screen ---------- */
+  .year-tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 14px;
+    overflow-x: auto;
+  }
+  .year-tab {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    padding: 7px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    color: var(--ink-soft);
+    border: 1px solid var(--line);
+  }
+  .year-tab.active {
+    background: var(--wine);
+    color: var(--linen);
+    border-color: var(--wine);
+  }
+  .year-tab.locked { opacity: 0.4; }
+
+  .track-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+    overflow-x: auto;
+  }
+  .track-chip {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 11px;
+    border-radius: 6px;
+    white-space: nowrap;
+    background: var(--linen-deep);
+    color: var(--ink-soft);
+  }
+  .track-chip.active {
+    background: var(--card);
+    color: var(--wine-deep);
+    font-weight: 600;
+    border: 1px solid var(--gold);
+  }
+  .track-chip.locked {
+    opacity: 0.45;
+  }
+  .track-chip.locked::after {
+    content: " 🔒";
+    font-size: 9px;
+  }
+
+  /* ---------- Splash / home screen ---------- */
+  .splash-screen {
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background: var(--linen);
+    position: relative;
+  }
+  .splash-kylix {
+    width: 88px;
+    height: 88px;
+    margin-bottom: 28px;
+  }
+  .splash-wordmark {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 34px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .splash-tagline {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    color: var(--wine);
+  }
+  .splash-loading {
+    position: absolute;
+    bottom: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+  }
+
+  .book-header {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin: 22px 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 4px;
+    border-bottom: 1px solid var(--line);
+  }
+  .item:last-child { border-bottom: none; }
+
+  .item-ring { width: 30px; height: 30px; flex-shrink: 0; }
+
+  .item-text { flex: 1; }
+  .item-title {
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .item-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--ink-soft);
+    margin-top: 2px;
+    letter-spacing: 0.03em;
+  }
+  .item.done .item-title { color: var(--ink-soft); }
+  .item.done .item-sub::before { content: "COMPLETE · "; color: var(--olive); }
+  .item.active .item-title { color: var(--wine-deep); font-weight: 600; }
+
+  /* ---------- Reading / tutorial screen ---------- */
+  .crumb {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--olive);
+    margin-bottom: 6px;
+  }
+  .passage-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 21px;
+    margin: 0 0 16px;
+    line-height: 1.15;
+  }
+  .passage-box {
+    background: var(--card);
+    border-left: 3px solid var(--gold);
+    padding: 16px 16px;
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--ink);
+    font-style: italic;
+    border-radius: 2px;
+    margin-bottom: 22px;
+  }
+  .passage-cite {
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: normal;
+    font-size: 10px;
+    color: var(--ink-soft);
+    display: block;
+    margin-top: 10px;
+  }
+
+  .question-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--wine);
+    margin-bottom: 8px;
+  }
+  .question-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+
+  .answer-box {
+    width: 100%;
+    min-height: 100px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px;
+    font-family: 'Source Serif 4', serif;
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 18px;
+    background: var(--wine);
+    color: var(--linen);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .divider-note {
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.08em;
+    color: var(--ink-soft);
+    margin: 26px 0 18px;
+    text-transform: uppercase;
+  }
+  .divider-note::before, .divider-note::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    border-top: 1px solid var(--line);
+    vertical-align: middle;
+    margin: 0 10px;
+  }
+
+  .commentary-card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 10px;
+  }
+  .commentary-source {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--olive);
+    margin-bottom: 4px;
+  }
+  .commentary-text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+  }
+
+</style>
+</head>
+<body>
+
+<div>
+  <div class="section-label">Screen 0 — Home / Loading</div>
+  <div class="phone">
+    <div class="status-bar"></div>
+    <div class="splash-screen">
+      <div class="splash-kylix">
+        <svg viewBox="0 0 88 88">
+          <circle class="kylix-bg" cx="44" cy="44" r="36" stroke-width="2.5"></circle>
+          <circle class="kylix-fill" cx="44" cy="44" r="36" stroke-width="2.5"
+            stroke-dasharray="226.2" stroke-dashoffset="70"></circle>
+          <circle class="kylix-center" cx="44" cy="44" r="17"></circle>
+        </svg>
+      </div>
+      <div class="splash-wordmark">Symposium</div>
+      <div class="splash-tagline">STUDIA HUMANITATIS</div>
+      <div class="splash-loading">Preparing your seat at the table…</div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="section-label">Screen 1 — Curriculum Tracker</div>
+  <div class="phone">
+    <div class="status-bar"></div>
+    <div class="screen">
+      <div class="top-row">
+        <div>
+          <div class="wordmark">Symposium</div>
+          <div class="tagline">STUDIA HUMANITATIS</div>
+        </div>
+        <div class="kylix">
+          <svg viewBox="0 0 46 46">
+            <circle class="kylix-bg" cx="23" cy="23" r="19"></circle>
+            <circle class="kylix-fill" cx="23" cy="23" r="19"
+              stroke-dasharray="119.4" stroke-dashoffset="42"></circle>
+            <circle class="kylix-center" cx="23" cy="23" r="9"></circle>
+          </svg>
+        </div>
+      </div>
+
+      <div class="year-tabs">
+        <div class="year-tab active">YEAR 1</div>
+        <div class="year-tab locked">YEAR 2</div>
+        <div class="year-tab locked">YEAR 3</div>
+        <div class="year-tab locked">YEAR 4</div>
+      </div>
+
+      <div class="track-row">
+        <div class="track-chip active">SEMINAR</div>
+        <div class="track-chip locked">LANGUAGE</div>
+        <div class="track-chip locked">MATHEMATICS</div>
+        <div class="track-chip locked">MUSIC</div>
+      </div>
+
+      <div class="book-header">APOLOGY — PLATO</div>
+
+      <div class="item done">
+        <div class="item-ring">
+          <svg viewBox="0 0 30 30">
+            <circle class="kylix-bg" cx="15" cy="15" r="12"></circle>
+            <circle class="kylix-fill" cx="15" cy="15" r="12" stroke="var(--olive)"
+              stroke-dasharray="75.4" stroke-dashoffset="0"></circle>
+          </svg>
+        </div>
+        <div class="item-text">
+          <div class="item-title">I. Socrates' Defense Begins</div>
+          <div class="item-sub">3 questions answered</div>
+        </div>
+      </div>
+
+      <div class="item active">
+        <div class="item-ring">
+          <svg viewBox="0 0 30 30">
+            <circle class="kylix-bg" cx="15" cy="15" r="12"></circle>
+            <circle class="kylix-fill" cx="15" cy="15" r="12"
+              stroke-dasharray="75.4" stroke-dashoffset="45"></circle>
+          </svg>
+        </div>
+        <div class="item-text">
+          <div class="item-title">II. The Charge of Corrupting the Young</div>
+          <div class="item-sub">IN PROGRESS · 1 of 3 questions</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-ring">
+          <svg viewBox="0 0 30 30">
+            <circle class="kylix-bg" cx="15" cy="15" r="12"></circle>
+          </svg>
+        </div>
+        <div class="item-text">
+          <div class="item-title">III. On the Fear of Death</div>
+          <div class="item-sub">NOT STARTED</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item-ring">
+          <svg viewBox="0 0 30 30">
+            <circle class="kylix-bg" cx="15" cy="15" r="12"></circle>
+          </svg>
+        </div>
+        <div class="item-text">
+          <div class="item-title">IV. The Verdict</div>
+          <div class="item-sub">NOT STARTED</div>
+        </div>
+      </div>
+
+      <div class="book-header" style="opacity:0.5;">ARISTOTLE — ETHICS (LOCKED)</div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="section-label">Screen 2 — Tutorial Reading (before answering)</div>
+  <div class="phone">
+    <div class="status-bar"></div>
+    <div class="screen">
+      <div class="crumb">APOLOGY · SECTION II</div>
+      <div class="passage-title">The Charge of Corrupting the Young</div>
+
+      <div class="passage-box">
+        Socrates turns to face his accuser Meletus directly, pressing him
+        to say plainly who it is that improves the young — if Socrates
+        himself corrupts them.
+        <span class="passage-cite">— paraphrased summary, not the original text</span>
+      </div>
+
+      <div class="question-label">Opening Question</div>
+      <div class="question-text">
+        Socrates insists on cross-examining his own accuser rather than
+        simply denying the charge. What does this choice reveal about
+        what he thinks a "defense" is actually for?
+      </div>
+
+      <textarea class="answer-box" placeholder="Write your own thoughts before continuing…"></textarea>
+
+      <div class="btn">SUBMIT MY ANSWER</div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div class="section-label">Screen 3 — After Answering (commentary revealed)</div>
+  <div class="phone">
+    <div class="status-bar"></div>
+    <div class="screen">
+      <div class="crumb">APOLOGY · SECTION II</div>
+      <div class="passage-title">The Charge of Corrupting the Young</div>
+
+      <div class="question-label">Your Answer</div>
+      <div class="passage-box" style="font-style:normal; border-left-color: var(--wine);">
+        I think he's showing that a real defense isn't about winning —
+        it's about exposing whether the accusation even makes sense
+        on its own terms.
+      </div>
+
+      <div class="divider-note">The Company Speaks</div>
+
+      <div class="commentary-card">
+        <div class="commentary-source">Translator's Note</div>
+        <div class="commentary-text">
+          Cross-examination (elenchus) is Socrates' signature method —
+          used here on his own accuser, in his own trial, for the last time.
+        </div>
+      </div>
+      <div class="commentary-card">
+        <div class="commentary-source">Further Reading</div>
+        <div class="commentary-text">
+          Gregory Vlastos on the elenchus as a method of shared inquiry
+          rather than rhetorical attack.
+        </div>
+      </div>
+
+      <div class="btn" style="background: var(--olive); margin-top: 20px;">CONTINUE TO SECTION III</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
