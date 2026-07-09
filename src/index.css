@@ -1,0 +1,419 @@
+:root {
+  --linen: #efe8d8;
+  --linen-deep: #e5dcc7;
+  --card: #f7f3e8;
+  --ink: #2b2620;
+  --ink-soft: #5c5347;
+  --wine: #7a2e2e;
+  --wine-deep: #5e2222;
+  --olive: #6b7353;
+  --gold: #b08d3e;
+  --line: rgba(43, 38, 32, 0.12);
+
+  --serif-body: 'Source Serif 4', Georgia, serif;
+  --serif-display: 'Fraunces', Georgia, serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--linen);
+  color: var(--ink);
+  font-family: var(--serif-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  max-width: 560px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  padding: max(20px, env(safe-area-inset-top)) 22px calc(32px + env(safe-area-inset-bottom));
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* ---------- Splash ---------- */
+.splash {
+  position: fixed;
+  inset: 0;
+  background: var(--linen);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+  animation: splash-fade 0.5s ease 1.4s forwards;
+}
+@keyframes splash-fade {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.splash-kylix {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 28px;
+}
+.splash-wordmark {
+  font-family: var(--serif-display);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 34px;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+.splash-tagline {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--wine);
+  text-transform: uppercase;
+}
+.splash-loading {
+  position: absolute;
+  bottom: 48px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+
+/* ---------- Header ---------- */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+.wordmark {
+  font-family: var(--serif-display);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: -0.01em;
+}
+.tagline {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--wine);
+  margin-top: 2px;
+  text-transform: uppercase;
+}
+
+/* ---------- Kylix ring ---------- */
+.kylix-bg {
+  fill: none;
+  stroke: var(--line);
+}
+.kylix-fill {
+  fill: none;
+  stroke: var(--wine);
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: stroke-dashoffset 0.4s ease;
+}
+.kylix-fill.olive {
+  stroke: var(--olive);
+}
+.kylix-center {
+  fill: var(--linen-deep);
+}
+
+/* ---------- Year tabs / track chips ---------- */
+.year-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.year-tab {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.year-tab.active {
+  background: var(--wine);
+  color: var(--linen);
+  border-color: var(--wine);
+}
+.year-tab.locked {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.track-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.track-chip {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 6px 11px;
+  border-radius: 6px;
+  white-space: nowrap;
+  background: var(--linen-deep);
+  color: var(--ink-soft);
+  border: 1px solid transparent;
+  flex-shrink: 0;
+}
+.track-chip.active {
+  background: var(--card);
+  color: var(--wine-deep);
+  font-weight: 600;
+  border-color: var(--gold);
+}
+.track-chip.locked {
+  opacity: 0.45;
+  cursor: default;
+}
+.track-chip.locked::after {
+  content: ' 🔒';
+  font-size: 9px;
+}
+
+/* ---------- Book list ---------- */
+.book-header {
+  font-family: var(--serif-display);
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 22px 0 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.book-header.locked {
+  opacity: 0.5;
+}
+.book-edition {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.03em;
+  color: var(--ink-soft);
+  margin: 6px 0 4px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 4px;
+  border-bottom: 1px solid var(--line);
+  width: 100%;
+}
+.item:last-child {
+  border-bottom: none;
+}
+.item-ring {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.item-text {
+  flex: 1;
+  min-width: 0;
+}
+.item-title {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.item-sub {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.item-sub .status-complete {
+  color: var(--olive);
+}
+.item-sub .status-active {
+  color: var(--wine);
+}
+.item.done .item-title {
+  color: var(--ink-soft);
+}
+.item.active .item-title {
+  color: var(--wine-deep);
+  font-weight: 600;
+}
+.item-chevron {
+  font-family: var(--mono);
+  color: var(--ink-soft);
+  opacity: 0.4;
+  font-size: 14px;
+}
+
+/* ---------- Section detail ---------- */
+.crumb {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--olive);
+  margin-bottom: 6px;
+}
+.back-btn {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.back-btn:hover {
+  color: var(--wine);
+}
+.passage-title {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0 0 6px;
+  line-height: 1.15;
+}
+.section-meta {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  margin-bottom: 22px;
+}
+
+.status-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin-bottom: 8px;
+}
+.status-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 26px;
+  flex-wrap: wrap;
+}
+.status-btn {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  background: var(--card);
+}
+.status-btn.active-not_started {
+  border-color: var(--ink-soft);
+  color: var(--ink);
+  font-weight: 500;
+}
+.status-btn.active-in_progress {
+  background: var(--wine);
+  border-color: var(--wine);
+  color: var(--linen);
+}
+.status-btn.active-completed {
+  background: var(--olive);
+  border-color: var(--olive);
+  color: var(--linen);
+}
+
+.notes-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin-bottom: 8px;
+}
+.notes-box {
+  width: 100%;
+  min-height: 160px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  font-family: var(--serif-body);
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.55;
+  resize: vertical;
+}
+.notes-box:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+.notes-saved {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  margin-top: 8px;
+  text-transform: uppercase;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-note {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.export-btn {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border-bottom: 1px dotted var(--ink-soft);
+}
+.export-btn:hover {
+  color: var(--wine);
+  border-bottom-color: var(--wine);
+}
