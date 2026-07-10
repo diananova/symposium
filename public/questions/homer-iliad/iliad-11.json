@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-11",
+  "guiding": [
+    "Agamemnon finally gets his own day of glory in this book. Watch how it compares to Diomed's aristeia back in Book V — what's similar, and what's missing.",
+    "One by one, the Achaeans' best fighters go down wounded. Watch how each wounding changes what the army as a whole can still do.",
+    "This book ends with Achilles finally showing curiosity about the battle he's refusing to join. Watch exactly what draws his attention, and through whom."
+  ],
+  "factual": [
+    {
+      "id": "iliad-11-f1",
+      "kind": "factual",
+      "prompt": "How does Agamemnon's day of glory come to an end?",
+      "options": [
+        "Coon, avenging his brother Iphidamas, wounds him, and Agamemnon is forced to withdraw from the fighting in pain.",
+        "He is killed outright by Hector in single combat.",
+        "He calls off his own attack once he sees Achilles watching from the ships.",
+        "Jove strikes him with a thunderbolt for boasting."
+      ],
+      "correctIndex": 0,
+      "explanation": "Jove had already signaled through Iris that Hector should hold back only until Agamemnon was wounded — this is that exact moment."
+    },
+    {
+      "id": "iliad-11-f2",
+      "kind": "factual",
+      "prompt": "What happens to Ulysses when he finds himself isolated and surrounded by Trojans?",
+      "options": [
+        "He fights bravely alone and is wounded before Ajax and Menelaus reach him and drive the Trojans back.",
+        "He surrenders and is taken prisoner.",
+        "He is rescued unharmed by Nestor's chariot before any fighting occurs.",
+        "He flees back to the ships without engaging."
+      ],
+      "correctIndex": 0,
+      "explanation": "His stand alone against many enemies is one of the book's clearest demonstrations of individual courage under pressure."
+    },
+    {
+      "id": "iliad-11-f3",
+      "kind": "factual",
+      "prompt": "Which Achaean chiefs end this book wounded and out of the fighting?",
+      "options": [
+        "Agamemnon, Diomed, Ulysses, and the healer Machaon are all wounded and carried from the field.",
+        "Only Agamemnon is wounded; the rest fight on unharmed.",
+        "Ajax alone is wounded, while the others retreat to protect him.",
+        "None of the chiefs are wounded; only common soldiers are lost."
+      ],
+      "correctIndex": 0,
+      "explanation": "Losing this many senior chiefs at once is a serious blow, and it's exactly what prompts Achilles' curiosity at the book's end."
+    },
+    {
+      "id": "iliad-11-f4",
+      "kind": "factual",
+      "prompt": "Why does Achilles send Patroclus to Nestor's tent?",
+      "options": [
+        "He saw Nestor's chariot bringing back a wounded man but couldn't tell who it was, and wants to know.",
+        "He wants Patroclus to formally challenge Hector on his behalf.",
+        "He wants to know whether Agamemnon has died.",
+        "Nestor had summoned Patroclus directly to receive new orders."
+      ],
+      "correctIndex": 0,
+      "explanation": "This small errand — mere curiosity — is what sets in motion everything that follows in the rest of the poem."
+    },
+    {
+      "id": "iliad-11-f5",
+      "kind": "factual",
+      "prompt": "What does Nestor urge Patroclus to do, and what does Patroclus do on his way back?",
+      "options": [
+        "Nestor urges him to persuade Achilles to return, or else to borrow Achilles' armor and lead the Myrmidons himself — and Patroclus stops to treat the wounded Eurypylus's injury.",
+        "Nestor tells him to report only that Agamemnon is safe, and Patroclus returns straight to Achilles.",
+        "Nestor asks him to fetch fresh supplies from the ships, and Patroclus does so without delay.",
+        "Nestor orders him to remain in the tent until the fighting ends, and Patroclus obeys."
+      ],
+      "correctIndex": 0,
+      "explanation": "Both details matter: Nestor's suggestion plants the idea that will bring Patroclus into the war himself, and his kindness to Eurypylus shows exactly the compassion that will define him."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-11-i1",
+      "kind": "interpretive",
+      "prompt": "Agamemnon's glory here is granted and ended by the gods' plan, just as Diomed's was in Book V. What does it mean that even the army's supreme commander's finest hour is not really his own to control?"
+    },
+    {
+      "id": "iliad-11-i2",
+      "kind": "interpretive",
+      "prompt": "Losing Agamemnon, Diomed, Ulysses, and Machaon all in one book leaves the army suddenly without most of its senior leadership. Why might Homer choose to strip the Achaeans of so much at once, right as Achilles starts paying attention again?"
+    },
+    {
+      "id": "iliad-11-i3",
+      "kind": "interpretive",
+      "prompt": "Achilles' first real curiosity about the war in eleven books is prompted by a wounded man in a chariot, not by the army's danger itself. What does that small, almost idle motive suggest about how he's actually spending his withdrawal?"
+    },
+    {
+      "id": "iliad-11-i4",
+      "kind": "interpretive",
+      "prompt": "Nestor suggests Patroclus could wear Achilles' armor and lead the Myrmidons himself. Why might this idea occur to Nestor now, and what does it reveal about how replaceable — or not — Achilles' presence actually is?"
+    },
+    {
+      "id": "iliad-11-e1",
+      "kind": "evaluative",
+      "prompt": "Patroclus stops to treat a wounded stranger's injury on an urgent errand. Does this small act of kindness, set against a book full of wounds and slaughter, change how you read his character going forward — and should it?"
+    }
+  ]
+}

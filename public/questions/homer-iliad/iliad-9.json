@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-9",
+  "guiding": [
+    "Agamemnon now proposes exactly what he only pretended to propose back in Book II. Watch what's different this time — is this still a test?",
+    "Three very different men will try to persuade Achilles to return: watch what each one appeals to — pride, duty, gifts, love, or something else — and which argument, if any, actually moves him.",
+    "Notice what Achilles says about honor and gifts here, compared to what drove him to withdraw in Book I. Has his complaint changed, or only deepened?"
+  ],
+  "factual": [
+    {
+      "id": "iliad-9-f1",
+      "kind": "factual",
+      "prompt": "What does Agamemnon propose at the start of this book, and how is it different from his proposal in Book II?",
+      "options": [
+        "He again proposes abandoning the war and sailing home, but this time in genuine despair, not as a test of the army.",
+        "He proposes a single combat between himself and Hector to end the war.",
+        "He proposes handing command over to Achilles.",
+        "He proposes a night raid to burn the Trojan camp."
+      ],
+      "correctIndex": 0,
+      "explanation": "Diomed immediately rebukes him, insisting he and Sthenelus will keep fighting even if the rest of the army sails home."
+    },
+    {
+      "id": "iliad-9-f2",
+      "kind": "factual",
+      "prompt": "What does Agamemnon offer Achilles to win him back, and which piece of the offer directly answers the wrong done in Book I?",
+      "options": [
+        "An enormous set of gifts, including the return of Briseis herself, along with an oath that Agamemnon never went to her bed.",
+        "Half of Agamemnon's own kingdom to rule jointly.",
+        "Command of the entire Achaean army for the rest of the war.",
+        "The immediate execution of Briseis's original captors."
+      ],
+      "correctIndex": 0,
+      "explanation": "The gifts are meant to restore Achilles' honor in the army's eyes, even though Achilles will argue that honor, once stripped, cannot simply be bought back."
+    },
+    {
+      "id": "iliad-9-f3",
+      "kind": "factual",
+      "prompt": "Who is sent as the embassy to Achilles, and how does Achilles greet them when they arrive?",
+      "options": [
+        "Ulysses, Ajax, and Phoenix — and Achilles, found playing the lyre with Patroclus beside him, welcomes them warmly as old friends.",
+        "Nestor alone, whom Achilles refuses to see.",
+        "Diomed and Ajax, who find Achilles already arming for battle.",
+        "Agamemnon himself, who is turned away at the tent's entrance."
+      ],
+      "correctIndex": 0,
+      "explanation": "The warmth of Achilles' welcome makes his refusal of the offer that follows even more striking — his quarrel is with Agamemnon, not with his friends."
+    },
+    {
+      "id": "iliad-9-f4",
+      "kind": "factual",
+      "prompt": "Why does Achilles refuse Ulysses's presentation of Agamemnon's offer?",
+      "options": [
+        "He says he hates a man who says one thing and means another, and insists no gifts can restore the honor already stripped from him.",
+        "He believes the gifts offered are not generous enough.",
+        "He has already sworn to Thetis that he will never fight again.",
+        "He demands Agamemnon apologize to him in person before he will consider it."
+      ],
+      "correctIndex": 0,
+      "explanation": "Achilles goes further, questioning the whole premise of the war — what, he asks, did the Trojans ever do to him personally?"
+    },
+    {
+      "id": "iliad-9-f5",
+      "kind": "factual",
+      "prompt": "What warning does Phoenix give Achilles, drawing on the story of the hero Meleager?",
+      "options": [
+        "That Meleager also withdrew from battle in anger and refused gifts offered to return, and by the time he finally fought anyway, he received no reward at all for it.",
+        "That Meleager died young because he refused every embassy sent to him.",
+        "That Meleager's city fell because the gods punished his pride specifically.",
+        "That Meleager was Achilles' own ancestor and shares his temper by blood."
+      ],
+      "correctIndex": 0,
+      "explanation": "Phoenix's point is about timing: honor offered and refused now may simply not be there to accept later."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-9-i1",
+      "kind": "interpretive",
+      "prompt": "Achilles insists that no gift can restore what Agamemnon took from him. Is he right that honor, once publicly stripped away, cannot simply be bought back — or is he refusing a genuine repair out of stubbornness?"
+    },
+    {
+      "id": "iliad-9-i2",
+      "kind": "interpretive",
+      "prompt": "Three men make three very different appeals — Ulysses to duty and consequence, Phoenix to love and long-term wisdom, Ajax to plain comradeship. Which appeal comes closest to actually moving Achilles, and why might that be the one that works best?"
+    },
+    {
+      "id": "iliad-9-i3",
+      "kind": "interpretive",
+      "prompt": "Achilles asks what the Trojans ever did to him personally, seeming to question the whole point of the war itself. Is this a new thought for him, or was it always underneath his anger at Agamemnon?"
+    },
+    {
+      "id": "iliad-9-i4",
+      "kind": "interpretive",
+      "prompt": "Phoenix warns Achilles with Meleager's story that honor delayed may be honor lost. Does Achilles' partial concession to Ajax at the end of the book suggest the warning worked, or that he simply hasn't decided yet?"
+    },
+    {
+      "id": "iliad-9-e1",
+      "kind": "evaluative",
+      "prompt": "Agamemnon's offer is enormous — treasure, captives, even marriage to his daughter — yet Achilles refuses it all. Is his refusal principled, or has his wrath outgrown any reasonable settlement?"
+    }
+  ]
+}

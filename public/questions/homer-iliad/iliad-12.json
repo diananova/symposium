@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-12",
+  "guiding": [
+    "The narrator briefly steps outside the story here to mention that this wall will one day be destroyed by the gods, long after the war ends. Watch what effect that flash-forward has on how urgent the fighting around it feels.",
+    "An omen appears in the sky as the Trojans prepare to attack — watch how it's read, and by whom, and whether that reading is accepted.",
+    "Watch exactly how the wall is finally broken, and by whose hand. Compare that moment to how carefully the Achaeans built it back in Book VII."
+  ],
+  "factual": [
+    {
+      "id": "iliad-12-f1",
+      "kind": "factual",
+      "prompt": "What does the narrator reveal about the Achaean wall's ultimate fate, before the battle around it even begins?",
+      "options": [
+        "That the gods will one day destroy it after the war ends, since it was built without proper sacrifices to them.",
+        "That it will stand forever as a monument to the Achaeans.",
+        "That Hector himself will tear it down before Troy falls.",
+        "That it was cursed by Priam before it was even finished."
+      ],
+      "correctIndex": 0,
+      "explanation": "This aside recalls Neptune's anger in Book VII — even the Achaeans' greatest defensive work is temporary in the gods' eyes."
+    },
+    {
+      "id": "iliad-12-f2",
+      "kind": "factual",
+      "prompt": "What omen appears as the Trojans prepare to attack, and how do Polydamas and Hector each respond to it?",
+      "options": [
+        "An eagle drops a snake it was carrying after being bitten; Polydamas reads it as a bad sign, but Hector rejects the omen, insisting the best sign is to fight for one's country.",
+        "A bolt of lightning strikes the wall itself, and both leaders agree to retreat.",
+        "A flight of doves crosses the field, which both men agree favors the Trojans.",
+        "The omen is never interpreted, since Hector forbids anyone from speaking of it."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hector's dismissal of the omen shows his growing confidence — and his willingness to override caution in pursuit of victory."
+    },
+    {
+      "id": "iliad-12-f3",
+      "kind": "factual",
+      "prompt": "What does Sarpedon, leader of the Lycian allies, urge his companion Glaucus to do, and on what grounds?",
+      "options": [
+        "To press the attack at the front, arguing that nobles who enjoy the best of everything at home must earn that privilege by risking the most in battle.",
+        "To hold back and let the Trojans take the lead, since the Lycians owe Troy no real debt.",
+        "To retreat to Lycia rather than risk death for a war not their own.",
+        "To challenge Ajax to single combat to settle the wall's fate at once."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sarpedon's reasoning ties honor directly to risk — a nobleman's privileges are only justified if he's willing to die for them."
+    },
+    {
+      "id": "iliad-12-f4",
+      "kind": "factual",
+      "prompt": "How is the Achaean wall's battlement first breached?",
+      "options": [
+        "Sarpedon tears open a section of the parapet with his bare hands, opening a path for others to follow.",
+        "The two Ajaxes accidentally leave a gate unguarded.",
+        "Trojan engineers dig beneath the wall's foundation overnight.",
+        "Minerva knocks down a section of the wall herself."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sarpedon's feat here sets the stage for Hector's even more decisive breakthrough moments later."
+    },
+    {
+      "id": "iliad-12-f5",
+      "kind": "factual",
+      "prompt": "How does Hector finally break through into the Achaean camp?",
+      "options": [
+        "He hurls a huge stone that shatters the main gate, and the Trojans pour through the broken wall.",
+        "He convinces the Achaean gatekeepers to surrender without a fight.",
+        "He orders the wall burned down over several hours.",
+        "He climbs over the wall alone at night and opens the gate from inside."
+      ],
+      "correctIndex": 0,
+      "explanation": "This single act of overwhelming force finally accomplishes what the whole Trojan army had been struggling to do all book."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-12-i1",
+      "kind": "interpretive",
+      "prompt": "Hector dismisses a bad omen by declaring that fighting for one's country is the only sign that matters. Is this the confidence of a true leader, or the recklessness that will eventually cost him everything?"
+    },
+    {
+      "id": "iliad-12-i2",
+      "kind": "interpretive",
+      "prompt": "Sarpedon argues that nobility only means something if it's paid for in risk and blood. Does this book's outcome — the wall falling despite the Achaeans' careful work — seem to support or challenge his argument?"
+    },
+    {
+      "id": "iliad-12-i3",
+      "kind": "interpretive",
+      "prompt": "The narrator tells us the wall's ultimate fate before the battle for it even happens, robbing the fight of some of its suspense. Why might Homer choose to reveal the ending in advance like this?"
+    },
+    {
+      "id": "iliad-12-i4",
+      "kind": "interpretive",
+      "prompt": "Sarpedon, a foreign ally with no personal stake in Troy's fate, fights harder here than some Trojans defending their own city. What does his example suggest about what actually motivates courage in this poem?"
+    },
+    {
+      "id": "iliad-12-e1",
+      "kind": "evaluative",
+      "prompt": "The wall the Achaeans built so carefully in Book VII falls in a single book, broken by one man's strength and another's momentum. Does this collapse feel like a fair consequence of neglecting the gods, or simply bad luck dressed up as justice?"
+    }
+  ]
+}

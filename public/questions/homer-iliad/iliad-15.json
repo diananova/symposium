@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-15",
+  "guiding": [
+    "Jove wakes to find his plan undone. Watch how he responds to Juno's trick — with what mixture of anger, memory, and renewed control.",
+    "Neptune protests that he is Jove's equal in rank, not his subject. Watch whether that claim holds up once tested.",
+    "By the end of this book, the war reaches the ships themselves for the first time. Watch what that escalation means for Patroclus, watching from nearby."
+  ],
+  "factual": [
+    {
+      "id": "iliad-15-f1",
+      "kind": "factual",
+      "prompt": "How does Jove react when he wakes and realizes what Juno has done?",
+      "options": [
+        "He rebukes her harshly, recalling a past punishment for a similar trick, though she swears she did not orchestrate Neptune's interference herself.",
+        "He laughs it off, admitting the trick was clever.",
+        "He punishes her immediately without giving her a chance to speak.",
+        "He decides to let the Achaeans win now that he has been outwitted."
+      ],
+      "correctIndex": 0,
+      "explanation": "Juno's oath is carefully worded — she avoids directly lying while still evading the full truth of her role in events."
+    },
+    {
+      "id": "iliad-15-f2",
+      "kind": "factual",
+      "prompt": "What argument does Neptune make when Jove orders him, through Iris, to withdraw from the battle?",
+      "options": [
+        "That he is Jove's equal in rank, since the universe was divided by lot among the sons of Saturn, and he should not have to obey like a lesser god.",
+        "That he has already promised Juno he would not stop helping the Achaeans.",
+        "That Jove has no authority over the sea, only the sky.",
+        "That withdrawing now would dishonor the Achaeans he has been protecting."
+      ],
+      "correctIndex": 0,
+      "explanation": "Despite this protest, Neptune ultimately yields rather than risk open conflict with Jove — a real limit on his claimed equality."
+    },
+    {
+      "id": "iliad-15-f3",
+      "kind": "factual",
+      "prompt": "What does Jove do to restore the Trojans' advantage once Neptune withdraws?",
+      "options": [
+        "He sends Apollo to fully heal Hector and lead the Trojan charge himself, carrying the aegis to terrify the Achaeans.",
+        "He personally descends to fight alongside Hector.",
+        "He orders Juno to heal Hector as penance for her trick.",
+        "He simply waits for the Trojans to recover on their own."
+      ],
+      "correctIndex": 0,
+      "explanation": "Apollo's direct intervention, carrying a symbol of divine terror itself, is what turns the battle decisively back toward Troy."
+    },
+    {
+      "id": "iliad-15-f4",
+      "kind": "factual",
+      "prompt": "How far do the Trojans push the Achaeans by the end of this book?",
+      "options": [
+        "All the way to the ships themselves, which they now threaten to burn.",
+        "Only back to the broken wall, no further than Book XII.",
+        "The Trojans are pushed back to their own city gates instead.",
+        "The fighting ends in a stalemate before either side gains ground."
+      ],
+      "correctIndex": 0,
+      "explanation": "This is the single worst moment for the Achaeans in the entire poem so far — the war has never come this close to total disaster for them."
+    },
+    {
+      "id": "iliad-15-f5",
+      "kind": "factual",
+      "prompt": "What does Patroclus decide to do as the din of battle grows worse near the ships?",
+      "options": [
+        "He resolves to leave the wounded Eurypylus and go to Achilles at once to beg for help.",
+        "He arms himself and joins the fight immediately without consulting Achilles.",
+        "He sends a message to Nestor asking for reinforcements instead.",
+        "He decides to wait until morning, believing the danger is exaggerated."
+      ],
+      "correctIndex": 0,
+      "explanation": "This decision is the hinge on which the rest of the poem turns — everything that follows begins with Patroclus finally going to Achilles."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-15-i1",
+      "kind": "interpretive",
+      "prompt": "Juno's oath to Jove is carefully true in its wording while still concealing the full truth. What does her evasion suggest about how honesty actually works among the gods, compared to the plain oaths mortals swore back in Book III?"
+    },
+    {
+      "id": "iliad-15-i2",
+      "kind": "interpretive",
+      "prompt": "Neptune claims equal rank with Jove, yet backs down rather than fight him directly. Does his retreat prove his claim was empty, or simply that being right isn't the same as being strong enough to insist on it?"
+    },
+    {
+      "id": "iliad-15-i3",
+      "kind": "interpretive",
+      "prompt": "The battle's entire direction has now reversed twice in three books, each time because of a god's private maneuvering rather than any change in the mortal soldiers themselves. What does this repeated pattern suggest the poem thinks about human agency in war?"
+    },
+    {
+      "id": "iliad-15-i4",
+      "kind": "interpretive",
+      "prompt": "The Trojans reach the ships for the first time in ten years of war, at the exact moment Patroclus finally decides to act. Why might Homer bring the danger to its peak right as Patroclus's own choice becomes unavoidable?"
+    },
+    {
+      "id": "iliad-15-e1",
+      "kind": "evaluative",
+      "prompt": "Neptune backs down from Jove rather than risk a fight he might lose. Is yielding to superior power here a wise god's caution, or does it undercut everything he claimed about his own equal rank?"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-16",
+  "guiding": [
+    "Achilles finally allows someone to fight in his place, wearing his own armor. Watch exactly what he does and doesn't grant Patroclus permission to do — and why the limit matters.",
+    "A son of Jove himself is fated to die in this book. Watch how Jove responds to that fact, and what stops him from simply saving his own child.",
+    "Patroclus's death does not come from a single blow. Watch how many different hands take part in it, and in what order."
+  ],
+  "factual": [
+    {
+      "id": "iliad-16-f1",
+      "kind": "factual",
+      "prompt": "What does Achilles finally agree to, and what limit does he place on it?",
+      "options": [
+        "He lends Patroclus his own armor and the Myrmidons to drive the Trojans from the ships, but orders him to return once that's done rather than pursue them toward Troy.",
+        "He agrees to fight himself the next morning, ending his withdrawal for good.",
+        "He allows Patroclus to fight but forbids him from wearing any of his own armor.",
+        "He sends Patroclus to negotiate directly with Hector instead of fighting."
+      ],
+      "correctIndex": 0,
+      "explanation": "Achilles' limit matters enormously — Patroclus's death comes exactly from ignoring it and pressing on toward the city."
+    },
+    {
+      "id": "iliad-16-f2",
+      "kind": "factual",
+      "prompt": "What does Achilles pray for Patroclus, and how does Jove answer that prayer?",
+      "options": [
+        "He prays for Patroclus's safe return along with victory; Jove grants the victory but not the safe return.",
+        "He prays only for Patroclus's victory and says nothing about his safety.",
+        "He prays that he himself will be allowed to join the fight, and Jove refuses outright.",
+        "He asks Jove to protect Hector from Patroclus, fearing an unfair fight."
+      ],
+      "correctIndex": 0,
+      "explanation": "This half-granted prayer is one of the poem's clearest moments of dramatic irony — Achilles asks for exactly what he will not get."
+    },
+    {
+      "id": "iliad-16-f3",
+      "kind": "factual",
+      "prompt": "What happens when Sarpedon, a son of Jove himself, is about to be killed in this battle?",
+      "options": [
+        "Jove considers saving him, but Juno warns that saving one favorite would prompt other gods to save their own, undermining fate itself — so Jove lets him die.",
+        "Jove saves Sarpedon at the last moment despite Juno's objections.",
+        "Sarpedon is never in real danger, since Jove protects him throughout the battle.",
+        "Jove is unaware of Sarpedon's danger until after his death."
+      ],
+      "correctIndex": 0,
+      "explanation": "Even a god's own child is not exempt from fate here — Jove instead sends Apollo to see that Sarpedon's body is properly honored afterward."
+    },
+    {
+      "id": "iliad-16-f4",
+      "kind": "factual",
+      "prompt": "What does Patroclus do that directly leads to his own death, disobeying Achilles' order?",
+      "options": [
+        "Carried away by his success, he pursues the Trojans all the way to the walls of Troy and tries to scale them himself.",
+        "He challenges Hector to single combat against Achilles' express wishes.",
+        "He removes his armor mid-battle to fight more freely.",
+        "He abandons the Myrmidons to fight alone for personal glory."
+      ],
+      "correctIndex": 0,
+      "explanation": "This is exactly the overreach Achilles had warned him against — driving the Trojans off is one thing, but pursuing them to Troy is another."
+    },
+    {
+      "id": "iliad-16-f5",
+      "kind": "factual",
+      "prompt": "How many different figures take part in Patroclus's death, and in what order?",
+      "options": [
+        "Apollo strikes him and knocks off his armor first, then the minor Trojan Euphorbus wounds him with a spear, and finally Hector delivers the killing blow.",
+        "Hector alone kills him in a fair one-on-one duel.",
+        "Apollo alone kills him outright, and no mortal touches him.",
+        "Euphorbus kills him alone, and Hector only claims credit afterward."
+      ],
+      "correctIndex": 0,
+      "explanation": "Even in death, Patroclus is not defeated by Hector's strength alone — a god disarms him first, robbing him of a fair fight."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-16-i1",
+      "kind": "interpretive",
+      "prompt": "Achilles lends his armor and his men, but not himself. Is this a real return to the war on his part, or still a form of the same withdrawal he's held since Book I?"
+    },
+    {
+      "id": "iliad-16-i2",
+      "kind": "interpretive",
+      "prompt": "Jove lets his own son Sarpedon die rather than break the pattern of fate for everyone else. What does this choice suggest about how even the most powerful god in the poem is bound by something larger than his own will?"
+    },
+    {
+      "id": "iliad-16-i3",
+      "kind": "interpretive",
+      "prompt": "Patroclus disobeys the one limit Achilles set for him, and it costs him his life. Is his death better understood as the price of glory-seeking, or as an almost inevitable result of wearing another man's armor and stepping into another man's war?"
+    },
+    {
+      "id": "iliad-16-i4",
+      "kind": "interpretive",
+      "prompt": "Patroclus is disarmed by a god before Hector ever touches him. What does it change about Hector's victory, and about Patroclus's death, that a fair fight was never really possible here?"
+    },
+    {
+      "id": "iliad-16-e1",
+      "kind": "evaluative",
+      "prompt": "Achilles set one clear limit for Patroclus, and Patroclus's disobedience of that single limit is what kills him. Whose failure does this feel more like to you — Patroclus's for overreaching, or Achilles' for sending him out at all while refusing to fight himself?"
+    }
+  ]
+}

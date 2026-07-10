@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-6",
+  "guiding": [
+    "This book pairs two very different scenes: two warriors meeting mid-battle, and a husband and wife meeting at a city wall. Watch what each scene says about what a life is worth.",
+    "Notice how Glaucus answers a simple question — who are you? — with a story about his family and an image about all human generations. What is he really telling Diomed?",
+    "Watch closely what Hector says to Andromache about why he must return to battle. Is his reason about himself, or about something larger than himself?"
+  ],
+  "factual": [
+    {
+      "id": "iliad-6-f1",
+      "kind": "factual",
+      "prompt": "When Diomed meets Glaucus on the battlefield, what does Glaucus tell him before either will fight?",
+      "options": [
+        "The story of his ancestor Bellerophon, who survived deadly trials in Lycia after being falsely condemned.",
+        "A prophecy that Diomed will die within the year.",
+        "That he is secretly a god in disguise, testing Diomed.",
+        "That he refuses to give his name to any enemy."
+      ],
+      "correctIndex": 0,
+      "explanation": "Diomed had demanded to know whether he faced a man or a god; Glaucus answers first with the famous comparison of human generations to leaves, then his family's story."
+    },
+    {
+      "id": "iliad-6-f2",
+      "kind": "factual",
+      "prompt": "Why do Diomed and Glaucus decide not to fight each other after all?",
+      "options": [
+        "They discover their grandfathers were guest-friends, so they exchange armor as a sign of friendship instead of fighting.",
+        "Minerva orders them both to stand down.",
+        "Hector calls Glaucus away before the duel can begin.",
+        "Diomed recognizes Glaucus as a fellow worshipper of Minerva and spares him on that basis."
+      ],
+      "correctIndex": 0,
+      "explanation": "The bond of hospitality between their families overrides the battlefield — though the poem notes the exchange itself is strikingly unequal, bronze for gold."
+    },
+    {
+      "id": "iliad-6-f3",
+      "kind": "factual",
+      "prompt": "Why does Hector return to Troy in the middle of the battle?",
+      "options": [
+        "At Helenus's urging, to have the Trojan women pray and make offerings to Minerva for the city's protection.",
+        "To fetch reinforcements from the palace guard.",
+        "To bring Paris's armor to him on the field.",
+        "To bury a fallen kinsman before nightfall."
+      ],
+      "correctIndex": 0,
+      "explanation": "This errand is what brings Hector home to see his mother, his brother, and finally his wife and son."
+    },
+    {
+      "id": "iliad-6-f4",
+      "kind": "factual",
+      "prompt": "What does Andromache beg Hector to do when they meet at the wall, and why?",
+      "options": [
+        "To stay inside the city rather than return to battle, since her father and brothers were already killed by Achilles and Hector is all she has left.",
+        "To take her and their son with him onto the battlefield for safety.",
+        "To make peace with Achilles personally.",
+        "To let Paris fight in his place from now on."
+      ],
+      "correctIndex": 0,
+      "explanation": "Her plea comes from a woman who has already lost her whole family to this war except the husband standing in front of her."
+    },
+    {
+      "id": "iliad-6-f5",
+      "kind": "factual",
+      "prompt": "How does Hector answer her, and what happens with their infant son Astyanax?",
+      "options": [
+        "He says he cannot hide from battle out of shame, foresees Troy's fall, and then removes his plumed helmet after it frightens the baby, laughing as he kisses him.",
+        "He agrees to stay and never returns to the fighting.",
+        "He sends Astyanax away from Troy for safety before rejoining the battle.",
+        "He refuses to hold his son, saying he cannot bear the parting."
+      ],
+      "correctIndex": 0,
+      "explanation": "The tenderness of this moment sits directly beside Hector's grim, clear-eyed prophecy of what awaits Troy and his family."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-6-i1",
+      "kind": "interpretive",
+      "prompt": "Glaucus answers a question about his identity with a story about his ancestor and an image comparing human generations to leaves on a tree. Why might Homer have him answer this way, rather than simply naming himself?"
+    },
+    {
+      "id": "iliad-6-i2",
+      "kind": "interpretive",
+      "prompt": "Diomed and Glaucus choose the bond of family hospitality over battle, in the middle of a war neither of their families started. What does this scene suggest can still hold weight even inside a war this destructive?"
+    },
+    {
+      "id": "iliad-6-i3",
+      "kind": "interpretive",
+      "prompt": "Hector tells Andromache that what pains him most is not his own death but imagining her enslaved after Troy falls. Why might Homer have him grieve her future more than his own?"
+    },
+    {
+      "id": "iliad-6-i4",
+      "kind": "interpretive",
+      "prompt": "Hector says he cannot hide from battle because of shame before the Trojans. Is that the same reason Achilles withdrew from battle in Book I, or its opposite?"
+    },
+    {
+      "id": "iliad-6-e1",
+      "kind": "evaluative",
+      "prompt": "Hector chooses public duty over Andromache's plea to stay; Achilles chose his own honor over the army's need in Book I. Which choice do you find more defensible, and does the fact that one man has a family waiting at home change your answer?"
+    }
+  ]
+}

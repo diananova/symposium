@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-8",
+  "guiding": [
+    "Jove finally asserts direct control over the other gods in this book. Watch what tools he uses to enforce that control — persuasion, threat, or something else.",
+    "Notice how the battle's fortune is decided here, and by whom. Is it decided by the fighters themselves, or by something above them?",
+    "The Trojans camp on the open plain for the first time instead of retreating to the city. Watch what that choice signals about how the war has turned."
+  ],
+  "factual": [
+    {
+      "id": "iliad-8-f1",
+      "kind": "factual",
+      "prompt": "What does Jove command the other gods at the start of this book?",
+      "options": [
+        "That none of them help either side in the war, on pain of being hurled into Tartarus.",
+        "That they must all help the Trojans equally from now on.",
+        "That the war must end by nightfall.",
+        "That only Minerva may intervene, and only on the Achaean side."
+      ],
+      "correctIndex": 0,
+      "explanation": "Jove backs this order with an image of his own supremacy over all the other gods combined."
+    },
+    {
+      "id": "iliad-8-f2",
+      "kind": "factual",
+      "prompt": "How does Jove use his golden scales during the battle, and what do they show?",
+      "options": [
+        "He weighs the fates of the two armies against each other, and the Achaean scale sinks, marking them for defeat that day.",
+        "He weighs the honor of Hector against Achilles to decide who is the greater warrior.",
+        "He weighs Agamemnon's guilt against Achilles' anger to settle their quarrel.",
+        "He uses them to decide whether to let the sun set early."
+      ],
+      "correctIndex": 0,
+      "explanation": "This is Jove's own private confirmation of what he already intends: a hard day for the Achaeans, in keeping with his promise to Thetis."
+    },
+    {
+      "id": "iliad-8-f3",
+      "kind": "factual",
+      "prompt": "When Juno and Minerva try to help the Achaeans despite Jove's order, what happens?",
+      "options": [
+        "Jove sends Iris to warn them off with threats against their chariot horses, and they reluctantly turn back to Olympus.",
+        "Jove allows it, since the order was only meant for the lesser gods.",
+        "They successfully turn the battle before Jove notices.",
+        "Jove destroys their chariot on the spot as punishment."
+      ],
+      "correctIndex": 0,
+      "explanation": "Even the two most powerful goddesses on the Achaean side cannot get around Jove's will once he has decided to enforce it."
+    },
+    {
+      "id": "iliad-8-f4",
+      "kind": "factual",
+      "prompt": "What does Jove predict when Juno and Minerva return to Olympus, sulking?",
+      "options": [
+        "That the Achaeans will suffer worse still, until Achilles returns to the fighting.",
+        "That the war will end within three days regardless of what anyone does.",
+        "That Hector will be killed before nightfall.",
+        "That he will personally destroy Troy himself out of frustration with both sides."
+      ],
+      "correctIndex": 0,
+      "explanation": "Jove's taunt makes clear that everything happening on the battlefield is unfolding exactly as he promised Thetis back in Book I."
+    },
+    {
+      "id": "iliad-8-f5",
+      "kind": "factual",
+      "prompt": "How does the book end, and what does it signal about how the war has turned?",
+      "options": [
+        "The Trojans camp on the open plain overnight for the first time, confident of victory, lighting many watchfires instead of retreating to the city.",
+        "The Achaeans burn their own ships to prevent capture.",
+        "Both armies agree to a week's truce to mourn their dead.",
+        "Hector is wounded and forced to withdraw to Troy for the night."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sleeping in the open, this close to the enemy, is a mark of Trojan confidence that would have been unthinkable earlier in the poem."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-8-i1",
+      "kind": "interpretive",
+      "prompt": "Jove enforces his will with threats of violence against the other gods, not persuasion. What does that method of rule suggest about power among the gods themselves, apart from their power over mortals?"
+    },
+    {
+      "id": "iliad-8-i2",
+      "kind": "interpretive",
+      "prompt": "The battle's whole outcome this day is decided in advance by a god weighing scales on a mountaintop, before a single spear is thrown. What does that do to the meaning of the courage and skill the soldiers show below?"
+    },
+    {
+      "id": "iliad-8-i3",
+      "kind": "interpretive",
+      "prompt": "Even Juno and Minerva, the Achaeans' strongest divine allies, cannot defy Jove's order. What does their failure suggest about whether the Achaeans' cause has any real backing beyond human effort right now?"
+    },
+    {
+      "id": "iliad-8-i4",
+      "kind": "interpretive",
+      "prompt": "Jove openly ties the Trojans' success today to keeping his promise to Thetis about Achilles. What does it mean that one man's private grievance is shaping the fate of two entire armies?"
+    },
+    {
+      "id": "iliad-8-e1",
+      "kind": "evaluative",
+      "prompt": "This book shows the war's outcome decided by a god's scales rather than by the fighters' own courage or skill. Does that make the soldiers' bravery in this poem more moving, or does it undercut it?"
+    }
+  ]
+}

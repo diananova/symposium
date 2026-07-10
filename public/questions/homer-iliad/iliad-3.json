@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-3",
+  "guiding": [
+    "This book proposes to settle the whole ten-year war with a single duel between two men. Watch how seriously each side actually treats that proposal.",
+    "Notice how Paris is described and treated by his own brother, and weigh that against how the poem has described Achilles and Agamemnon so far.",
+    "Watch for the moment a god intervenes directly in a fight already underway, and ask what that intervention actually rescues its favorite from."
+  ],
+  "factual": [
+    {
+      "id": "iliad-3-f1",
+      "kind": "factual",
+      "prompt": "What happens when Paris first steps out to challenge the Achaeans, and Menelaus answers?",
+      "options": [
+        "Paris shrinks back in fear and retreats into the Trojan ranks rather than face the husband he wronged.",
+        "Paris kills Menelaus's charioteer before the duel can even be proposed.",
+        "Paris and Menelaus fight immediately, and Paris is wounded in the arm.",
+        "Paris demands Hector fight in his place."
+      ],
+      "correctIndex": 0,
+      "explanation": "Paris boasted moments before, but flinches and retreats the instant Menelaus, whose wife he stole, actually comes forward."
+    },
+    {
+      "id": "iliad-3-f2",
+      "kind": "factual",
+      "prompt": "How does Hector respond to his brother's retreat?",
+      "options": [
+        "He rebukes Paris harshly, contrasting his handsome looks with his lack of courage, and shames him into proposing the duel himself.",
+        "He praises Paris's caution as wisdom.",
+        "He fights Menelaus in Paris's place without a word.",
+        "He orders Paris exiled from Troy on the spot."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hector's scorn stings Paris into offering the terms himself: he and Menelaus will duel, and Helen and the treasure will go to the winner."
+    },
+    {
+      "id": "iliad-3-f3",
+      "kind": "factual",
+      "prompt": "Why is Helen brought up to the wall above the Scaean gate, and what does she do there?",
+      "options": [
+        "She is asked to name the Achaean chieftains below for Priam, who cannot tell one from another, and picks out Agamemnon, Ulysses, and Ajax by sight.",
+        "She is sent to negotiate the terms of the duel with Menelaus directly.",
+        "She is placed there so the Trojan army can witness her public trial.",
+        "She goes to warn Priam of a planned Achaean ambush."
+      ],
+      "correctIndex": 0,
+      "explanation": "This scene lets Helen (and the reader) survey the enemy leaders through Priam's eyes, even as her presence is the war's very cause."
+    },
+    {
+      "id": "iliad-3-f4",
+      "kind": "factual",
+      "prompt": "How does the duel between Paris and Menelaus actually end?",
+      "options": [
+        "Menelaus is dragging Paris by his helmet strap toward the Achaean lines when Venus snaps the strap and spirits Paris away in a mist.",
+        "Paris wounds Menelaus and is declared the winner.",
+        "Both men collapse from exhaustion and the duel is called a draw by Priam.",
+        "Hector intervenes to stop the fight before either man is hurt."
+      ],
+      "correctIndex": 0,
+      "explanation": "Menelaus has him beaten — the terms should be settled — but Venus removes Paris from the field entirely, denying the war its resolution."
+    },
+    {
+      "id": "iliad-3-f5",
+      "kind": "factual",
+      "prompt": "What does Venus do immediately after rescuing Paris, and how does Helen react?",
+      "options": [
+        "Venus compels a reluctant Helen to go to Paris in his bedchamber, and Helen rebukes him openly for his cowardice before yielding.",
+        "Venus heals Paris's wounds so he can return to the fight at once.",
+        "Venus disguises Helen as a Trojan soldier to smuggle her out of the city.",
+        "Venus turns Paris invisible so he can rejoin the front lines unseen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Helen's contempt for Paris in this scene is plain, even as the goddess overrides her will."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-3-i1",
+      "kind": "interpretive",
+      "prompt": "Both armies agree to let one duel settle a ten-year war, but Venus's intervention makes sure it settles nothing. What does that failure suggest about whether this war was ever going to end by agreement?"
+    },
+    {
+      "id": "iliad-3-i2",
+      "kind": "interpretive",
+      "prompt": "Hector shames Paris by contrasting his beauty with his cowardice. What standard of manhood is Hector holding him to, and does the rest of the book bear that standard out or complicate it?"
+    },
+    {
+      "id": "iliad-3-i3",
+      "kind": "interpretive",
+      "prompt": "Helen names the Achaean chiefs for Priam with what sounds like admiration, even regret, for the war she is blamed for causing. What does her tone at the wall suggest about how she sees her own role in all this?"
+    },
+    {
+      "id": "iliad-3-i4",
+      "kind": "interpretive",
+      "prompt": "Venus rescues Paris not from death exactly, but from public defeat and humiliation. Is what she saves him from a matter of life, or a matter of honor — and does the poem treat those as the same thing?"
+    },
+    {
+      "id": "iliad-3-e1",
+      "kind": "evaluative",
+      "prompt": "In Book I, Achilles refuses to fight over a matter of honor; here, Paris is dragged out of a fight to save his life and standing by a god's direct hand. Whose situation asks more of us to judge harshly — the man who won't fight, or the man who was saved from having to?"
+    }
+  ]
+}

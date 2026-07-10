@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-7",
+  "guiding": [
+    "Once again, one duel is proposed to stand in for the whole war. Watch how this attempt is different from the failed duel in Book III — who chooses the champion this time, and how.",
+    "Notice how the Achaeans first respond to Hector's challenge, before anyone actually volunteers. What does their hesitation reveal about the army's state without Achilles?",
+    "Watch how the duel ends, and what the two fighters do afterward. Compare that ending to how Book III's duel ended."
+  ],
+  "factual": [
+    {
+      "id": "iliad-7-f1",
+      "kind": "factual",
+      "prompt": "How do the Achaeans first react when Hector challenges any of them to single combat?",
+      "options": [
+        "They fall silent from fear, ashamed to refuse but afraid to accept, until Menelaus shames them by offering himself.",
+        "They immediately cheer and a dozen men volunteer at once.",
+        "Agamemnon accepts the challenge himself without hesitation.",
+        "They laugh at Hector's offer and refuse to answer at all."
+      ],
+      "correctIndex": 0,
+      "explanation": "Even Menelaus's offer alarms the other chiefs, who fear he is overmatched — a sign of how much the army's confidence has suffered."
+    },
+    {
+      "id": "iliad-7-f2",
+      "kind": "factual",
+      "prompt": "How is the Achaean champion finally chosen?",
+      "options": [
+        "Nestor shames nine chiefs into volunteering, and lots are drawn — the mark falls to Ajax.",
+        "Agamemnon appoints Diomed by right of his recent victories.",
+        "Achilles is summoned from his tent to fight in Hector's place.",
+        "Hector himself selects his opponent from among the volunteers."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ajax's selection by lot, after Nestor's rebuke shakes the army out of its fear, sets up one of the poem's great single combats."
+    },
+    {
+      "id": "iliad-7-f3",
+      "kind": "factual",
+      "prompt": "How does the duel between Ajax and Hector actually end?",
+      "options": [
+        "Nightfall separates them evenly matched, and heralds from both sides stop the fight before either man is killed.",
+        "Ajax kills Hector, ending the war on the spot.",
+        "Hector wounds Ajax badly and claims victory.",
+        "Both men collapse from wounds and are carried off by their own sides."
+      ],
+      "correctIndex": 0,
+      "explanation": "Unlike the broken duel in Book III, this fight ends on its own terms, with both men's courage still intact."
+    },
+    {
+      "id": "iliad-7-f4",
+      "kind": "factual",
+      "prompt": "What do Ajax and Hector do once the fight is called off?",
+      "options": [
+        "They exchange gifts — Hector his sword, Ajax his belt — as a sign of mutual respect.",
+        "They agree to fight again the next morning.",
+        "They part without a word, each claiming victory.",
+        "They embrace as long-lost kinsmen, having discovered a family tie."
+      ],
+      "correctIndex": 0,
+      "explanation": "The gesture marks genuine respect between enemies — and both gifts will matter again later in the poem."
+    },
+    {
+      "id": "iliad-7-f5",
+      "kind": "factual",
+      "prompt": "What do the Achaeans build during the truce that follows, and how does a god react to it?",
+      "options": [
+        "A wall and trench around their ships, which angers Neptune that mortals built such a thing without honoring the gods first.",
+        "A second fleet of ships to replace losses.",
+        "A shrine to Minerva for her aid in the duel.",
+        "A funeral pyre large enough for both armies' dead together."
+      ],
+      "correctIndex": 0,
+      "explanation": "Jove reassures Neptune he may destroy the wall once the war is over — a small sign that even the Achaeans' works are temporary in the gods' eyes."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-7-i1",
+      "kind": "interpretive",
+      "prompt": "The Achaeans hesitate to face Hector until Nestor shames them, recalling his own youthful courage. What does it suggest about this army that an old man's memory of glory is what moves the young men to act?"
+    },
+    {
+      "id": "iliad-7-i2",
+      "kind": "interpretive",
+      "prompt": "Unlike the duel in Book III, this one ends by mutual consent and respect rather than a god's interference. What does the difference between these two duels suggest about when human decisions, rather than divine ones, actually get to stand?"
+    },
+    {
+      "id": "iliad-7-i3",
+      "kind": "interpretive",
+      "prompt": "Ajax and Hector, enemies moments earlier, exchange gifts as equals. What does this exchange suggest is possible between men on opposite sides of a war, even one this bitter?"
+    },
+    {
+      "id": "iliad-7-i4",
+      "kind": "interpretive",
+      "prompt": "Neptune is offended that the Achaeans built a wall without a sacrifice to the gods first. Why might the poem care about this detail, when the wall itself seems like ordinary military sense?"
+    },
+    {
+      "id": "iliad-7-e1",
+      "kind": "evaluative",
+      "prompt": "This book gives us a duel that ends in mutual respect between enemies, right after Book IV showed a truce broken by treachery. Which moment says more about what this war actually is — the broken oath, or the respectful duel?"
+    }
+  ]
+}

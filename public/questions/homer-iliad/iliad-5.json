@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-5",
+  "guiding": [
+    "This book gives one mortal an almost godlike day on the battlefield. Watch what a human being can and cannot do once a god has taken his side.",
+    "Notice which gods choose to enter the fighting directly, and which hold back. What seems to separate the two groups?",
+    "Watch for a moment when a god is wounded by a mortal hand. What does the god's reaction suggest about what a god actually risks by joining a human war?"
+  ],
+  "factual": [
+    {
+      "id": "iliad-5-f1",
+      "kind": "factual",
+      "prompt": "What does Minerva grant Diomed at the start of this book?",
+      "options": [
+        "Extraordinary courage and strength, with a fire seeming to blaze from his helmet and shield as he cuts through the Trojan ranks.",
+        "Invisibility, so he can move through the Trojan camp unseen.",
+        "The power to speak with the voice of Jove.",
+        "A new set of armor forged by Vulcan."
+      ],
+      "correctIndex": 0,
+      "explanation": "Diomed's aristeia — his single day of supreme battlefield glory — begins with this direct gift from Minerva."
+    },
+    {
+      "id": "iliad-5-f2",
+      "kind": "factual",
+      "prompt": "After Pandarus wounds Diomed with an arrow, what does Minerva do, and what condition does she attach?",
+      "options": [
+        "She heals him and sharpens his sight to see gods on the field, but warns him to fight no god except Venus.",
+        "She heals him but forbids him from fighting any more that day.",
+        "She kills Pandarus herself in revenge before Diomed can act.",
+        "She takes him from the battlefield to Olympus to recover."
+      ],
+      "correctIndex": 0,
+      "explanation": "That single exception — Venus, and Venus alone — is exactly the god Diomed will go on to wound."
+    },
+    {
+      "id": "iliad-5-f3",
+      "kind": "factual",
+      "prompt": "What happens when Aeneas and Pandarus attack Diomed together in a chariot?",
+      "options": [
+        "Diomed kills Pandarus and wounds Aeneas badly with a huge stone, nearly killing him.",
+        "Diomed is forced to retreat from the two of them.",
+        "Pandarus wounds Diomed a second time, ending his rampage.",
+        "Aeneas kills Pandarus by accident in the chaos."
+      ],
+      "correctIndex": 0,
+      "explanation": "This sets up Venus's rescue of her son Aeneas moments later — and Diomed's use of Minerva's one exception."
+    },
+    {
+      "id": "iliad-5-f4",
+      "kind": "factual",
+      "prompt": "What does Diomed do when Venus swoops down to carry the wounded Aeneas from the field?",
+      "options": [
+        "Remembering Minerva's permission, he wounds Venus in the hand, and she drops Aeneas and flees to Olympus in tears.",
+        "He lets her go without interference, respecting the gods.",
+        "He kills Aeneas before Venus can reach him.",
+        "He is struck blind for daring to approach a goddess."
+      ],
+      "correctIndex": 0,
+      "explanation": "Venus is comforted by her mother Dione on Olympus, while Jove tells her that war, not love, is simply not her province."
+    },
+    {
+      "id": "iliad-5-f5",
+      "kind": "factual",
+      "prompt": "Later in the book, how is Diomed finally stopped from his rampage?",
+      "options": [
+        "With Minerva actually guiding his spear, he wounds Mars himself in the belly, and the god flees roaring to Olympus to complain to Jove.",
+        "Hector wounds him badly enough to end his aristeia.",
+        "Apollo strikes him down for his earlier attack on Venus.",
+        "He simply exhausts himself and withdraws from the field."
+      ],
+      "correctIndex": 0,
+      "explanation": "Jove has little sympathy for Mars's complaint — a striking sign of how the gods themselves regard the god of war."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-5-i1",
+      "kind": "interpretive",
+      "prompt": "For one book, a mortal fights almost as an equal of the gods, and even wounds two of them. What does the poem seem to think a human being is capable of, when a god chooses to lend that capability?"
+    },
+    {
+      "id": "iliad-5-i2",
+      "kind": "interpretive",
+      "prompt": "Minerva permits Diomed to wound Venus specifically, but no other god. Why might Venus, of all the gods, be the one considered fair game on a battlefield?"
+    },
+    {
+      "id": "iliad-5-i3",
+      "kind": "interpretive",
+      "prompt": "Jove tells Venus that war is not her province, and shows little sympathy when Mars is wounded and complains. What does Jove's attitude toward these two gods suggest about how the poem ranks love and war among the gods' proper concerns?"
+    },
+    {
+      "id": "iliad-5-i4",
+      "kind": "interpretive",
+      "prompt": "Diomed's entire triumph in this book depends on a goddess's gift, granted and revoked at her will. Is his glory here really his own, and does the poem seem to think that question matters?"
+    },
+    {
+      "id": "iliad-5-e1",
+      "kind": "evaluative",
+      "prompt": "Achilles' withdrawal in Book I came from wounded honor; Diomed's rampage here comes from a god's direct gift. Which kind of greatness on the battlefield seems more admirable to you — the honor a man defends himself, or the power a god lends him?"
+    }
+  ]
+}

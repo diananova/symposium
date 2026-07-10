@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-10",
+  "guiding": [
+    "This book takes place entirely at night, and entirely through deception and stealth, unlike the open daylight combat we've seen so far. Watch what changes about how these men behave in the dark.",
+    "Both sides send a spy out on this same night. Watch how differently the two spies are treated by their own commanders, and by the men who catch them.",
+    "Notice what the spy Dolon offers to save his life, and whether it works. What does that tell you about how mercy operates in this war?"
+  ],
+  "factual": [
+    {
+      "id": "iliad-10-f1",
+      "kind": "factual",
+      "prompt": "Why can't Agamemnon and Menelaus sleep at the start of this book, and what do they do about it?",
+      "options": [
+        "Worried about the army's danger, they rouse the other chiefs for a night council to plan a spying mission into the Trojan camp.",
+        "They are kept awake by Trojan watchfires burning too close to the ships.",
+        "They are woken by a divine messenger warning of an attack before dawn.",
+        "They quarrel loudly enough to wake the whole camp."
+      ],
+      "correctIndex": 0,
+      "explanation": "Their sleeplessness reflects just how badly the previous day's fighting went for the Achaeans."
+    },
+    {
+      "id": "iliad-10-f2",
+      "kind": "factual",
+      "prompt": "Who volunteers for the spying mission, and who do they choose as a companion?",
+      "options": [
+        "Diomed volunteers and chooses Ulysses to go with him.",
+        "Ajax volunteers and chooses Nestor.",
+        "Menelaus volunteers alone, refusing any companion.",
+        "Agamemnon sends two heralds instead of a warrior."
+      ],
+      "correctIndex": 0,
+      "explanation": "The pairing puts the poem's boldest fighter alongside its cleverest schemer."
+    },
+    {
+      "id": "iliad-10-f3",
+      "kind": "factual",
+      "prompt": "Who is Dolon, and what does Hector promise him for his own spying mission?",
+      "options": [
+        "A Trojan sent to scout the Achaean camp, promised Achilles' own chariot and horses as his reward.",
+        "A Trojan priest sent to curse the Achaean ships.",
+        "An Achaean deserter offering to betray his own camp.",
+        "A herald sent only to negotiate, not to spy."
+      ],
+      "correctIndex": 0,
+      "explanation": "The prize Hector offers is wildly unrealistic — Achilles' horses are famously divine and unwinnable by ordinary means — which makes Dolon's eagerness almost pitiable."
+    },
+    {
+      "id": "iliad-10-f4",
+      "kind": "factual",
+      "prompt": "What happens when Diomed and Ulysses catch Dolon on the plain?",
+      "options": [
+        "He reveals the Trojan positions and the location of the newly arrived Thracian king Rhesus to save his life, but they kill him anyway.",
+        "He fights them off and escapes back to Troy.",
+        "He leads them into a Trojan ambush.",
+        "He is spared and sent home in exchange for his information."
+      ],
+      "correctIndex": 0,
+      "explanation": "The information Dolon gives up is exactly what leads Diomed and Ulysses to Rhesus's camp next."
+    },
+    {
+      "id": "iliad-10-f5",
+      "kind": "factual",
+      "prompt": "What do Diomed and Ulysses do in the Thracian camp, and how does the book end?",
+      "options": [
+        "They kill Rhesus and twelve of his men in their sleep, steal his famous horses, and return to a warm welcome and feast in the Achaean camp.",
+        "They are captured and held for ransom by the Thracians.",
+        "They fail to find Rhesus and return empty-handed.",
+        "They burn the Thracian camp without taking anything."
+      ],
+      "correctIndex": 0,
+      "explanation": "The raid is a rare moment of unambiguous, celebrated success for the Achaeans after a string of losses."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-10-i1",
+      "kind": "interpretive",
+      "prompt": "Diomed and Ulysses kill Dolon immediately after he gives them everything he knows, offering no mercy for his cooperation. Does the poem present this as dishonorable, or simply as how war works at night, off the battlefield's open rules?"
+    },
+    {
+      "id": "iliad-10-i2",
+      "kind": "interpretive",
+      "prompt": "Killing sleeping men in their beds is very different from the daylight duels we've seen so far, where an armed man at least has a chance to fight back. Does this book ask us to judge that difference, or simply show it as another face of the same war?"
+    },
+    {
+      "id": "iliad-10-i3",
+      "kind": "interpretive",
+      "prompt": "Hector's reward to Dolon — Achilles' own divine horses — is almost impossible for him to actually deliver. What does that gap between promise and reality suggest about how desperation shapes what men are willing to risk?"
+    },
+    {
+      "id": "iliad-10-i4",
+      "kind": "interpretive",
+      "prompt": "This is one of the only fully successful Achaean operations in the poem so far. Why might Homer place a clean, celebrated victory here, right after several books of Trojan gains?"
+    },
+    {
+      "id": "iliad-10-e1",
+      "kind": "evaluative",
+      "prompt": "Ajax and Hector exchanged gifts in mutual respect in Book VII; here, Diomed and Ulysses kill a man immediately after he cooperates with them. Which of these two approaches to an enemy seems more honest about what war actually is?"
+    }
+  ]
+}

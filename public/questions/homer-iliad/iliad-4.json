@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-4",
+  "guiding": [
+    "The duel that should have ended the war is over, unresolved. Watch how the decision to keep fighting gets made — and who actually makes it.",
+    "Notice the difference between the oath the armies just swore and what happens to it in this book. What does that gap suggest about how binding a sacred promise really is here?",
+    "Agamemnon walks among his own chiefs before the battle. Watch how differently he speaks to different men, and what effect his words have."
+  ],
+  "factual": [
+    {
+      "id": "iliad-4-f1",
+      "kind": "factual",
+      "prompt": "What do the gods decide on Olympus at the start of this book?",
+      "options": [
+        "Jove is willing to let the war end in peace, but Juno insists Troy must fall, and he yields and sends Minerva to break the truce.",
+        "Jove forbids any god from interfering in the war from now on.",
+        "Juno and Minerva argue for peace, but Jove insists the war continue.",
+        "The gods vote to end the war immediately after the duel."
+      ],
+      "correctIndex": 0,
+      "explanation": "Juno's hatred of Troy wins out, and Jove sends Minerva down to shatter the very oaths the armies just swore."
+    },
+    {
+      "id": "iliad-4-f2",
+      "kind": "factual",
+      "prompt": "How does Minerva actually break the truce?",
+      "options": [
+        "Disguised as a Trojan soldier, she persuades Pandarus to shoot an arrow at Menelaus.",
+        "She appears in her own form and commands Hector to attack.",
+        "She poisons the wine at the oath-sacrifice.",
+        "She whispers false orders to Agamemnon."
+      ],
+      "correctIndex": 0,
+      "explanation": "Pandarus is flattered into breaking the sacred oath himself, though it is Minerva who tempts him to it."
+    },
+    {
+      "id": "iliad-4-f3",
+      "kind": "factual",
+      "prompt": "What happens to Menelaus, and how does Agamemnon react?",
+      "options": [
+        "He is wounded but not killed — Minerva deflects the arrow — yet Agamemnon is distraught, fearing his brother's death and the war's shameful end.",
+        "He is killed outright, and Agamemnon vows immediate revenge on all Troy.",
+        "He is unharmed, and Agamemnon laughs off the broken truce.",
+        "He is captured by the Trojans and held for ransom."
+      ],
+      "correctIndex": 0,
+      "explanation": "Agamemnon's grief is as much about what Menelaus's death would mean for the army's cause as for his brother himself."
+    },
+    {
+      "id": "iliad-4-f4",
+      "kind": "factual",
+      "prompt": "As Agamemnon moves among his own chiefs before the fighting starts, how does he treat them?",
+      "options": [
+        "He praises men like Idomeneus and the Ajaxes, but rebukes others, including Ulysses and Diomed, for seeming slow to fight — stinging them into action.",
+        "He praises every chief equally to keep morale high.",
+        "He rebukes every chief harshly, trusting only Nestor.",
+        "He avoids Ulysses and Diomed entirely, fearing their tempers."
+      ],
+      "correctIndex": 0,
+      "explanation": "His uneven treatment needles pride as a tool of command — and it works, since both men answer the challenge."
+    },
+    {
+      "id": "iliad-4-f5",
+      "kind": "factual",
+      "prompt": "How does the book end?",
+      "options": [
+        "General battle breaks out along the whole line, with heavy losses on both sides described in stark, unsparing terms.",
+        "Both armies withdraw at nightfall without fighting.",
+        "Hector calls for another single combat to replace the broken truce.",
+        "The gods intervene again to stop the fighting before it begins."
+      ],
+      "correctIndex": 0,
+      "explanation": "The truce's collapse plunges both armies straight into full-scale slaughter, with no more talk of ending the war by agreement."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-4-i1",
+      "kind": "interpretive",
+      "prompt": "Juno's hatred of Troy is personal and old, yet it is what decides the fate of thousands of men who have no part in her quarrel. What does this suggest about how much human suffering in this poem actually turns on causes the humans themselves never chose?"
+    },
+    {
+      "id": "iliad-4-i2",
+      "kind": "interpretive",
+      "prompt": "Pandarus breaks a sacred oath because a disguised goddess flatters his pride as an archer. Does the poem treat him as guilty for that choice, or as merely a tool — and does it matter which?"
+    },
+    {
+      "id": "iliad-4-i3",
+      "kind": "interpretive",
+      "prompt": "Agamemnon rebukes Ulysses and Diomed to provoke them into fighting harder. Is that good leadership, manipulation, or both at once?"
+    },
+    {
+      "id": "iliad-4-i4",
+      "kind": "interpretive",
+      "prompt": "The armies swore a solemn oath just one book ago, and it is broken almost as soon as it is made. What does the poem seem to think oaths are actually worth, among men and gods both?"
+    },
+    {
+      "id": "iliad-4-e1",
+      "kind": "evaluative",
+      "prompt": "The duel in Book III should have ended the war fairly; a god's interference in Book IV ensures it doesn't. Is it more troubling that a god breaks a human oath, or that human armies so readily go back to killing once given the excuse?"
+    }
+  ]
+}

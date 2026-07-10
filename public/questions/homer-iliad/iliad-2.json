@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-2",
+  "guiding": [
+    "Book I ended with the gods laughing on Olympus while men below suffered for their quarrel. Watch how Jove's plan for the Achaeans unfolds here — does it continue in that same spirit?",
+    "Notice how the army moves as a single body, in contrast to Achilles' very personal wrath in Book I. What moves a mass of men to fight or flee, compared to what moved one man to abandon the war entirely?",
+    "Pay attention to who is allowed to speak in the assembly, and who is not — and what happens to the man who ignores that unspoken rule."
+  ],
+  "factual": [
+    {
+      "id": "iliad-2-f1",
+      "kind": "factual",
+      "prompt": "Why does Jove send a Dream to Agamemnon?",
+      "options": [
+        "To deceive him into thinking Troy can be taken today if he attacks in full force, so that many Achaeans will die honoring Thetis's request.",
+        "To warn him of a coming Trojan night raid on the camp.",
+        "To command him to return Chryseis at once, before Apollo's plague returns.",
+        "To tell him to make peace with Achilles immediately."
+      ],
+      "correctIndex": 0,
+      "explanation": "The Dream comes disguised as Nestor and lies to Agamemnon, since Jove is honoring the promise he made to Thetis in Book I."
+    },
+    {
+      "id": "iliad-2-f2",
+      "kind": "factual",
+      "prompt": "What does Agamemnon do that nearly unravels the army before battle even begins?",
+      "options": [
+        "He tests the men's resolve by proposing they abandon the war and sail home — and they take him at his word, stampeding for the ships.",
+        "He challenges Hector to single combat without consulting the other chiefs.",
+        "He orders the fleet burned so no one can retreat.",
+        "He sends Ulysses to negotiate a truce with Priam."
+      ],
+      "correctIndex": 0,
+      "explanation": "Agamemnon means it as a test of the army's spirit, but the exhausted men take him seriously and rush for the ships in relief."
+    },
+    {
+      "id": "iliad-2-f3",
+      "kind": "factual",
+      "prompt": "Who stops the rout toward the ships, and how does he restore order?",
+      "options": [
+        "Ulysses, urged on by Minerva — he speaks respectfully to the chiefs but rebukes and strikes the common soldiers back into line.",
+        "Nestor, who threatens to resign his command on the spot.",
+        "Achilles, who leaves his tent to shame the fleeing men.",
+        "Agamemnon himself, who admits at once that the test was a trick."
+      ],
+      "correctIndex": 0,
+      "explanation": "Minerva comes down at Juno's urging; Ulysses moves through the army, treating leaders and commoners very differently as he restores order."
+    },
+    {
+      "id": "iliad-2-f4",
+      "kind": "factual",
+      "prompt": "What happens to Thersites, and why?",
+      "options": [
+        "Ulysses strikes him with the sceptre for mocking Agamemnon and urging the men to desert, and the army laughs at his humiliation.",
+        "He is chosen to lead the embassy to Troy for his eloquence.",
+        "Hector kills him for spying on the Trojan camp.",
+        "Agamemnon rewards him for speaking the common soldiers' mind."
+      ],
+      "correctIndex": 0,
+      "explanation": "Thersites is described as the ugliest and most disorderly man at Troy; his public humiliation helps restore the army's resolve to fight."
+    },
+    {
+      "id": "iliad-2-f5",
+      "kind": "factual",
+      "prompt": "What is the Catalogue of Ships, and what does it establish just before battle begins?",
+      "options": [
+        "A long roll-call of every contingent on both sides and their leaders, establishing the true scale of the forces about to clash.",
+        "A private letter from Agamemnon listing his grievances against Achilles.",
+        "A set of prophecies from Calchas about how the war will end.",
+        "An inventory of the ransom Agamemnon still owes Chryses."
+      ],
+      "correctIndex": 0,
+      "explanation": "Homer pauses the action to name the Achaean contingents and the Trojans and their allies, including Sarpedon and Glaucus leading the Lycians."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-2-i1",
+      "kind": "interpretive",
+      "prompt": "Agamemnon's test of the army badly backfires — the men take him at his word instantly. What does their wholesale rush for the ships suggest about how thin this army's commitment to the war already is?"
+    },
+    {
+      "id": "iliad-2-i2",
+      "kind": "interpretive",
+      "prompt": "Ulysses treats chiefs and commoners very differently — reasoned argument for one, blows for the other. What does that difference suggest about how authority actually holds this army together?"
+    },
+    {
+      "id": "iliad-2-i3",
+      "kind": "interpretive",
+      "prompt": "Thersites says aloud something like what Achilles implied about Agamemnon in Book I — that the war profits the king more than the men who fight it. Why might the poem let a coward voice a possibly true complaint, only to humiliate him for it?"
+    },
+    {
+      "id": "iliad-2-i4",
+      "kind": "interpretive",
+      "prompt": "The Catalogue of Ships interrupts the story at the exact moment the army is finally ready to fight. Why might Homer choose this moment to pause and name every contingent, rather than putting it earlier or later?"
+    },
+    {
+      "id": "iliad-2-e1",
+      "kind": "evaluative",
+      "prompt": "In Book I, one man's wrath nearly unmade the army; in Book II, the army's collective exhaustion nearly does the same. Which failure of resolve seems more dangerous to a war effort — one leader's private anger, or a whole army's fatigue — and why?"
+    }
+  ]
+}

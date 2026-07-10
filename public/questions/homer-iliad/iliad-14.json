@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-14",
+  "guiding": [
+    "Agamemnon again proposes retreat, and again someone rebukes him for it. Compare this exchange to the same pattern back in Book IX — has anything really changed?",
+    "Juno takes an entirely different approach to helping the Achaeans than Neptune did in Book XIII. Watch what tools she uses instead of open force.",
+    "Notice exactly what turns the tide of battle by the end of this book, and how briefly that turn depends on one god being unable to watch."
+  ],
+  "factual": [
+    {
+      "id": "iliad-14-f1",
+      "kind": "factual",
+      "prompt": "What does Agamemnon propose when Nestor brings the wounded chiefs together to survey the battle, and how is he answered?",
+      "options": [
+        "He proposes launching the ships to retreat, and Ulysses sharply rebukes him for even suggesting it while the army still fights.",
+        "He proposes a full retreat to Greece, and every chief present agrees at once.",
+        "He proposes negotiating peace with Priam directly, and Diomed supports the idea.",
+        "He proposes handing command to Ulysses, who accepts."
+      ],
+      "correctIndex": 0,
+      "explanation": "This is at least the third time Agamemnon has proposed giving up, and the rebuke he receives shows how little patience the other chiefs have left for it."
+    },
+    {
+      "id": "iliad-14-f2",
+      "kind": "factual",
+      "prompt": "What does Juno borrow from Venus, and under what false pretext?",
+      "options": [
+        "Venus's girdle of charm and desire, claiming she needs it to reconcile her estranged foster-parents Oceanus and Tethys.",
+        "Venus's mirror, claiming she wants to check her appearance before visiting mortals.",
+        "Venus's chariot, claiming her own is being repaired.",
+        "Venus's veil, claiming she needs to travel to Olympus unnoticed."
+      ],
+      "correctIndex": 0,
+      "explanation": "Venus, unaware of Juno's real purpose, lends the girdle freely — the deception depends entirely on Venus never suspecting what it will actually be used for."
+    },
+    {
+      "id": "iliad-14-f3",
+      "kind": "factual",
+      "prompt": "How does Juno secure Sleep's help in her plan, given his past reluctance?",
+      "options": [
+        "She bribes him with the promise of marriage to one of the Graces, since he had once been punished for helping her against Jove's will before.",
+        "She threatens to have Jove destroy him if he refuses.",
+        "She simply commands him, and he obeys without hesitation.",
+        "She tricks him into helping without telling him what it's for."
+      ],
+      "correctIndex": 0,
+      "explanation": "Sleep's caution shows that even a god can remember a past punishment well enough to demand real payment before risking Jove's anger again."
+    },
+    {
+      "id": "iliad-14-f4",
+      "kind": "factual",
+      "prompt": "What happens once Juno succeeds in distracting Jove on Mount Ida?",
+      "options": [
+        "With Jove fast asleep, Neptune openly rallies the Achaeans, and the battle turns strongly in their favor.",
+        "Juno immediately confesses the trick to Jove, who forgives her.",
+        "The other gods refuse to take advantage of Jove's absence out of loyalty to him.",
+        "Nothing changes on the battlefield, since Jove had already decided the day's outcome in advance."
+      ],
+      "correctIndex": 0,
+      "explanation": "The entire deception exists for exactly this purpose: to give Neptune a free hand while Jove cannot see or intervene."
+    },
+    {
+      "id": "iliad-14-f5",
+      "kind": "factual",
+      "prompt": "What happens to Hector near the end of this book, and what effect does it have on the Trojans?",
+      "options": [
+        "Ajax strikes him down with a huge stone, and he is carried off the field unconscious, causing panic and retreat among the Trojans.",
+        "Hector is captured alive and held for ransom.",
+        "Hector kills Ajax in a sudden reversal of fortune.",
+        "Hector withdraws voluntarily to rest before a final assault."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hector's fall, even temporary, is enough to unravel the Trojan advance the moment their most confident leader is gone from view."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-14-i1",
+      "kind": "interpretive",
+      "prompt": "Juno achieves through elaborate deception and seduction what Neptune could only attempt through disguise and caution in Book XIII. What does the difference between their methods suggest about how each of them operates as a god?"
+    },
+    {
+      "id": "iliad-14-i2",
+      "kind": "interpretive",
+      "prompt": "Sleep demands a real price before helping Juno, remembering a past punishment. What does his caution suggest about how gods actually relate to Jove's authority, compared to how Jove himself claimed absolute power back in Book VIII?"
+    },
+    {
+      "id": "iliad-14-i3",
+      "kind": "interpretive",
+      "prompt": "The entire turn of this battle depends on tricking one god into looking away at the right moment. What does that fragility suggest about how stable any outcome in this war really is, whether human or divine?"
+    },
+    {
+      "id": "iliad-14-i4",
+      "kind": "interpretive",
+      "prompt": "Venus lends her girdle freely, never suspecting it will be used against the very side she favors. Is she simply deceived here, or does her willingness to trust another goddess say something about her character specifically?"
+    },
+    {
+      "id": "iliad-14-e1",
+      "kind": "evaluative",
+      "prompt": "Juno turns the battle through deception and seduction rather than direct confrontation, unlike Neptune's more cautious disguise or Diomed's open combat earlier in the poem. Does using desire and trickery as weapons of war strike you as more or less honorable than fighting in the open?"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-13",
+  "guiding": [
+    "With the wall broken, watch which god decides to act now that Jove has turned his attention elsewhere. What does that god's choice suggest about how united the gods really are on Troy's side?",
+    "Idomeneus gets his own moment of glory in this book. Notice what he says to his companion Meriones about courage and cowardice — is his view of bravery the same as what we've seen from other heroes so far?",
+    "Watch how Polydamas advises Hector again here. Compare Hector's response to how he treated Polydamas's warning about the omen in Book XII."
+  ],
+  "factual": [
+    {
+      "id": "iliad-13-f1",
+      "kind": "factual",
+      "prompt": "Why is Neptune suddenly free to help the Achaeans in this book?",
+      "options": [
+        "Jove, believing his purpose fulfilled once the wall was breached, turns his attention away from the battle, leaving an opening for Neptune to act.",
+        "Jove personally grants Neptune permission to intervene on the Achaeans' behalf.",
+        "Neptune defies Jove's order outright, accepting whatever punishment follows.",
+        "Juno distracts Jove so that Neptune can slip away unnoticed."
+      ],
+      "correctIndex": 0,
+      "explanation": "Neptune disguises himself as the seer Calchas to rally the Achaean chiefs without revealing that a god has disobeyed Jove's earlier ban."
+    },
+    {
+      "id": "iliad-13-f2",
+      "kind": "factual",
+      "prompt": "Which Achaean chief has his own day of battlefield glory in this book, fighting alongside his companion Meriones?",
+      "options": [
+        "Idomeneus, the Cretan leader, who kills several Trojans in fierce fighting.",
+        "Ajax son of Oileus, fighting entirely alone.",
+        "Nestor, despite his age, leading a final charge.",
+        "Menelaus, avenging his earlier wound from Book IV."
+      ],
+      "correctIndex": 0,
+      "explanation": "Idomeneus and Meriones's exchanges about courage and cowardice frame much of this section's fighting."
+    },
+    {
+      "id": "iliad-13-f3",
+      "kind": "factual",
+      "prompt": "What does Polydamas suggest to Hector in this book?",
+      "options": [
+        "That the Trojan chiefs gather in council to decide whether to press the attack or fall back, given the resistance they've met.",
+        "That Hector return to Troy immediately for his own safety.",
+        "That the Trojans burn the Achaean ships rather than fight for the wall.",
+        "That Hector challenge Ajax to a second single combat to settle things quickly."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hector agrees to gather the leaders for counsel, but insists on continuing to fight himself in the meantime."
+    },
+    {
+      "id": "iliad-13-f4",
+      "kind": "factual",
+      "prompt": "How does the Achaean resistance in this book compare to what happened in Book XII?",
+      "options": [
+        "Bolstered by Neptune's hidden aid, the Achaeans hold their ground far more successfully, and the Trojans do not reach the ships themselves.",
+        "The Achaeans are routed completely, and the Trojans burn several ships.",
+        "The two sides agree to a truce partway through the book.",
+        "The Achaeans retreat entirely from the camp, abandoning the wall."
+      ],
+      "correctIndex": 0,
+      "explanation": "Neptune's quiet intervention is enough to turn a battle that looked lost in Book XII into a genuine contest again."
+    },
+    {
+      "id": "iliad-13-f5",
+      "kind": "factual",
+      "prompt": "In what disguise does Neptune move among the Achaean chiefs to encourage them?",
+      "options": [
+        "As the seer Calchas.",
+        "As Nestor.",
+        "As Agamemnon himself.",
+        "He appears undisguised, openly defying Jove."
+      ],
+      "correctIndex": 0,
+      "explanation": "Taking the form of a trusted seer lets Neptune's encouragement land as human wisdom rather than obvious divine interference."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-13-i1",
+      "kind": "interpretive",
+      "prompt": "Neptune only dares to help the Achaeans once Jove's attention is elsewhere, disguising himself rather than acting openly. What does this caution suggest about the real balance of power among the gods, whatever Jove claimed in Book VIII?"
+    },
+    {
+      "id": "iliad-13-i2",
+      "kind": "interpretive",
+      "prompt": "Idomeneus and Meriones discuss courage and cowardice at length before returning to the fight. Why might Homer pause the action here for this kind of reflection, rather than simply showing more fighting?"
+    },
+    {
+      "id": "iliad-13-i3",
+      "kind": "interpretive",
+      "prompt": "Hector listens to Polydamas this time, at least enough to call a council, unlike his flat rejection of the omen in Book XII. What might explain the difference — has Hector changed, or is this advice simply easier to accept?"
+    },
+    {
+      "id": "iliad-13-i4",
+      "kind": "interpretive",
+      "prompt": "The Achaeans recover much of their lost ground once a god quietly intervenes, without any change in the mortal soldiers' own skill or courage. What does that recovery suggest about how much of this war's outcome ever really rests in human hands?"
+    },
+    {
+      "id": "iliad-13-e1",
+      "kind": "evaluative",
+      "prompt": "Neptune disobeys Jove's direct order out of sympathy for the Achaeans, but only in disguise and only once Jove isn't watching. Is this quiet defiance admirable loyalty to a cause, or a lesser kind of courage than what we've seen from the mortal fighters?"
+    }
+  ]
+}
