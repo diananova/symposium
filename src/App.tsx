@@ -1,21 +1,99 @@
 import { useEffect, useState } from 'react';
-import type { Book, CommentaryRef, Section, Track } from './types';
+import { HashRouter, Navigate, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { curriculum } from './data/curriculum';
+import { findBook, findCommentary, findSection, findYear } from './data/lookup';
 import { emptyProgress, useProgress } from './progress';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { Splash } from './components/Splash';
 import { Tracker } from './components/Tracker';
 import { BookView } from './components/BookView';
 import { SectionDetail } from './components/SectionDetail';
 import { CommentaryView } from './components/CommentaryView';
 
-type View =
-  | { name: 'tracker' }
-  | { name: 'book'; track: Track; book: Book }
-  | { name: 'section'; track: Track; book: Book; section: Section }
-  | { name: 'commentary'; track: Track; book: Book; commentary: CommentaryRef };
+type ProgressApi = ReturnType<typeof useProgress>;
+
+function TrackerRoute({ progressApi }: { progressApi: ProgressApi }) {
+  const { yearId, trackId } = useParams();
+  const navigate = useNavigate();
+
+  const year = findYear(yearId) ?? curriculum.years[0];
+  const track = year.tracks.find((t) => t.id === trackId) ?? year.tracks[0];
+
+  return (
+    <Tracker
+      progress={progressApi.progress}
+      year={year}
+      track={track}
+      onSelectYear={(y) => navigate(`/${y.id}/${y.tracks[0]?.id ?? ''}`)}
+      onSelectTrack={(t) => navigate(`/${year.id}/${t.id}`)}
+      onOpenBook={(book) => navigate(`/book/${book.id}`)}
+      onExport={progressApi.exportJson}
+    />
+  );
+}
+
+function BookRoute({ progressApi }: { progressApi: ProgressApi }) {
+  const { bookId } = useParams();
+  const navigate = useNavigate();
+  const ctx = findBook(bookId);
+  if (!ctx) return <Navigate to="/" replace />;
+
+  return (
+    <BookView
+      track={ctx.track}
+      book={ctx.book}
+      progress={progressApi.progress}
+      onOpenSection={(section) => navigate(`/book/${ctx.book.id}/read/${section.id}`)}
+      onOpenCommentary={(commentary) => navigate(`/book/${ctx.book.id}/read/${commentary.id}`)}
+      onBack={() => navigate(`/${ctx.year.id}/${ctx.track.id}`)}
+    />
+  );
+}
+
+function DocRoute({ progressApi }: { progressApi: ProgressApi }) {
+  const { bookId, docId } = useParams();
+  const navigate = useNavigate();
+  const ctx = findBook(bookId);
+  if (!ctx) return <Navigate to="/" replace />;
+
+  const section = findSection(ctx.book, docId);
+  if (section) {
+    return (
+      <SectionDetail
+        book={ctx.book}
+        section={section}
+        progress={progressApi.progress[section.id] ?? emptyProgress}
+        onSetStatus={(status) => progressApi.setStatus(section.id, status)}
+        onSetNotes={(notes) => progressApi.setNotes(section.id, notes)}
+        onBack={() => navigate(`/book/${ctx.book.id}`)}
+      />
+    );
+  }
+
+  const commentary = findCommentary(ctx.book, docId);
+  if (commentary) {
+    return (
+      <CommentaryView
+        book={ctx.book}
+        commentary={commentary}
+        onBack={() => navigate(`/book/${ctx.book.id}`)}
+      />
+    );
+  }
+
+  return <Navigate to={`/book/${ctx.book.id}`} replace />;
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 export default function App() {
-  const { progress, setStatus, setNotes, exportJson } = useProgress();
-  const [view, setView] = useState<View>({ name: 'tracker' });
+  const progressApi = useProgress();
   const [showSplash, setShowSplash] = useState(true);
 
   // Splash fades out via CSS; unmount it after the animation ends.
@@ -24,47 +102,19 @@ export default function App() {
     return () => clearTimeout(t);
   }, []);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [view]);
-
   return (
-    <>
+    <ErrorBoundary>
       {showSplash && <Splash />}
-      {view.name === 'tracker' && (
-        <Tracker
-          progress={progress}
-          onOpenBook={(track, book) => setView({ name: 'book', track, book })}
-          onExport={exportJson}
-        />
-      )}
-      {view.name === 'book' && (
-        <BookView
-          track={view.track}
-          book={view.book}
-          progress={progress}
-          onOpenSection={(section) => setView({ ...view, name: 'section', section })}
-          onOpenCommentary={(commentary) => setView({ ...view, name: 'commentary', commentary })}
-          onBack={() => setView({ name: 'tracker' })}
-        />
-      )}
-      {view.name === 'section' && (
-        <SectionDetail
-          book={view.book}
-          section={view.section}
-          progress={progress[view.section.id] ?? emptyProgress}
-          onSetStatus={(status) => setStatus(view.section.id, status)}
-          onSetNotes={(notes) => setNotes(view.section.id, notes)}
-          onBack={() => setView({ name: 'book', track: view.track, book: view.book })}
-        />
-      )}
-      {view.name === 'commentary' && (
-        <CommentaryView
-          book={view.book}
-          commentary={view.commentary}
-          onBack={() => setView({ name: 'book', track: view.track, book: view.book })}
-        />
-      )}
-    </>
+      <HashRouter>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<TrackerRoute progressApi={progressApi} />} />
+          <Route path="/:yearId/:trackId?" element={<TrackerRoute progressApi={progressApi} />} />
+          <Route path="/book/:bookId" element={<BookRoute progressApi={progressApi} />} />
+          <Route path="/book/:bookId/read/:docId" element={<DocRoute progressApi={progressApi} />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </HashRouter>
+    </ErrorBoundary>
   );
 }

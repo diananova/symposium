@@ -29,12 +29,28 @@ in your own words → then hear from others** ("The Company Speaks").
 Upcoming: Phase 2 (pre-reading context panels), Phase 3 (tutorial question
 loop with post-answer commentary — "Contributions" and "The Company Speaks").
 
-## Stack
+## Architecture
 
-- React + TypeScript + Vite, mobile-first responsive web
-- No backend: single-user v1 persists to `localStorage`
-  (`symposium.progress.v1`), JSON-exportable. Curriculum content is static
-  data in [src/data/curriculum.ts](src/data/curriculum.ts).
+- React + TypeScript + Vite, mobile-first responsive web (wider layouts at
+  ≥720px; reading measure stays book-like).
+- **Deliberately no server.** The app is static curriculum content plus one
+  user's progress; a backend would add cost and an availability dependency
+  for no benefit. The separation lives at the right seams instead:
+  - *Content* is static JSON under `public/texts/` — effectively the
+    read-only API, produced by the pipeline below.
+  - *Progress* sits behind the `ProgressStore` interface in
+    [src/lib/progressStore.ts](src/lib/progressStore.ts); v1 implements it
+    with `localStorage` (`symposium.progress.v1`, JSON-exportable). A synced
+    backend (Firestore, API) later means implementing that one interface.
+- **Routing**: hash-based URLs for every view (`#/book/plato-apology/read/apology-3`)
+  — deep-linkable, back-button friendly, and deployable to any static host
+  with no rewrite rules.
+- **PWA**: installable, with the app shell, self-hosted fonts, and *all*
+  curriculum texts precached — the entire library reads offline after the
+  first visit.
+- **Quality gates**: vitest unit tests (storage contract + curriculum
+  invariants: unique ids, text files present, reading order) and a GitHub
+  Actions CI running lint, tests, and build on every push.
 
 ## Content pipeline
 

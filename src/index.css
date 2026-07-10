@@ -10,8 +10,8 @@
   --gold: #b08d3e;
   --line: rgba(43, 38, 32, 0.12);
 
-  --serif-body: 'Source Serif 4', Georgia, serif;
-  --serif-display: 'Fraunces', Georgia, serif;
+  --serif-body: 'Source Serif 4 Variable', Georgia, serif;
+  --serif-display: 'Fraunces Variable', Georgia, serif;
   --mono: 'IBM Plex Mono', ui-monospace, monospace;
 }
 
@@ -562,4 +562,39 @@ button {
 .export-btn:hover {
   color: var(--wine);
   border-bottom-color: var(--wine);
+}
+
+/* ---------- Error screen ---------- */
+.error-screen {
+  min-height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+}
+
+/* ---------- Wider viewports ---------- */
+/* Reading measure stays capped so long texts keep book-like line lengths. */
+.reading {
+  max-width: 34em;
+}
+
+@media (min-width: 720px) {
+  #root {
+    max-width: 760px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .book-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .reading p {
+    font-size: 17px;
+  }
+  .notes-box,
+  .interp-banner {
+    max-width: 34em;
+  }
 }

@@ -1,52 +1,22 @@
-import { useCallback, useEffect, useState } from 'react';
-import type { ProgressMap, Section, SectionProgress, SectionStatus } from './types';
+import { useCallback, useMemo, useState } from 'react';
+import type { ProgressMap, SectionStatus } from './types';
+import { applyUpdate, createLocalStorageStore } from './lib/progressStore';
 
-const STORAGE_KEY = 'symposium.progress.v1';
-
-function load(): ProgressMap {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? (JSON.parse(raw) as ProgressMap) : {};
-  } catch {
-    return {};
-  }
-}
-
-export const emptyProgress: SectionProgress = {
-  status: 'not_started',
-  notes: '',
-  updatedAt: '',
-};
-
-export function statusOf(progress: ProgressMap, section: Section): SectionStatus {
-  return (progress[section.id] ?? emptyProgress).status;
-}
-
-/** How full a section's kylix is drawn for a given status. */
-export function sectionFraction(status: SectionStatus): number {
-  if (status === 'completed') return 1;
-  if (status === 'in_progress') return 0.4;
-  return 0;
-}
+export { emptyProgress, sectionFraction, statusOf } from './lib/progressStore';
 
 export function useProgress() {
-  const [progress, setProgress] = useState<ProgressMap>(load);
-
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
-  }, [progress]);
+  const store = useMemo(() => createLocalStorageStore(window.localStorage), []);
+  const [progress, setProgress] = useState<ProgressMap>(() => store.load());
 
   const update = useCallback(
-    (sectionId: string, patch: Partial<Pick<SectionProgress, 'status' | 'notes'>>) => {
+    (sectionId: string, patch: Parameters<typeof applyUpdate>[2]) => {
       setProgress((prev) => {
-        const current = prev[sectionId] ?? emptyProgress;
-        return {
-          ...prev,
-          [sectionId]: { ...current, ...patch, updatedAt: new Date().toISOString() },
-        };
+        const next = applyUpdate(prev, sectionId, patch);
+        store.save(next);
+        return next;
       });
     },
-    [],
+    [store],
   );
 
   const setStatus = useCallback(
