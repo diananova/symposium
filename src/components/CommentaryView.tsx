@@ -11,7 +11,7 @@ export function CommentaryView({ book, commentary, onBack }: CommentaryViewProps
   return (
     <>
       <button className="back-btn" onClick={onBack}>
-        ‹ Curriculum
+        ‹ {book.title}
       </button>
 
       <div className="crumb">

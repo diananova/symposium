@@ -32,7 +32,7 @@ export function SectionDetail({
   return (
     <>
       <button className="back-btn" onClick={onBack}>
-        ‹ Curriculum
+        ‹ {book.title}
       </button>
 
       <div className="crumb">

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import type { ProgressMap, SectionProgress, SectionStatus } from './types';
+import type { ProgressMap, Section, SectionProgress, SectionStatus } from './types';
 
 const STORAGE_KEY = 'symposium.progress.v1';
 
@@ -17,6 +17,17 @@ export const emptyProgress: SectionProgress = {
   notes: '',
   updatedAt: '',
 };
+
+export function statusOf(progress: ProgressMap, section: Section): SectionStatus {
+  return (progress[section.id] ?? emptyProgress).status;
+}
+
+/** How full a section's kylix is drawn for a given status. */
+export function sectionFraction(status: SectionStatus): number {
+  if (status === 'completed') return 1;
+  if (status === 'in_progress') return 0.4;
+  return 0;
+}
 
 export function useProgress() {
   const [progress, setProgress] = useState<ProgressMap>(load);

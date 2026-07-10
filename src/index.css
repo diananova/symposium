@@ -190,23 +190,82 @@ button {
   border-color: var(--gold);
 }
 
-/* ---------- Book list ---------- */
-.book-header {
-  font-family: var(--serif-display);
-  font-weight: 500;
-  font-size: 15px;
-  color: var(--ink-soft);
-  margin: 22px 0 4px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--line);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
+/* ---------- Book cards (curriculum overview) ---------- */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 4px;
 }
+.book-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 13px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: border-color 0.15s ease;
+}
+.book-card:hover,
+.book-card.active {
+  border-color: var(--gold);
+}
+.book-card.done {
+  border-color: rgba(107, 115, 83, 0.55);
+}
+.book-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.book-card-interp {
+  font-family: var(--serif-display);
+  font-size: 15px;
+  color: var(--gold);
+  opacity: 0.8;
+}
+.book-card-title {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 15.5px;
+  line-height: 1.2;
+  color: var(--ink);
+}
+.book-card.done .book-card-title {
+  color: var(--ink-soft);
+}
+.book-card-author {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin-top: 2px;
+}
+.book-card-meta {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-top: 7px;
+}
+
 .empty-note {
   font-size: 14.5px;
   color: var(--ink-soft);
   font-style: italic;
   margin: 28px 4px;
+}
+
+/* ---------- Book page ---------- */
+.book-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
 }
 .book-edition {
   font-family: var(--mono);
@@ -214,6 +273,9 @@ button {
   letter-spacing: 0.03em;
   color: var(--ink-soft);
   margin: 6px 0 4px;
+}
+.section-list {
+  margin-top: 14px;
 }
 
 .item {

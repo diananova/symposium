@@ -1,27 +1,16 @@
 import { useState } from 'react';
 import { curriculum } from '../data/curriculum';
-import type { Book, CommentaryRef, ProgressMap, Section, SectionStatus } from '../types';
-import { emptyProgress } from '../progress';
+import type { Book, ProgressMap, Track } from '../types';
+import { statusOf } from '../progress';
 import { Kylix } from './Kylix';
 
 interface TrackerProps {
   progress: ProgressMap;
-  onOpenSection: (book: Book, section: Section) => void;
-  onOpenCommentary: (book: Book, commentary: CommentaryRef) => void;
+  onOpenBook: (track: Track, book: Book) => void;
   onExport: () => void;
 }
 
-function statusOf(progress: ProgressMap, section: Section): SectionStatus {
-  return (progress[section.id] ?? emptyProgress).status;
-}
-
-function sectionFraction(status: SectionStatus): number {
-  if (status === 'completed') return 1;
-  if (status === 'in_progress') return 0.4;
-  return 0;
-}
-
-export function Tracker({ progress, onOpenSection, onOpenCommentary, onExport }: TrackerProps) {
+export function Tracker({ progress, onOpenBook, onExport }: TrackerProps) {
   const [yearId, setYearId] = useState('year-1');
   const year = curriculum.years.find((y) => y.id === yearId) ?? curriculum.years[0];
   const [trackId, setTrackId] = useState(year.tracks[0]?.id ?? '');
@@ -76,68 +65,44 @@ export function Tracker({ progress, onOpenSection, onOpenCommentary, onExport }:
         </p>
       )}
 
-      {track?.books.map((book) => (
-        <section key={book.id}>
-          <h2 className="book-header">
-            {book.title} — {book.author}
-          </h2>
-          {book.edition && <div className="book-edition">Edition: {book.edition}</div>}
-          {book.sections.map((section) => {
-              const status = statusOf(progress, section);
-              const rowClass =
-                status === 'completed' ? ' done' : status === 'in_progress' ? ' active' : '';
-              return (
-                <button
-                  key={section.id}
-                  className={`item${rowClass}`}
-                  onClick={() => onOpenSection(book, section)}
-                >
-                  <div className="item-ring">
-                    <Kylix
-                      size={30}
-                      fraction={sectionFraction(status)}
-                      olive={status === 'completed'}
-                      center={false}
-                    />
-                  </div>
-                  <div className="item-text">
-                    <div className="item-title">{section.title}</div>
-                    <div className="item-sub">
-                      {status === 'completed' && <span className="status-complete">Complete</span>}
-                      {status === 'in_progress' && <span className="status-active">In progress</span>}
-                      {status === 'not_started' && <span>Not started</span>}
-                      {section.meta?.cite && <> · {section.meta.cite}</>}
-                      {section.meta?.estLength && <> · {section.meta.estLength}</>}
-                    </div>
-                  </div>
-                  <span className="item-chevron" aria-hidden="true">
-                    ›
-                  </span>
-                </button>
-              );
-            })}
-          {book.commentary?.map((c) => (
-            <button
-              key={c.id}
-              className="item item-commentary"
-              onClick={() => onOpenCommentary(book, c)}
-            >
-              <div className="item-ring commentary-mark" aria-hidden="true">
-                §
-              </div>
-              <div className="item-text">
-                <div className="item-title">{c.title}</div>
-                <div className="item-sub">
-                  <span className="status-interp">Interpretation</span> · not the text
+      {track && track.books.length > 0 && (
+        <div className="book-grid">
+          {track.books.map((book) => {
+            const total = book.sections.length;
+            const done = book.sections.filter((s) => statusOf(progress, s) === 'completed').length;
+            const started = book.sections.some((s) => statusOf(progress, s) !== 'not_started');
+            const finished = total > 0 && done === total;
+            const cardClass = finished ? ' done' : started ? ' active' : '';
+            return (
+              <button
+                key={book.id}
+                className={`book-card${cardClass}`}
+                onClick={() => onOpenBook(track, book)}
+              >
+                <div className="book-card-top">
+                  <Kylix
+                    size={30}
+                    fraction={total ? done / total : 0}
+                    olive={finished}
+                    center={false}
+                    label={`${book.title}: ${done} of ${total} sections complete`}
+                  />
+                  {book.commentary && book.commentary.length > 0 && (
+                    <span className="book-card-interp" title="Commentary available" aria-hidden="true">
+                      §
+                    </span>
+                  )}
                 </div>
-              </div>
-              <span className="item-chevron" aria-hidden="true">
-                ›
-              </span>
-            </button>
-          ))}
-        </section>
-      ))}
+                <div className="book-card-title">{book.title}</div>
+                <div className="book-card-author">{book.author}</div>
+                <div className="book-card-meta">
+                  {done > 0 ? `${done} / ${total} sections` : `${total} section${total === 1 ? '' : 's'}`}
+                </div>
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       <footer className="footer">
         <span className="footer-note">
