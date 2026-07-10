@@ -33,6 +33,20 @@ and stamps that attribution into every generated file under
 need to duplicate multi-megabyte raw source files here — see
 `scripts/build-texts.mjs` and `.claude/skills/add-book/SKILL.md` instead.
 
+## Tutorial-question sources (consulted for inspiration, never copied)
+
+Reviewed 2026-07-11 while drafting reading questions. Full tiering and
+licensing notes in [../finding-questions.md](../finding-questions.md); we
+draft our own questions, so these are models/method only, not content
+sources.
+
+| Source | Tier | Note |
+| --- | --- | --- |
+| [Great Books Foundation — Shared Inquiry](https://www.greatbooks.org/nonprofit-organization/what-is-shared-inquiry/) | method | The factual/interpretive/evaluative taxonomy behind our post-reading ladder. |
+| [Open University — Introducing Homer's Iliad](https://www.open.edu/openlearn/history-the-arts/introducing-homers-iliad/content-section-0) | open (CC BY-NC-SA) | Adaptable with attribution if ever needed. |
+| [David Bruce — Discussion Guides](https://davidbruceblog.wordpress.com/) | free-to-distribute | Full book-by-book Q&A; distribution licence only, not derivative. |
+| [GVSU — Webster Iliad questions](https://faculty.gvsu.edu/websterm/Iliad.htm) · [Cornell — Benton](https://www.cornellcollege.edu/classical_studies/cbenton/Myth/questions/Iliad.htm) | copyrighted | Free to view; interpretive-question models only. |
+
 ## Adding a new reference
 
 When a future session fetches something to justify a curriculum or content
