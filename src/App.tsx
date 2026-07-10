@@ -9,6 +9,7 @@ import { Splash } from './components/Splash';
 import { Tracker } from './components/Tracker';
 import { BookView } from './components/BookView';
 import { SectionDetail } from './components/SectionDetail';
+import { QuestionsPage } from './components/QuestionsPage';
 import { CommentaryView } from './components/CommentaryView';
 
 type ProgressApi = ReturnType<typeof useProgress>;
@@ -52,7 +53,7 @@ function BookRoute({ progressApi }: { progressApi: ProgressApi }) {
   );
 }
 
-function DocRoute({ progressApi, answersApi }: { progressApi: ProgressApi; answersApi: AnswersApi }) {
+function DocRoute({ progressApi }: { progressApi: ProgressApi }) {
   const { bookId, docId } = useParams();
   const navigate = useNavigate();
   const ctx = findBook(bookId);
@@ -65,11 +66,9 @@ function DocRoute({ progressApi, answersApi }: { progressApi: ProgressApi; answe
         book={ctx.book}
         section={section}
         progress={progressApi.progress[section.id] ?? emptyProgress}
-        answers={answersApi.answers}
         onSetStatus={(status) => progressApi.setStatus(section.id, status)}
         onSetNotes={(notes) => progressApi.setNotes(section.id, notes)}
-        onAnswerFactual={answersApi.answerFactual}
-        onSubmitOpenAnswer={answersApi.submitOpenAnswer}
+        onComplete={() => navigate(`/book/${ctx.book.id}/read/${section.id}/questions`)}
         onBack={() => navigate(`/book/${ctx.book.id}`)}
       />
     );
@@ -87,6 +86,29 @@ function DocRoute({ progressApi, answersApi }: { progressApi: ProgressApi; answe
   }
 
   return <Navigate to={`/book/${ctx.book.id}`} replace />;
+}
+
+function QuestionsRoute({ answersApi }: { answersApi: AnswersApi }) {
+  const { bookId, docId } = useParams();
+  const navigate = useNavigate();
+  const ctx = findBook(bookId);
+  if (!ctx) return <Navigate to="/" replace />;
+
+  const section = findSection(ctx.book, docId);
+  if (!section || !section.hasQuestions) {
+    return <Navigate to={`/book/${bookId}/read/${docId}`} replace />;
+  }
+
+  return (
+    <QuestionsPage
+      book={ctx.book}
+      section={section}
+      answers={answersApi.answers}
+      onAnswerFactual={answersApi.answerFactual}
+      onSubmitOpenAnswer={answersApi.submitOpenAnswer}
+      onBack={() => navigate(`/book/${ctx.book.id}/read/${section.id}`)}
+    />
+  );
 }
 
 function ScrollToTop() {
@@ -117,9 +139,10 @@ export default function App() {
           <Route path="/" element={<TrackerRoute progressApi={progressApi} />} />
           <Route path="/:yearId/:trackId?" element={<TrackerRoute progressApi={progressApi} />} />
           <Route path="/book/:bookId" element={<BookRoute progressApi={progressApi} />} />
+          <Route path="/book/:bookId/read/:docId" element={<DocRoute progressApi={progressApi} />} />
           <Route
-            path="/book/:bookId/read/:docId"
-            element={<DocRoute progressApi={progressApi} answersApi={answersApi} />}
+            path="/book/:bookId/read/:docId/questions"
+            element={<QuestionsRoute answersApi={answersApi} />}
           />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

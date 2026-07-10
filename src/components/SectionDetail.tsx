@@ -1,18 +1,16 @@
-import type { AnswersState, Book, Section, SectionProgress, SectionStatus } from '../types';
+import type { Book, Section, SectionProgress, SectionStatus } from '../types';
 import { Kylix } from './Kylix';
 import { Reader } from './Reader';
-import { GuidingQuestions, FactualQuestions, OpenQuestions } from './Questions';
+import { GuidingQuestions } from './Questions';
 import { useQuestionSet } from '../lib/useQuestionSet';
 
 interface SectionDetailProps {
   book: Book;
   section: Section;
   progress: SectionProgress;
-  answers: AnswersState;
   onSetStatus: (status: SectionStatus) => void;
   onSetNotes: (notes: string) => void;
-  onAnswerFactual: (questionId: string, selectedIndex: number, correct: boolean) => void;
-  onSubmitOpenAnswer: (questionId: string, text: string) => void;
+  onComplete: () => void;
   onBack: () => void;
 }
 
@@ -30,15 +28,15 @@ export function SectionDetail({
   book,
   section,
   progress,
-  answers,
   onSetStatus,
   onSetNotes,
-  onAnswerFactual,
-  onSubmitOpenAnswer,
+  onComplete,
   onBack,
 }: SectionDetailProps) {
+  // Only the guiding questions render here (before the Reader); factual and
+  // open questions live on their own page, reached via "Complete" below.
   const questionState = useQuestionSet(book.id, section.id, !!section.hasQuestions);
-  const questions = questionState.status === 'ready' ? questionState.data : undefined;
+  const guiding = questionState.status === 'ready' ? questionState.data.guiding : undefined;
 
   return (
     <>
@@ -79,7 +77,7 @@ export function SectionDetail({
         ))}
       </div>
 
-      {questions && <GuidingQuestions questions={questions.guiding} />}
+      {guiding && <GuidingQuestions questions={guiding} />}
 
       {section.hasText && (
         <>
@@ -88,19 +86,10 @@ export function SectionDetail({
         </>
       )}
 
-      {questions && (
-        <>
-          <FactualQuestions
-            questions={questions.factual}
-            answers={answers.factual}
-            onAnswer={onAnswerFactual}
-          />
-          <OpenQuestions
-            questions={questions.open}
-            answers={answers.open}
-            onSubmit={onSubmitOpenAnswer}
-          />
-        </>
+      {section.hasQuestions && (
+        <button className="complete-btn" onClick={onComplete}>
+          Complete → Answer Questions
+        </button>
       )}
 
       <div className="notes-label">Notes</div>
