@@ -8,9 +8,11 @@ in your own words → then hear from others** ("The Company Speaks").
 
 ## Status: Phase 1 — Curriculum Tracker
 
-- Year → Track → Book → Section curriculum model (Years 2–4 and non-Seminar
-  tracks visible but locked, as a roadmap)
-- Seeded with Plato's *Apology* (7 sections, Stephanus cites, estimated lengths)
+- Year → Track → Book → Section curriculum model
+- Year 1 seeded with the actual St. John's College freshman reading list
+  across its four tracks — Seminar, Language (Ancient Greek), Mathematics,
+  Laboratory — with Plato's *Apology* divided into 7 sections (Stephanus
+  cites, estimated lengths). Years 2–4 to follow.
 - Per-section reading status (not started / in progress / complete) and
   free-text notes, autosaved locally
 - Progress rendered as the **kylix** ring motif (a symposium wine cup from

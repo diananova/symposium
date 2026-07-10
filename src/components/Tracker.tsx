@@ -46,8 +46,7 @@ export function Tracker({ progress, onOpenSection, onExport }: TrackerProps) {
         {curriculum.years.map((y) => (
           <button
             key={y.id}
-            className={`year-tab${y.id === year.id ? ' active' : ''}${y.locked ? ' locked' : ''}`}
-            disabled={y.locked}
+            className={`year-tab${y.id === year.id ? ' active' : ''}`}
             onClick={() => {
               setYearId(y.id);
               setTrackId(y.tracks[0]?.id ?? '');
@@ -62,8 +61,7 @@ export function Tracker({ progress, onOpenSection, onExport }: TrackerProps) {
         {year.tracks.map((t) => (
           <button
             key={t.id}
-            className={`track-chip${t.id === track?.id ? ' active' : ''}${t.locked ? ' locked' : ''}`}
-            disabled={t.locked}
+            className={`track-chip${t.id === track?.id ? ' active' : ''}`}
             onClick={() => setTrackId(t.id)}
           >
             {t.name}
@@ -71,15 +69,19 @@ export function Tracker({ progress, onOpenSection, onExport }: TrackerProps) {
         ))}
       </nav>
 
+      {year.tracks.length === 0 && (
+        <p className="empty-note">
+          The {year.name} reading list hasn’t been added yet — Year 1 is fully seeded.
+        </p>
+      )}
+
       {track?.books.map((book) => (
         <section key={book.id}>
-          <h2 className={`book-header${book.locked ? ' locked' : ''}`}>
+          <h2 className="book-header">
             {book.title} — {book.author}
-            {book.locked ? ' (locked)' : ''}
           </h2>
-          {!book.locked && book.edition && <div className="book-edition">Edition: {book.edition}</div>}
-          {!book.locked &&
-            book.sections.map((section) => {
+          {book.edition && <div className="book-edition">Edition: {book.edition}</div>}
+          {book.sections.map((section) => {
               const status = statusOf(progress, section);
               const rowClass =
                 status === 'completed' ? ' done' : status === 'in_progress' ? ' active' : '';

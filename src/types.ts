@@ -17,7 +17,6 @@ export interface Book {
   id: string;
   title: string;
   author: string;
-  locked?: boolean;
   sections: Section[];
   edition?: string; // recommended translation/edition
 }
@@ -27,7 +26,6 @@ export type TrackName = 'Seminar' | 'Language' | 'Mathematics' | 'Music' | 'Labo
 export interface Track {
   id: string;
   name: TrackName;
-  locked?: boolean;
   books: Book[];
 }
 
@@ -35,7 +33,6 @@ export interface Year {
   id: string;
   label: string; // "Year 1"
   name: string; // "Freshman"
-  locked?: boolean;
   tracks: Track[];
 }
 
