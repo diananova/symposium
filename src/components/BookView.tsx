@@ -21,6 +21,7 @@ export function BookView({
 }: BookViewProps) {
   const total = book.sections.length;
   const done = book.sections.filter((s) => statusOf(progress, s) === 'completed').length;
+  const position = track.books.findIndex((b) => b.id === book.id) + 1;
 
   return (
     <>
@@ -29,7 +30,7 @@ export function BookView({
       </button>
 
       <div className="crumb">
-        {track.name} · {book.author}
+        {track.name} · Book {position} of {track.books.length} · {book.author}
       </div>
       <div className="book-title-row">
         <h1 className="passage-title">{book.title}</h1>

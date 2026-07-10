@@ -7,6 +7,11 @@ import type { Curriculum } from '../types';
 // Year 1 track. Section divisions follow each work's own structure (books,
 // plays, parts); Apology keeps its original section ids so saved progress
 // carries over. Years 2–4 exist in the model but have no readings yet.
+//
+// BOOK ORDER IS THE READING ORDER. Seminar follows the Annapolis 2025–26
+// freshman seminar schedule — see docs/seminar-reading-order.md for the
+// full schedule and the mapping decisions (grouped plays, unscheduled
+// reading-list works slotted at natural points).
 
 export const curriculum: Curriculum = {
   years: [
@@ -48,67 +53,6 @@ export const curriculum: Curriculum = {
               ],
             },
             {
-              id: 'aeschylus-tragedies',
-              title: 'Tragedies',
-              author: 'Aeschylus',
-              sections: [
-                { id: 'aeschylus-1', title: 'Agamemnon' },
-                { id: 'aeschylus-2', title: 'Libation Bearers' },
-                { id: 'aeschylus-3', title: 'Eumenides' },
-                { id: 'aeschylus-4', title: 'Prometheus Bound' },
-              ],
-            },
-            {
-              id: 'sophocles-tragedies',
-              title: 'Tragedies',
-              author: 'Sophocles',
-              sections: [
-                { id: 'sophocles-1', title: 'Oedipus Rex' },
-                { id: 'sophocles-2', title: 'Oedipus at Colonus' },
-                { id: 'sophocles-3', title: 'Antigone' },
-                { id: 'sophocles-4', title: 'Philoctetes' },
-                { id: 'sophocles-5', title: 'Ajax' },
-              ],
-            },
-            {
-              id: 'thucydides-war',
-              title: 'The History of the Peloponnesian War',
-              author: 'Thucydides',
-              edition: 'Landmark Thucydides (Strassler ed.)',
-              sections: [
-                { id: 'thucydides-1', title: 'Books I–II' },
-                { id: 'thucydides-2', title: 'Books III–IV' },
-                { id: 'thucydides-3', title: 'Books V–VI' },
-                { id: 'thucydides-4', title: 'Books VII–VIII' },
-              ],
-            },
-            {
-              id: 'euripides-tragedies',
-              title: 'Tragedies',
-              author: 'Euripides',
-              sections: [
-                { id: 'euripides-1', title: 'Hippolytus' },
-                { id: 'euripides-2', title: 'Bacchae' },
-              ],
-            },
-            {
-              id: 'herodotus-histories',
-              title: 'Histories',
-              author: 'Herodotus',
-              edition: 'Grene trans. (Chicago), or Landmark Herodotus',
-              sections: [
-                { id: 'herodotus-1', title: 'Books I–III' },
-                { id: 'herodotus-2', title: 'Books IV–VI' },
-                { id: 'herodotus-3', title: 'Books VII–IX' },
-              ],
-            },
-            {
-              id: 'aristophanes-clouds',
-              title: 'Clouds',
-              author: 'Aristophanes',
-              sections: [{ id: 'clouds-1', title: 'The complete play' }],
-            },
-            {
               id: 'plato-meno',
               title: 'Meno',
               author: 'Plato',
@@ -120,6 +64,17 @@ export const curriculum: Curriculum = {
                   hasText: true,
                   meta: { cite: '70a–100b', estLength: '~1 hr' },
                 },
+              ],
+            },
+            {
+              id: 'aeschylus-tragedies',
+              title: 'Tragedies',
+              author: 'Aeschylus',
+              sections: [
+                { id: 'aeschylus-1', title: 'Agamemnon' },
+                { id: 'aeschylus-2', title: 'Libation Bearers' },
+                { id: 'aeschylus-3', title: 'Eumenides' },
+                { id: 'aeschylus-4', title: 'Prometheus Bound' },
               ],
             },
             {
@@ -141,6 +96,46 @@ export const curriculum: Curriculum = {
                   meta: { cite: '481b–527e', estLength: '~1.5 hrs' },
                 },
               ],
+            },
+            {
+              id: 'plutarch-lives',
+              title: 'Lives',
+              author: 'Plutarch',
+              sections: [
+                { id: 'plutarch-1', title: 'Lycurgus' },
+                { id: 'plutarch-2', title: 'Solon' },
+              ],
+            },
+            {
+              id: 'herodotus-histories',
+              title: 'Histories',
+              author: 'Herodotus',
+              edition: 'Grene trans. (Chicago), or Landmark Herodotus',
+              sections: [
+                { id: 'herodotus-1', title: 'Books I–III' },
+                { id: 'herodotus-2', title: 'Books IV–VI' },
+                { id: 'herodotus-3', title: 'Books VII–IX' },
+              ],
+            },
+            {
+              id: 'plato-republic',
+              title: 'Republic',
+              author: 'Plato',
+              commentary: [
+                { id: 'jowett-introduction', title: 'Jowett’s Introduction and Analysis' },
+              ],
+              sections: [
+                { id: 'republic-1', title: 'Book I', hasText: true, meta: { estLength: '~55 min' } },
+                { id: 'republic-2', title: 'Books II–IV', hasText: true, meta: { estLength: '~2.5 hrs' } },
+                { id: 'republic-3', title: 'Books V–VII', hasText: true, meta: { estLength: '~2.5 hrs' } },
+                { id: 'republic-4', title: 'Books VIII–X', hasText: true, meta: { estLength: '~2.5 hrs' } },
+              ],
+            },
+            {
+              id: 'aristophanes-clouds',
+              title: 'Clouds',
+              author: 'Aristophanes',
+              sections: [{ id: 'clouds-1', title: 'The complete play' }],
             },
             {
               id: 'plato-apology',
@@ -228,6 +223,27 @@ export const curriculum: Curriculum = {
               ],
             },
             {
+              id: 'sophocles-tragedies',
+              title: 'Tragedies',
+              author: 'Sophocles',
+              sections: [
+                { id: 'sophocles-1', title: 'Oedipus Rex' },
+                { id: 'sophocles-2', title: 'Oedipus at Colonus' },
+                { id: 'sophocles-3', title: 'Antigone' },
+                { id: 'sophocles-4', title: 'Philoctetes' },
+                { id: 'sophocles-5', title: 'Ajax' },
+              ],
+            },
+            {
+              id: 'euripides-tragedies',
+              title: 'Tragedies',
+              author: 'Euripides',
+              sections: [
+                { id: 'euripides-1', title: 'Hippolytus' },
+                { id: 'euripides-2', title: 'Bacchae' },
+              ],
+            },
+            {
               id: 'plato-symposium',
               title: 'Symposium',
               author: 'Plato',
@@ -248,31 +264,15 @@ export const curriculum: Curriculum = {
               ],
             },
             {
-              id: 'plato-republic',
-              title: 'Republic',
-              author: 'Plato',
-              commentary: [
-                { id: 'jowett-introduction', title: 'Jowett’s Introduction and Analysis' },
-              ],
+              id: 'thucydides-war',
+              title: 'The History of the Peloponnesian War',
+              author: 'Thucydides',
+              edition: 'Landmark Thucydides (Strassler ed.)',
               sections: [
-                { id: 'republic-1', title: 'Book I', hasText: true, meta: { estLength: '~55 min' } },
-                { id: 'republic-2', title: 'Books II–IV', hasText: true, meta: { estLength: '~2.5 hrs' } },
-                { id: 'republic-3', title: 'Books V–VII', hasText: true, meta: { estLength: '~2.5 hrs' } },
-                { id: 'republic-4', title: 'Books VIII–X', hasText: true, meta: { estLength: '~2.5 hrs' } },
-              ],
-            },
-            {
-              id: 'plato-phaedrus',
-              title: 'Phaedrus',
-              author: 'Plato',
-              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
-              sections: [
-                {
-                  id: 'phaedrus-1',
-                  title: 'The complete dialogue',
-                  hasText: true,
-                  meta: { cite: '227a–279c', estLength: '~1.5 hrs' },
-                },
+                { id: 'thucydides-1', title: 'Books I–II' },
+                { id: 'thucydides-2', title: 'Books III–IV' },
+                { id: 'thucydides-3', title: 'Books V–VI' },
+                { id: 'thucydides-4', title: 'Books VII–VIII' },
               ],
             },
             {
@@ -332,13 +332,6 @@ export const curriculum: Curriculum = {
               ],
             },
             {
-              id: 'aristotle-poetics',
-              title: 'Poetics',
-              author: 'Aristotle',
-              edition: 'Sachs trans. (Focus)',
-              sections: [{ id: 'poetics-1', title: 'The complete treatise' }],
-            },
-            {
               id: 'aristotle-ethics',
               title: 'Nicomachean Ethics',
               author: 'Aristotle',
@@ -357,6 +350,13 @@ export const curriculum: Curriculum = {
                 { id: 'politics-1', title: 'Books I–IV' },
                 { id: 'politics-2', title: 'Books V–VIII' },
               ],
+            },
+            {
+              id: 'aristotle-poetics',
+              title: 'Poetics',
+              author: 'Aristotle',
+              edition: 'Sachs trans. (Focus)',
+              sections: [{ id: 'poetics-1', title: 'The complete treatise' }],
             },
             {
               id: 'aristotle-physics',
@@ -394,12 +394,17 @@ export const curriculum: Curriculum = {
               ],
             },
             {
-              id: 'plutarch-lives',
-              title: 'Lives',
-              author: 'Plutarch',
+              id: 'plato-phaedrus',
+              title: 'Phaedrus',
+              author: 'Plato',
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
               sections: [
-                { id: 'plutarch-1', title: 'Lycurgus' },
-                { id: 'plutarch-2', title: 'Solon' },
+                {
+                  id: 'phaedrus-1',
+                  title: 'The complete dialogue',
+                  hasText: true,
+                  meta: { cite: '227a–279c', estLength: '~1.5 hrs' },
+                },
               ],
             },
           ],

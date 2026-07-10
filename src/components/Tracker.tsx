@@ -66,8 +66,10 @@ export function Tracker({ progress, onOpenBook, onExport }: TrackerProps) {
       )}
 
       {track && track.books.length > 0 && (
-        <div className="book-grid">
-          {track.books.map((book) => {
+        <>
+          <div className="order-note">In reading order</div>
+          <div className="book-grid">
+            {track.books.map((book, i) => {
             const total = book.sections.length;
             const done = book.sections.filter((s) => statusOf(progress, s) === 'completed').length;
             const started = book.sections.some((s) => statusOf(progress, s) !== 'not_started');
@@ -80,6 +82,7 @@ export function Tracker({ progress, onOpenBook, onExport }: TrackerProps) {
                 onClick={() => onOpenBook(track, book)}
               >
                 <div className="book-card-top">
+                  <span className="book-card-num">{String(i + 1).padStart(2, '0')}</span>
                   <Kylix
                     size={30}
                     fraction={total ? done / total : 0}
@@ -87,21 +90,18 @@ export function Tracker({ progress, onOpenBook, onExport }: TrackerProps) {
                     center={false}
                     label={`${book.title}: ${done} of ${total} sections complete`}
                   />
-                  {book.commentary && book.commentary.length > 0 && (
-                    <span className="book-card-interp" title="Commentary available" aria-hidden="true">
-                      §
-                    </span>
-                  )}
                 </div>
                 <div className="book-card-title">{book.title}</div>
                 <div className="book-card-author">{book.author}</div>
                 <div className="book-card-meta">
                   {done > 0 ? `${done} / ${total} sections` : `${total} section${total === 1 ? '' : 's'}`}
+                  {book.commentary && book.commentary.length > 0 && ' · §'}
                 </div>
               </button>
             );
-          })}
-        </div>
+            })}
+          </div>
+        </>
       )}
 
       <footer className="footer">
