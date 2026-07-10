@@ -87,17 +87,32 @@ source texts into context.
   automatically; anything with lowercase letters is kept.
 - **Title-page boilerplate varies per file** ("by Plato", "Translated by…",
   "Contents", "This etext was prepared by…", mixed-case TOC lines like
-  "Section 1. Section 2."). `stripBoilerplate` filters known patterns only
-  until the first real paragraph. After ingesting, ALWAYS print the first
-  paragraph of every commentary/section file — if junk survives, add a
-  pattern to `BOILERPLATE` rather than hand-editing output.
+  "Section 1. Section 2.", "[Illustration]"). `stripBoilerplate` filters
+  known patterns only until the first real paragraph. After ingesting,
+  ALWAYS print the first paragraph of every commentary/section file — if
+  junk survives, add a pattern to `BOILERPLATE` rather than hand-editing.
+- **Heading punctuation differs between TOC and text, and between works**:
+  Butler's Iliad uses "BOOK I." (period) in the text; his Odyssey uses
+  "BOOK I" (no period) in the text but periods in the TOC. Verify against
+  the *text* headings (the word-count step surfaces the exact form), not
+  the TOC.
+- **Endnotes inflate the last section**: Butler's Odyssey appends a
+  FOOTNOTES block after Book XXIV (+10k words). Check the last section's
+  word count for plausibility; if inflated, set `textEnd`. The end marker
+  is searched only after `textStart`, so a TOC entry with the same words
+  is harmless.
+- **Section sizing**: cap sections at ~45 min (~10,000 words at 230 wpm).
+  Before configuring, compute per-unit word counts (split the downloaded
+  file on its headings with a quick node one-liner). For Homer, one
+  section per book lands at 15–39 min — natural units beat arbitrary
+  groupings when they fit the cap.
 
 ## Known-good sources
 
 | Work | Source | Translator | Notes |
 | --- | --- | --- | --- |
 | Plato, all 12 Year-1 dialogues | PG 1656, 1643, 1672, 1657, 1658, 1600, 1497, 1636, 1687, 1726, 1735, 1572 | Jowett | ingested |
-| Homer, Iliad / Odyssey | PG 2199 / 1727 (Butler, prose) or PG 16452 (Pope) | Butler | verify IDs before use |
+| Homer, Iliad / Odyssey | PG 2199 / 1727 | Butler (prose) | ingested; Odyssey needs textEnd 'FOOTNOTES:' |
 | Thucydides | PG 7142 | Crawley | verify |
 | Herodotus | PG 2707 (Macaulay) | Macaulay | verify |
 | Euclid, Elements | no clean PG plain text — consider Heath on archive.org | Heath | needs OCR cleanup, harder |

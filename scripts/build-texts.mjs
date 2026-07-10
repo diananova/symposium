@@ -44,7 +44,45 @@ const JOWETT_PG = (id) => ({
 const PERSONS = 'PERSONS OF THE DIALOGUE';
 const JOWETT_INTRO = { id: 'jowett-introduction', title: 'Jowett’s Introduction' };
 
+// One section per Homeric book (each is 15-40 min of reading, under the
+// 45-minute section cap). The first section's anchor is the opening of
+// Book I's text/argument, since textStart must skip the table of contents
+// and therefore excludes the "BOOK I" heading paragraph itself.
+const ROMAN = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI','XXII','XXIII','XXIV'];
+const homerSections = (prefix, firstAnchor, headingPeriod) =>
+  ROMAN.map((rn, i) => ({
+    sectionId: `${prefix}-${i + 1}`,
+    title: `Book ${rn}`,
+    anchor: i === 0 ? firstAnchor : `BOOK ${rn}${headingPeriod ? '.' : ''}`,
+  }));
+
 const WORKS = [
+  {
+    bookId: 'homer-iliad',
+    sourceUrl: 'https://www.gutenberg.org/cache/epub/2199/pg2199.txt',
+    attribution: {
+      translator: 'Samuel Butler',
+      license: 'Public domain',
+      source: 'Project Gutenberg #2199',
+      sourceUrl: 'https://www.gutenberg.org/ebooks/2199',
+    },
+    textStart: 'The quarrel between Agamemnon and Achilles',
+    sections: homerSections('iliad', 'The quarrel between Agamemnon and Achilles', true),
+  },
+  {
+    bookId: 'homer-odyssey',
+    sourceUrl: 'https://www.gutenberg.org/cache/epub/1727/pg1727.txt',
+    attribution: {
+      translator: 'Samuel Butler',
+      license: 'Public domain',
+      source: 'Project Gutenberg #1727',
+      sourceUrl: 'https://www.gutenberg.org/ebooks/1727',
+    },
+    textStart: 'THE GODS IN COUNCIL',
+    textEnd: 'FOOTNOTES:', // Butler's endnotes follow Book XXIV
+    commentary: [{ id: 'butler-prefaces', title: 'Butler’s Prefaces' }],
+    sections: homerSections('odyssey', 'THE GODS IN COUNCIL', false),
+  },
   {
     bookId: 'plato-apology',
     ...JOWETT_PG(1656),
@@ -181,8 +219,10 @@ function toParagraphs(raw) {
 const BOILERPLATE = [
   /^Produced by /,
   /^This etext was prepared by /i,
-  /^by Plato$/i,
+  /^\[Illustration/,
+  /^by [A-Z][a-zA-Z .]+$/, // title-page author credit ("by Plato", "by Homer")
   /^Translated(,| by| with)/i,
+  /^rendered into English prose/i, // Butler's title-page subtitle
   /^Contents$/i,
   /^Note: See also /,
   /^[A-Za-z’' ]{1,40}$/, // bare title/heading line, e.g. "Apology"
@@ -194,7 +234,9 @@ function stripBoilerplate(paragraphs) {
   const start = paragraphs.findIndex(
     (p) => /[a-z]/.test(p) && !BOILERPLATE.some((re) => re.test(p)),
   );
-  return paragraphs.slice(start === -1 ? 0 : start).filter((p) => /[a-z]/.test(p));
+  return paragraphs
+    .slice(start === -1 ? 0 : start)
+    .filter((p) => /[a-z]/.test(p) && !/^\[Illustration/.test(p));
 }
 
 const words = (paragraphs) => paragraphs.join(' ').split(/\s+/).length;
@@ -207,7 +249,9 @@ async function buildWork(work) {
 
   const headerEnd = raw.indexOf(PG_START);
   const start = raw.indexOf(work.textStart);
-  const end = raw.indexOf(work.textEnd ?? PG_END);
+  // Search for the end marker only after the text starts: tables of
+  // contents can contain the same words (e.g. "FOOTNOTES:").
+  const end = raw.indexOf(work.textEnd ?? PG_END, start);
   if (headerEnd === -1 || start === -1 || end === -1 || end <= start) {
     throw new Error(`${work.bookId}: text start/end markers not found in source`);
   }
