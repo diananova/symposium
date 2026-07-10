@@ -4,7 +4,8 @@ Source: St. John's College, Annapolis — Schedule of Seminar Readings,
 Fall 2025 & Spring 2026.
 https://www.sjc.edu/academic-programs/undergraduate/classes/seminar/annapolis-undergraduate-readings
 (fetched 2026-07-10; the Santa Fe campus publishes a slightly different
-schedule, and exact order shifts a little year to year)
+schedule, and exact order shifts a little year to year). Cited alongside
+other external sources in [references/README.md](references/README.md).
 
 This is the authority for **book order in `src/data/curriculum.ts`** —
 the app treats book order as reading order. When adding or reordering

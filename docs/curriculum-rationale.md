@@ -1,9 +1,11 @@
 # Why the curriculum is structured this way (reference)
 
 Source: *Statement of the St. John's College Program* (sjc.edu, fetched
-2026-07-10) — the faculty's own account of the Program. This file grounds
-the `context` fields in `src/data/curriculum.ts`; cite it when writing
-context for new books.
+2026-07-10) — the faculty's own account of the Program. Archived in full
+at [references/st-johns-statement-of-the-program.pdf](references/st-johns-statement-of-the-program.pdf)
+(text extract alongside it) — see [references/README.md](references/README.md)
+for all source citations. This file grounds the `context` fields in
+`src/data/curriculum.ts`; cite it when writing context for new books.
 
 ## Key rationale, in the college's words (quoted/closely paraphrased)
 
