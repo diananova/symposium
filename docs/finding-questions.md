@@ -12,17 +12,31 @@ For each section of a work:
 - **Before (guiding): 2–3 questions.** Purpose-setting / advance
   organizers. They give the reader a *lens* and prime engaged reading.
   **Hard rule: no spoilers.** "Watch how honour is measured," not "notice
-  that Achilles refuses the embassy."
-- **After: 5–8 questions, laddered** using the Great Books *Shared Inquiry*
-  taxonomy (see sources):
-  - **Factual** (~2) — one right answer; checks the events landed. These
-    are also the raw material for future spaced-repetition/retention cards.
-  - **Interpretive** (~3–4) — more than one defensible answer, grounded in
-    the text. The heart of the set.
-  - **Evaluative** (~1–2) — the reader's judgment. From the second section
-    of a work onward, use these to **cross-link earlier reading** ("how does
-    this compare with X in Book I / in the Iliad / with Socrates on…"). That
-    reinforces curriculum cohesion *and* aids retention through connection.
+  that Achilles refuses the embassy." Display-only — no answer captured.
+- **After: 5 factual + 3–5 open, laddered** using the Great Books *Shared
+  Inquiry* taxonomy (see sources). Total after-set ≈ 8–10.
+  - **Factual — exactly 5 per section, multiple choice.** One right answer;
+    checks the events landed. **Format:** 4 options, exactly one correct,
+    plus a one-sentence `explanation` revealed after the reader picks
+    (cite the moment/scene). Auto-graded, immediate feedback. These are also
+    the raw material for the future spaced-repetition/retention review — one
+    card per factual question.
+  - **Interpretive (~3–4) — free text.** More than one defensible answer,
+    grounded in the text. The heart of the set.
+  - **Evaluative (~1–2) — free text.** The reader's judgment. From the
+    second section of a work onward, use these to **cross-link earlier
+    reading** ("how does this compare with X in Book I / in the Iliad / with
+    Socrates on…"). Reinforces curriculum cohesion *and* retention through
+    connection.
+
+**Free-text answers:** hard 300-word limit (live counter, blocks past 300),
+saved and timestamped to the progress store like notes; on revisit, past
+answers stack with dates so the reader can see their thinking change.
+
+**No gate.** Open questions are optional and non-blocking — nothing is
+hidden or sequenced behind answering them. (This deliberately relaxes the
+original build-prompt core loop of "answer before you see commentary"; keep
+it this way unless the user asks to reinstate the gate.)
 
 ## Non-negotiable gotchas
 
@@ -78,9 +92,10 @@ commercial, pedagogically thin.
 1. Skim one Tier-3 set (e.g. GVSU) + the Shared Inquiry taxonomy to
    calibrate level. Don't copy.
 2. Grep the hosted text file for names/terms (translation-vocabulary check).
-3. Draft per section: 2–3 pre (no spoilers) + 5–8 post (factual →
-   interpretive → evaluative), passage-anchored, cross-linking prior reading
-   from section 2 onward.
+3. Draft per section: 2–3 pre (no spoilers) + 5 factual MC (4 options, one
+   correct, one-line explanation each) + 3–5 open (interpretive → evaluative,
+   free text), passage-anchored, cross-linking prior reading from section 2
+   onward.
 4. **Human review before publishing** — per the build prompt, questions are
    drafted with Claude but the user approves before they go live. Never
    auto-publish.
