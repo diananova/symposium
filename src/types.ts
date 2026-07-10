@@ -8,6 +8,8 @@ export interface Section {
   title: string;
   /** True when a public-domain text exists at /texts/<bookId>/<sectionId>.json */
   hasText?: boolean;
+  /** True when a question set exists at /questions/<bookId>/<sectionId>.json */
+  hasQuestions?: boolean;
   /** Optional orienting metadata (Phase 2 grows this into a full context panel) */
   meta?: {
     cite?: string; // e.g. Stephanus pages
@@ -35,6 +37,60 @@ export interface TextDoc {
 export interface CommentaryRef {
   id: string;
   title: string;
+}
+
+/** A single multiple-choice comprehension question. Auto-graded. */
+export interface FactualQuestion {
+  id: string;
+  kind: 'factual';
+  prompt: string;
+  /** Exactly 4 options. */
+  options: string[];
+  correctIndex: number;
+  /** One sentence, revealed after the reader answers; cites the passage. */
+  explanation: string;
+}
+
+/** A free-text question — interpretive (multiple defensible answers) or
+ * evaluative (the reader's judgment). Never auto-graded. */
+export interface OpenQuestion {
+  id: string;
+  kind: 'interpretive' | 'evaluative';
+  prompt: string;
+}
+
+/** Shape of /public/questions/<bookId>/<sectionId>.json. Fixed shape per
+ * docs/finding-questions.md: 2-3 guiding + 5 factual + 4 interpretive + 1
+ * evaluative. */
+export interface QuestionSet {
+  bookId: string;
+  sectionId: string;
+  /** Shown BEFORE reading; no answer captured, purely a lens. No spoilers. */
+  guiding: string[];
+  /** Shown AFTER reading; exactly 5. */
+  factual: FactualQuestion[];
+  /** Shown AFTER reading; exactly 4 interpretive then 1 evaluative. */
+  open: OpenQuestion[];
+}
+
+/** Persisted answer to one factual question. */
+export interface FactualAnswer {
+  selectedIndex: number;
+  correct: boolean;
+  answeredAt: string;
+}
+
+/** One submission to an open question. Multiple accumulate over time so the
+ * reader can see their thinking change on revisit — never overwritten. */
+export interface OpenAnswerEntry {
+  text: string;
+  answeredAt: string;
+}
+
+/** All answers, keyed by question id (globally unique — see answersStore.ts). */
+export interface AnswersState {
+  factual: Record<string, FactualAnswer>;
+  open: Record<string, OpenAnswerEntry[]>;
 }
 
 export interface Book {

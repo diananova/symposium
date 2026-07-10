@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-1",
+  "guiding": [
+    "The poem's very first word is anger. As you read, watch what actually provokes Achilles and what he believes he is owed — what is the quarrel really about, beneath the argument over a captive?",
+    "Notice how honour is measured in this world. What concrete things stand in for a warrior's worth, and what is at stake when one of them is taken away?",
+    "Watch the moments a god steps into a human decision. When Minerva or Apollo acts on a person, does it replace that person's own reasoning, or give it shape?"
+  ],
+  "factual": [
+    {
+      "id": "iliad-1-f1",
+      "kind": "factual",
+      "prompt": "Why does Apollo send a plague on the Achaean camp?",
+      "options": [
+        "Agamemnon dishonoured Chryses, a priest of Apollo, by refusing to ransom his daughter Chryseis — and Chryses prayed to the god for vengeance.",
+        "Achilles neglected to sacrifice to Apollo before battle, and the god struck the camp in anger.",
+        "The Achaeans plundered Apollo's temple at Troy and carried off its treasures.",
+        "Agamemnon broke an oath he had sworn to Apollo to lift the siege within nine years."
+      ],
+      "correctIndex": 0,
+      "explanation": "Chryses comes to the ships with ransom; Agamemnon drives him off with threats, so the priest appeals to Apollo, who comes down from Olympus with his bow to strike the camp."
+    },
+    {
+      "id": "iliad-1-f2",
+      "kind": "factual",
+      "prompt": "To compensate for giving up Chryseis, what does Agamemnon take from Achilles?",
+      "options": [
+        "Briseis, the captive woman awarded to Achilles as his prize of honour.",
+        "Achilles' armour and his war-horses.",
+        "Achilles' command over the Myrmidons.",
+        "A double share of the spoils from the next battle."
+      ],
+      "correctIndex": 0,
+      "explanation": "The seizure of Briseis — a thing standing for Achilles' honour, not merely a person — is what triggers his withdrawal and the whole plot that follows."
+    },
+    {
+      "id": "iliad-1-f3",
+      "kind": "factual",
+      "prompt": "Who reveals the cause of the plague, and what does he require before naming it?",
+      "options": [
+        "Calchas the seer, who first asks Achilles for protection, since naming the cause will enrage a powerful man.",
+        "Nestor, the eldest chieftain, who alone may speak without fear.",
+        "Achilles himself, after reading the flight of birds.",
+        "Chryses, who returns to the camp to denounce Agamemnon."
+      ],
+      "correctIndex": 0,
+      "explanation": "Calchas fears Agamemnon's wrath and secures Achilles' pledge of safety before he will speak — the first sign of the rift to come."
+    },
+    {
+      "id": "iliad-1-f4",
+      "kind": "factual",
+      "prompt": "When Achilles' hand goes to his sword, who checks him — and at whose sending?",
+      "options": [
+        "Minerva, sent by Juno, who loves both men and will not see one kill the other.",
+        "Nestor, stepping between them to plead for peace.",
+        "Apollo, still angry and unwilling to see more Achaeans die.",
+        "Patroclus, seizing his friend's arm."
+      ],
+      "correctIndex": 0,
+      "explanation": "Only Achilles sees Minerva; she promises that holding back now will one day win him gifts threefold."
+    },
+    {
+      "id": "iliad-1-f5",
+      "kind": "factual",
+      "prompt": "What does Achilles ask his mother Thetis to do, and how does Jove answer?",
+      "options": [
+        "To beg Jove to favour the Trojans so the Achaeans feel his absence — and Jove bows his head in assent.",
+        "To bring him new armour forged by Vulcan so he may fight alone.",
+        "To carry him from Troy and end his part in the war.",
+        "To make Agamemnon return Briseis at once, through Juno."
+      ],
+      "correctIndex": 0,
+      "explanation": "Achilles wants his own side to suffer for dishonouring him — his wrath now turns against the Achaeans themselves."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-1-i1",
+      "kind": "interpretive",
+      "prompt": "When Minerva checks Achilles' hand as he reaches for his sword, only he can see her. Is Homer showing a god's intervention, or dramatizing Achilles' own restraint — and does the text let us decide?"
+    },
+    {
+      "id": "iliad-1-i2",
+      "kind": "interpretive",
+      "prompt": "Agamemnon commands the greater army; Achilles claims the greater worth. On what does each man rest his claim, and does Book I suggest either is in the right?"
+    },
+    {
+      "id": "iliad-1-i3",
+      "kind": "interpretive",
+      "prompt": "Chryses turns to Apollo, Achilles turns to Thetis — two wronged men appeal to a divine parent or patron. What does that parallel imply about how things actually get done in this world?"
+    },
+    {
+      "id": "iliad-1-i4",
+      "kind": "interpretive",
+      "prompt": "Homer ends a book of human suffering with Jove and Juno quarrelling and the gods dissolving into laughter on Olympus. Why close on the gods — and why on laughter?"
+    },
+    {
+      "id": "iliad-1-e1",
+      "kind": "evaluative",
+      "prompt": "Achilles withdraws knowing his absence will cost his own comrades their lives. Is that a justified response to dishonour, or has his anger outgrown its cause?"
+    }
+  ]
+}

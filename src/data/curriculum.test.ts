@@ -1,11 +1,13 @@
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { curriculum } from './curriculum';
+import type { QuestionSet } from '../types';
 
 const allBooks = curriculum.years.flatMap((y) => y.tracks.flatMap((t) => t.books));
 const allSections = allBooks.flatMap((b) => b.sections);
 const textsDir = path.join(__dirname, '..', '..', 'public', 'texts');
+const questionsDir = path.join(__dirname, '..', '..', 'public', 'questions');
 
 describe('curriculum invariants', () => {
   it('section ids are globally unique (progress is keyed by them)', () => {
@@ -25,6 +27,36 @@ describe('curriculum invariants', () => {
           const file = path.join(textsDir, book.id, `${section.id}.json`);
           expect(existsSync(file), `missing ${book.id}/${section.id}.json`).toBe(true);
         }
+      }
+    }
+  });
+
+  it('every hasQuestions section has a question set on disk with the fixed shape', () => {
+    // docs/finding-questions.md locks this shape: 2-3 guiding + exactly 5
+    // factual (4 options each) + exactly 4 interpretive + 1 evaluative.
+    for (const book of allBooks) {
+      for (const section of book.sections) {
+        if (!section.hasQuestions) continue;
+        const file = path.join(questionsDir, book.id, `${section.id}.json`);
+        expect(existsSync(file), `missing ${book.id}/${section.id}.json`).toBe(true);
+        const set = JSON.parse(readFileSync(file, 'utf8')) as QuestionSet;
+
+        expect(set.guiding.length, `${section.id}: guiding count`).toBeGreaterThanOrEqual(2);
+        expect(set.guiding.length, `${section.id}: guiding count`).toBeLessThanOrEqual(3);
+
+        expect(set.factual, `${section.id}: factual count`).toHaveLength(5);
+        for (const q of set.factual) {
+          expect(q.options, `${section.id}/${q.id}: option count`).toHaveLength(4);
+          expect(q.correctIndex, `${section.id}/${q.id}: correctIndex range`).toBeGreaterThanOrEqual(0);
+          expect(q.correctIndex, `${section.id}/${q.id}: correctIndex range`).toBeLessThan(4);
+          expect(q.explanation, `${section.id}/${q.id}: explanation`).toBeTruthy();
+        }
+
+        const interpretive = set.open.filter((q) => q.kind === 'interpretive');
+        const evaluative = set.open.filter((q) => q.kind === 'evaluative');
+        expect(interpretive, `${section.id}: interpretive count`).toHaveLength(4);
+        expect(evaluative, `${section.id}: evaluative count`).toHaveLength(1);
+        expect(set.open.at(-1)?.kind, `${section.id}: evaluative must be last`).toBe('evaluative');
       }
     }
   });

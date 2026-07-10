@@ -3,6 +3,7 @@ import { HashRouter, Navigate, Route, Routes, useLocation, useNavigate, useParam
 import { curriculum } from './data/curriculum';
 import { findBook, findCommentary, findSection, findYear } from './data/lookup';
 import { emptyProgress, useProgress } from './progress';
+import { useAnswers } from './answers';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { Splash } from './components/Splash';
 import { Tracker } from './components/Tracker';
@@ -11,6 +12,7 @@ import { SectionDetail } from './components/SectionDetail';
 import { CommentaryView } from './components/CommentaryView';
 
 type ProgressApi = ReturnType<typeof useProgress>;
+type AnswersApi = ReturnType<typeof useAnswers>;
 
 function TrackerRoute({ progressApi }: { progressApi: ProgressApi }) {
   const { yearId, trackId } = useParams();
@@ -50,7 +52,7 @@ function BookRoute({ progressApi }: { progressApi: ProgressApi }) {
   );
 }
 
-function DocRoute({ progressApi }: { progressApi: ProgressApi }) {
+function DocRoute({ progressApi, answersApi }: { progressApi: ProgressApi; answersApi: AnswersApi }) {
   const { bookId, docId } = useParams();
   const navigate = useNavigate();
   const ctx = findBook(bookId);
@@ -63,8 +65,11 @@ function DocRoute({ progressApi }: { progressApi: ProgressApi }) {
         book={ctx.book}
         section={section}
         progress={progressApi.progress[section.id] ?? emptyProgress}
+        answers={answersApi.answers}
         onSetStatus={(status) => progressApi.setStatus(section.id, status)}
         onSetNotes={(notes) => progressApi.setNotes(section.id, notes)}
+        onAnswerFactual={answersApi.answerFactual}
+        onSubmitOpenAnswer={answersApi.submitOpenAnswer}
         onBack={() => navigate(`/book/${ctx.book.id}`)}
       />
     );
@@ -94,6 +99,7 @@ function ScrollToTop() {
 
 export default function App() {
   const progressApi = useProgress();
+  const answersApi = useAnswers();
   const [showSplash, setShowSplash] = useState(true);
 
   // Splash fades out via CSS; unmount it after the animation ends.
@@ -111,7 +117,10 @@ export default function App() {
           <Route path="/" element={<TrackerRoute progressApi={progressApi} />} />
           <Route path="/:yearId/:trackId?" element={<TrackerRoute progressApi={progressApi} />} />
           <Route path="/book/:bookId" element={<BookRoute progressApi={progressApi} />} />
-          <Route path="/book/:bookId/read/:docId" element={<DocRoute progressApi={progressApi} />} />
+          <Route
+            path="/book/:bookId/read/:docId"
+            element={<DocRoute progressApi={progressApi} answersApi={answersApi} />}
+          />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </HashRouter>

@@ -38,7 +38,13 @@ export const curriculum: Curriculum = {
               },
               edition: 'In-app: Butler (public domain); in print: Lattimore (Chicago)',
               sections: [
-                { id: 'iliad-1', title: 'Book I', hasText: true, meta: { estLength: '~25 min' } },
+                {
+                  id: 'iliad-1',
+                  title: 'Book I',
+                  hasText: true,
+                  hasQuestions: true,
+                  meta: { estLength: '~25 min' },
+                },
                 { id: 'iliad-2', title: 'Book II', hasText: true, meta: { estLength: '~34 min' } },
                 { id: 'iliad-3', title: 'Book III', hasText: true, meta: { estLength: '~18 min' } },
                 { id: 'iliad-4', title: 'Book IV', hasText: true, meta: { estLength: '~22 min' } },

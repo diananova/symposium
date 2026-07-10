@@ -547,6 +547,223 @@ button {
   color: var(--olive);
 }
 
+/* ---------- Guiding questions (before reading) ---------- */
+.guiding-block {
+  background: var(--card);
+  border-left: 3px solid var(--gold);
+  border-radius: 2px;
+  padding: 14px 16px;
+  margin-bottom: 26px;
+}
+.guiding-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.guiding-list {
+  margin: 0;
+  padding-left: 1.1em;
+}
+.guiding-list li {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.guiding-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Factual questions (multiple choice, after reading) ---------- */
+.factual-block {
+  margin: 30px 0;
+  padding-top: 6px;
+  border-top: 1px solid var(--line);
+}
+.factual-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin-bottom: 16px;
+}
+.factual-score {
+  color: var(--ink-soft);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.factual-item {
+  margin-bottom: 20px;
+}
+.factual-item:last-child {
+  margin-bottom: 0;
+}
+.factual-prompt {
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+.factual-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.factual-option {
+  text-align: left;
+  font-size: 13.5px;
+  line-height: 1.4;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--ink);
+}
+.factual-option:not(:disabled):hover {
+  border-color: var(--gold);
+}
+.factual-option:disabled {
+  cursor: default;
+}
+.factual-option.correct {
+  border-color: var(--olive);
+  background: rgba(107, 115, 83, 0.12);
+  color: var(--ink);
+  font-weight: 500;
+}
+.factual-option.incorrect {
+  border-color: var(--wine);
+  background: rgba(122, 46, 46, 0.08);
+  color: var(--ink-soft);
+  text-decoration: line-through;
+}
+.factual-explanation {
+  margin-top: 8px;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  padding: 10px 12px;
+  background: var(--linen-deep);
+  border-radius: 6px;
+}
+
+/* ---------- Open questions (interpretive / evaluative, free text) ---------- */
+.open-block {
+  margin: 30px 0;
+}
+.open-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin-bottom: 16px;
+}
+.open-item {
+  margin-bottom: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid var(--line);
+}
+.open-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.open-kind {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.open-kind-interpretive {
+  color: var(--olive);
+}
+.open-kind-evaluative {
+  color: var(--gold);
+}
+.open-prompt {
+  font-family: var(--serif-display);
+  font-weight: 500;
+  font-size: 15.5px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.open-past {
+  background: var(--linen-deep);
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+.open-past-meta {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+.open-past p {
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--ink);
+}
+.open-textarea {
+  width: 100%;
+  min-height: 110px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: var(--serif-body);
+  font-size: 14.5px;
+  color: var(--ink);
+  line-height: 1.55;
+  resize: vertical;
+}
+.open-textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+.open-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+.open-count {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+.open-count.at-limit {
+  color: var(--wine);
+}
+.open-submit {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: var(--wine);
+  color: var(--linen);
+}
+.open-submit:disabled {
+  background: var(--linen-deep);
+  color: var(--ink-soft);
+  cursor: default;
+}
+
 .notes-label {
   font-family: var(--mono);
   font-size: 10px;
