@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-22",
+  "guiding": [
+    "Both of Hector's parents beg him from the walls not to face Achilles. Watch exactly what reason he gives himself for staying outside the gates anyway.",
+    "Watch the moment Hector realizes he is truly alone in this fight, after believing he had help. What does that realization do to him in the instant before the end?",
+    "Watch what Achilles refuses to grant Hector, even as he lies dying and begging. Compare that refusal to how Ajax and Hector treated each other after their duel in Book VII."
+  ],
+  "factual": [
+    {
+      "id": "iliad-22-f1",
+      "kind": "factual",
+      "prompt": "Why does Hector remain outside the city walls despite his parents' pleading, even though he has the chance to retreat safely inside?",
+      "options": [
+        "He feels shame at the thought of being blamed for ignoring Polydamas's earlier advice to withdraw, and cannot bear to face that judgment from his own people.",
+        "He believes he can easily defeat Achilles and wants the personal glory.",
+        "Priam forbids him from entering, having disowned him for the day's losses.",
+        "He is physically unable to reach the gates in time."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hector's shame before the Trojans, not confidence in victory, is what actually keeps him outside the walls."
+    },
+    {
+      "id": "iliad-22-f2",
+      "kind": "factual",
+      "prompt": "How does Minerva trick Hector into finally standing to face Achilles instead of continuing to flee?",
+      "options": [
+        "She disguises herself as his brother Deiphobus, convincing him he now has support to face Achilles together.",
+        "She promises him victory directly in her own divine form.",
+        "She threatens to abandon the Trojans entirely if he keeps running.",
+        "She disguises herself as Priam, ordering him to stand and fight."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hector's fatal decision to stop running rests entirely on a trick — the support he believes he has is never real."
+    },
+    {
+      "id": "iliad-22-f3",
+      "kind": "factual",
+      "prompt": "What does Hector ask of Achilles before they fight, and how does Achilles respond?",
+      "options": [
+        "Hector asks for a pact that whoever wins will return the loser's body for proper burial, but Achilles refuses, saying there can be no such pacts between them.",
+        "Hector asks for a brief truce to say goodbye to his family, and Achilles grants it.",
+        "Hector asks to fight on equal terms without any god's help, and Achilles agrees.",
+        "Hector asks Achilles to spare his life in exchange for Helen's return, and Achilles considers it."
+      ],
+      "correctIndex": 0,
+      "explanation": "Achilles compares their situation to lions and men, who share no covenants — there will be no mercy of any kind in this fight."
+    },
+    {
+      "id": "iliad-22-f4",
+      "kind": "factual",
+      "prompt": "What does Hector prophesy with his dying breath?",
+      "options": [
+        "That Achilles himself will soon die, killed by Paris and Apollo at the Scaean gates.",
+        "That Troy will never fall despite his own death.",
+        "That Achilles will regret this killing for the rest of his life.",
+        "That Andromache will be spared from slavery after Troy falls."
+      ],
+      "correctIndex": 0,
+      "explanation": "Achilles dismisses the prophecy at the time, but it echoes everything Thetis and Xanthus have already told him about his own fate."
+    },
+    {
+      "id": "iliad-22-f5",
+      "kind": "factual",
+      "prompt": "What does Achilles do to Hector's body after killing him, and who witnesses it?",
+      "options": [
+        "He ties the body to his chariot by the ankles and drags it around the walls of Troy, in view of Priam, Hecuba, and eventually Andromache.",
+        "He returns the body immediately to Priam out of respect for a worthy opponent.",
+        "He burns the body on the battlefield before the Trojans can retrieve it.",
+        "He leaves the body untouched, taking only the armor."
+      ],
+      "correctIndex": 0,
+      "explanation": "This desecration, watched by Hector's own family from the walls, is the cruelest image in the entire poem so far."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-22-i1",
+      "kind": "interpretive",
+      "prompt": "Hector stays outside the walls not from confidence but from shame at what his own people might say about him. Is dying to avoid public blame a form of courage, or a kind of trap that has nothing to do with real bravery?"
+    },
+    {
+      "id": "iliad-22-i2",
+      "kind": "interpretive",
+      "prompt": "Hector's fatal decision to stand and fight rests entirely on a goddess's disguise and lie. What does it mean that the poem's most consequential human choice is actually engineered by divine deception?"
+    },
+    {
+      "id": "iliad-22-i3",
+      "kind": "interpretive",
+      "prompt": "Achilles refuses Hector's request for a burial pact by comparing their relationship to lions and men — creatures with no shared covenants at all. Is Achilles right that some conflicts truly allow no mutual respect, or has his grief for Patroclus pushed him past what even this war usually permits?"
+    },
+    {
+      "id": "iliad-22-i4",
+      "kind": "interpretive",
+      "prompt": "Hector dies prophesying Achilles' own death, just as Patroclus did in Book XVI. Why might Homer give dying men this particular power to foretell the deaths of those who killed them?"
+    },
+    {
+      "id": "iliad-22-e1",
+      "kind": "evaluative",
+      "prompt": "Achilles refuses Hector any mercy, dragging his body before his own grieving family. Given everything Achilles has lost, is this cruelty understandable grief taken too far, or has he become something the poem wants us to judge harshly?"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-21",
+  "guiding": [
+    "Achilles refuses mercy to a man who once survived him before. Watch exactly what reasoning he gives, and whether it's really about that one man at all.",
+    "A river itself becomes Achilles' opponent in this book. Watch what it takes to make a god of nature react against a mortal directly.",
+    "The gods finally fight each other openly here, after a whole poem of working through mortals. Watch how differently their battle reads compared to any human fight so far."
+  ],
+  "factual": [
+    {
+      "id": "iliad-21-f1",
+      "kind": "factual",
+      "prompt": "Who is Lycaon, and why does his death at Achilles' hands feel especially harsh?",
+      "options": [
+        "A son of Priam whom Achilles had once captured and sold into slavery, now ransomed and fighting again — he begs for mercy, but Achilles refuses, saying even Patroclus, who was better than Lycaon, is dead.",
+        "A Trojan ally meeting Achilles for the first time, killed without any prior history between them.",
+        "Hector's own son, killed in front of the Trojan walls.",
+        "A priest of Apollo, killed while trying to negotiate a truce."
+      ],
+      "correctIndex": 0,
+      "explanation": "Achilles' reasoning — that since even Patroclus died, and he himself will die too, no one deserves special mercy — marks a harder, more fatalistic Achilles than the one who once sold Lycaon into slavery rather than killing him outright."
+    },
+    {
+      "id": "iliad-21-f2",
+      "kind": "factual",
+      "prompt": "Why does the river god Scamander turn against Achilles?",
+      "options": [
+        "He is angered that Achilles' slaughter is choking his waters with corpses, and confronts him directly when Achilles won't stop.",
+        "He has always favored the Achaeans and simply switches allegiance now that Troy is losing.",
+        "Hector prays to him directly for aid against Achilles.",
+        "Juno commands him to attack Achilles as punishment for Lycaon's death."
+      ],
+      "correctIndex": 0,
+      "explanation": "The river's fury is provoked by the sheer scale of death Achilles is causing, not by taking either side in the war itself."
+    },
+    {
+      "id": "iliad-21-f3",
+      "kind": "factual",
+      "prompt": "How is Achilles finally saved from the rising floodwaters?",
+      "options": [
+        "Vulcan, at Juno's urging, sends fire to scorch the riverbanks and boil the water, forcing Scamander to yield and beg for a truce.",
+        "Minerva physically carries him out of the river.",
+        "Achilles defeats the river god in single combat.",
+        "Priam calls off the river's attack to spare Achilles."
+      ],
+      "correctIndex": 0,
+      "explanation": "Only fire, a force equally elemental, is enough to counter the river's flood."
+    },
+    {
+      "id": "iliad-21-f4",
+      "kind": "factual",
+      "prompt": "What happens when the gods themselves take sides and fight each other directly?",
+      "options": [
+        "Minerva soundly defeats Mars, knocking him down with a stone, and also strikes down Venus; other gods like Apollo and Mercury decline to fight their opponents out of respect.",
+        "Every god fights to the death, with several killed permanently.",
+        "The gods' battle is more devastating than any human fighting in the poem.",
+        "Jove personally intervenes to stop the gods from fighting at all."
+      ],
+      "correctIndex": 0,
+      "explanation": "The gods' battle plays out almost as comic relief — undignified and quickly resolved compared to the real suffering of the mortals below."
+    },
+    {
+      "id": "iliad-21-f5",
+      "kind": "factual",
+      "prompt": "How does Apollo help the Trojans retreat safely into the city at the book's end?",
+      "options": [
+        "He disguises himself as the Trojan warrior Agenor to lure Achilles away in pursuit, buying time for the rest of the army to reach the walls.",
+        "He seals the city gates with a magical barrier Achilles cannot cross.",
+        "He convinces Achilles directly to grant the Trojans a truce.",
+        "He carries the entire Trojan army into the city himself."
+      ],
+      "correctIndex": 0,
+      "explanation": "This trick sets up the next book's action: Achilles chasing what he believes is a Trojan warrior, only for the true confrontation with Hector to still be waiting."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-21-i1",
+      "kind": "interpretive",
+      "prompt": "Achilles refuses Lycaon mercy by reasoning that since even Patroclus died, no one deserves to be spared. Is this cold fatalism, honest grief turned outward, or something else entirely?"
+    },
+    {
+      "id": "iliad-21-i2",
+      "kind": "interpretive",
+      "prompt": "A river god attacks Achilles not out of loyalty to either army, but simply because the killing has become too much even for nature to bear. What does it mean that the natural world itself, not just the gods or the armies, has a limit to what it will tolerate?"
+    },
+    {
+      "id": "iliad-21-i3",
+      "kind": "interpretive",
+      "prompt": "The gods' battle among themselves is brief and almost comic next to the real devastation among mortals. Why might Homer deliberately make the gods' violence look smaller and less serious than human violence?"
+    },
+    {
+      "id": "iliad-21-i4",
+      "kind": "interpretive",
+      "prompt": "Apollo saves the Trojan army through a trick rather than open confrontation with Achilles. What does this choice say about what even a god is willing to risk against Achilles at the height of his rage?"
+    },
+    {
+      "id": "iliad-21-e1",
+      "kind": "evaluative",
+      "prompt": "Achilles' fury here is so overwhelming it draws a reaction even from a river and provokes the gods themselves into open conflict. At what point does this scale of destruction stop reading as heroic grief and start reading as something to be genuinely afraid of?"
+    }
+  ]
+}

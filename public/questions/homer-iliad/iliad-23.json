@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-23",
+  "guiding": [
+    "Patroclus's ghost appears to Achilles in this book, asking for something specific. Watch what that request reveals about how the dead are understood to need the living in this poem.",
+    "The funeral itself includes an act of real cruelty alongside genuine mourning. Watch how the poem holds both together without resolving the tension between them.",
+    "The funeral games that follow are full of competition, dispute, and reconciliation in miniature. Watch for a moment where a conflict gets resolved by generosity rather than by force or a ruling."
+  ],
+  "factual": [
+    {
+      "id": "iliad-23-f1",
+      "kind": "factual",
+      "prompt": "What does the ghost of Patroclus ask of Achilles when it appears to him in a dream?",
+      "options": [
+        "For quick burial so he may pass into Hades, and that their bones eventually be mingled together in one urn when Achilles dies too.",
+        "For Achilles to spare Hector's body from further abuse.",
+        "For Achilles to abandon the war and return home immediately.",
+        "For revenge against Agamemnon rather than the Trojans."
+      ],
+      "correctIndex": 0,
+      "explanation": "This request — to be joined with Achilles even in death — echoes just how deep their bond was in life."
+    },
+    {
+      "id": "iliad-23-f2",
+      "kind": "factual",
+      "prompt": "What grim act of vengeance does Achilles carry out at Patroclus's funeral pyre?",
+      "options": [
+        "He slaughters the twelve captured Trojan youths on the pyre, an act foreshadowed back when Patroclus first died.",
+        "He publicly executes Priam's remaining sons before the assembled army.",
+        "He burns Hector's body along with Patroclus's, denying him any separate rites.",
+        "He forces Trojan prisoners to build the pyre with their bare hands before killing them."
+      ],
+      "correctIndex": 0,
+      "explanation": "This act sits uncomfortably beside the real tenderness of the funeral rites — the poem doesn't resolve that discomfort, it simply shows both."
+    },
+    {
+      "id": "iliad-23-f3",
+      "kind": "factual",
+      "prompt": "What finally makes the funeral pyre burn properly, after it initially won't catch?",
+      "options": [
+        "Achilles prays to the winds Boreas and Zephyrus, who come and fan the flames all night until the body is fully consumed.",
+        "Vulcan personally ignites it with divine fire.",
+        "The Myrmidons pour extra oil on it until it catches.",
+        "Apollo lights it as a final mercy toward Patroclus."
+      ],
+      "correctIndex": 0,
+      "explanation": "Even this small practical detail of the funeral requires divine intervention to complete."
+    },
+    {
+      "id": "iliad-23-f4",
+      "kind": "factual",
+      "prompt": "What happens when Antilochus takes second place in the chariot race through a risky move against Menelaus, and Menelaus objects?",
+      "options": [
+        "Antilochus offers to yield his prize rather than argue the point, and Menelaus, satisfied by the gracious gesture, lets him keep it after all.",
+        "The two nearly come to blows before Achilles physically separates them.",
+        "Nestor is called in to judge, and rules against his own son Antilochus.",
+        "Menelaus takes the prize by force, and Antilochus is publicly shamed."
+      ],
+      "correctIndex": 0,
+      "explanation": "This small dispute, resolved through generosity rather than a ruling or a fight, stands out for how differently it ends compared to the war's larger conflicts."
+    },
+    {
+      "id": "iliad-23-f5",
+      "kind": "factual",
+      "prompt": "What eventually happens to Patroclus's remains after the pyre burns down?",
+      "options": [
+        "His bones are gathered, wrapped in fat, placed in a golden urn, and a mound is raised over them, meant to later hold Achilles' bones as well.",
+        "His ashes are scattered into the sea at his own request.",
+        "His remains are sent home to his father Menoetius for burial there.",
+        "No mound is raised, since Achilles insists on carrying the urn with him always."
+      ],
+      "correctIndex": 0,
+      "explanation": "The shared future mound is the fulfillment of the promise Patroclus's ghost asked for at the start of the book."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-23-i1",
+      "kind": "interpretive",
+      "prompt": "Patroclus's ghost asks to have his bones mingled with Achilles' own one day. What does this request suggest about how friendship and identity work in this poem, even beyond death?"
+    },
+    {
+      "id": "iliad-23-i2",
+      "kind": "interpretive",
+      "prompt": "The same funeral that shows real tenderness toward Patroclus also includes the slaughter of twelve young men who did nothing to deserve it personally. Does the poem seem to judge this cruelty, excuse it as grief, or simply present it without comment?"
+    },
+    {
+      "id": "iliad-23-i3",
+      "kind": "interpretive",
+      "prompt": "The funeral games are full of the same competitive spirit as the war itself, but with disputes resolved by generosity rather than violence. What does that difference suggest is possible among these men when the stakes are honor and prizes rather than survival?"
+    },
+    {
+      "id": "iliad-23-i4",
+      "kind": "interpretive",
+      "prompt": "Antilochus's gracious offer to yield his prize resolves the dispute instantly, in sharp contrast to the quarrel between Agamemnon and Achilles that started the whole poem. What does this contrast suggest about what was actually missing in Book I?"
+    },
+    {
+      "id": "iliad-23-e1",
+      "kind": "evaluative",
+      "prompt": "This book holds together real grief, genuine ritual, cold vengeance, and lighthearted competition all at once. Does that mixture feel true to how grief actually works, or does it feel like the poem is excusing cruelty by surrounding it with tenderness?"
+    }
+  ]
+}

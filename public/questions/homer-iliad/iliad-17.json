@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-17",
+  "guiding": [
+    "A fallen hero's body becomes its own battlefield in this book. Watch what fighting over a corpse, rather than over ground or the ships, changes about how the two sides behave.",
+    "Hector puts on armor that isn't his. Watch how the poem itself seems to feel about that choice, apart from what any character says.",
+    "Achilles still doesn't know Patroclus is dead through most of this book. Watch how that delay shapes the urgency of everyone else's fighting."
+  ],
+  "factual": [
+    {
+      "id": "iliad-17-f1",
+      "kind": "factual",
+      "prompt": "Who first stands over Patroclus's body to defend it, and against whom?",
+      "options": [
+        "Menelaus, who kills Euphorbus when he presses his claim to the first wound.",
+        "Ajax, who fights off Hector single-handedly from the start.",
+        "Achilles, roused by a sudden premonition of his friend's death.",
+        "Automedon, using Achilles' own chariot to block the Trojans."
+      ],
+      "correctIndex": 0,
+      "explanation": "Euphorbus's death here answers his part in killing Patroclus, though Hector still takes the greater prize: Patroclus's armor."
+    },
+    {
+      "id": "iliad-17-f2",
+      "kind": "factual",
+      "prompt": "What does Hector do once he reaches the body, urged on by Apollo?",
+      "options": [
+        "He strips Achilles' armor from the corpse and puts it on himself.",
+        "He drags the body back to Troy as a trophy.",
+        "He burns the body on the spot to deny the Achaeans a funeral.",
+        "He offers to return the body in exchange for a truce."
+      ],
+      "correctIndex": 0,
+      "explanation": "Wearing the very armor of the man fated to kill him is one of the poem's starkest images of a hero overreaching his own fate."
+    },
+    {
+      "id": "iliad-17-f3",
+      "kind": "factual",
+      "prompt": "How does Jove react to seeing Hector in Achilles' armor?",
+      "options": [
+        "He grants Hector glory for the moment, but notes with some pity that he will never live to have his wife take that armor off him.",
+        "He strikes Hector down immediately for the presumption.",
+        "He is pleased and promises Hector total victory in the war.",
+        "He orders Apollo to take the armor back at once."
+      ],
+      "correctIndex": 0,
+      "explanation": "Even in granting Hector this moment of glory, Jove's words carry the shadow of what's coming."
+    },
+    {
+      "id": "iliad-17-f4",
+      "kind": "factual",
+      "prompt": "What happens to Achilles' immortal horses when they learn of Patroclus's death?",
+      "options": [
+        "They weep and refuse to move, until Jove takes pity and gives them strength to go on.",
+        "They break free and flee the battlefield entirely.",
+        "They turn on their own driver, Automedon, in grief-stricken confusion.",
+        "They are unaffected, since horses cannot grieve in this poem."
+      ],
+      "correctIndex": 0,
+      "explanation": "That even Achilles' divine horses grieve for Patroclus says something about how deeply his loss registers, beyond the human characters alone."
+    },
+    {
+      "id": "iliad-17-f5",
+      "kind": "factual",
+      "prompt": "Who is sent to tell Achilles that Patroclus is dead, and what is happening to the body as this happens?",
+      "options": [
+        "Antilochus, Nestor's son, is sent running to Achilles, while the rest of the Achaeans fight desperately to drag the body back toward the ships.",
+        "Ajax goes himself, leaving Menelaus alone to guard the body.",
+        "No messenger is sent; Achilles learns only when the body itself is brought to him.",
+        "Nestor goes in person, while the body is already safely at the ships."
+      ],
+      "correctIndex": 0,
+      "explanation": "The body's fate and Achilles' knowledge of it are still separate threads at the book's end — one race to save a friend, another to break the news of his loss."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-17-i1",
+      "kind": "interpretive",
+      "prompt": "So much of this book is spent fighting over a body that can no longer be helped, rather than over ground that matters strategically. What does that shift in what's worth dying for say about how honor works among these warriors?"
+    },
+    {
+      "id": "iliad-17-i2",
+      "kind": "interpretive",
+      "prompt": "Jove pities Hector even while granting him glory in Achilles' armor. Why might a god feel pity for a man he is, in effect, allowing to walk toward his own doom?"
+    },
+    {
+      "id": "iliad-17-i3",
+      "kind": "interpretive",
+      "prompt": "Achilles' horses grieve for Patroclus before Achilles himself even knows his friend is dead. What does it suggest that an animal's grief arrives in the poem before the human grief we're waiting for?"
+    },
+    {
+      "id": "iliad-17-i4",
+      "kind": "interpretive",
+      "prompt": "Hector takes Achilles' armor as a trophy, but the poem frames it as a kind of doom rather than a triumph. Is claiming an enemy's armor here more about honor, or about tempting a fate not yet arrived?"
+    },
+    {
+      "id": "iliad-17-e1",
+      "kind": "evaluative",
+      "prompt": "Hector wears armor that marks him, in the poem's own eyes, for death — yet he wears it anyway, in a moment of real glory. Is that choice a kind of courage, or a kind of blindness to what's actually being risked?"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-18",
+  "guiding": [
+    "Achilles finally learns what has happened. Watch how his grief compares to his anger in Book I — are they the same emotion wearing two different faces, or something genuinely different?",
+    "Achilles chooses to return to a war he knows will now cost him his own life soon after. Watch what actually persuades him back, since it isn't Agamemnon's gifts this time.",
+    "A shield is forged in this book unlike any other object in the poem so far. Watch what it depicts, and ask why a weapon of war would be decorated with scenes of ordinary peacetime life."
+  ],
+  "factual": [
+    {
+      "id": "iliad-18-f1",
+      "kind": "factual",
+      "prompt": "How does Achilles react when Antilochus tells him Patroclus is dead?",
+      "options": [
+        "He is overwhelmed with grief, falling to the ground and pouring ashes over himself, crying out so terribly that Thetis hears him from the depths of the sea.",
+        "He immediately arms himself and rushes into battle unarmed for armor.",
+        "He refuses to believe the news and sends Antilochus back to confirm it.",
+        "He blames Antilochus for failing to protect Patroclus."
+      ],
+      "correctIndex": 0,
+      "explanation": "The scale of his grief is what draws his divine mother up from the sea to comfort him in person."
+    },
+    {
+      "id": "iliad-18-f2",
+      "kind": "factual",
+      "prompt": "What does Achilles tell Thetis he now intends to do, even knowing what it will cost him?",
+      "options": [
+        "To kill Hector in revenge, even though Thetis reminds him his own death is fated to follow soon after Hector's.",
+        "To abandon the war entirely and sail home with Patroclus's body.",
+        "To challenge Agamemnon to single combat for the death of his friend.",
+        "To ask Jove directly to bring Patroclus back to life."
+      ],
+      "correctIndex": 0,
+      "explanation": "Achilles accepts this trade knowingly — his own life for the chance to avenge Patroclus."
+    },
+    {
+      "id": "iliad-18-f3",
+      "kind": "factual",
+      "prompt": "How does Achilles help recover Patroclus's body before his new armor even arrives?",
+      "options": [
+        "Unarmed, he shows himself at the trench and shouts three times, and the terrifying sound alone sends the Trojans into retreat.",
+        "He borrows Ajax's armor to fight his way to the body.",
+        "He sends Automedon alone to retrieve it under cover of night.",
+        "He does nothing until his new armor arrives the next morning."
+      ],
+      "correctIndex": 0,
+      "explanation": "Even without weapons or armor, Achilles' mere presence and voice are enough to break the Trojan advance."
+    },
+    {
+      "id": "iliad-18-f4",
+      "kind": "factual",
+      "prompt": "What does Polydamas advise the Trojans to do, now that Achilles will clearly return to the fight, and how does Hector respond?",
+      "options": [
+        "Polydamas urges withdrawing into the city for safety, but Hector refuses, insisting on staying in the field to face Achilles directly.",
+        "Polydamas urges an immediate all-out attack, which Hector happily agrees to.",
+        "Polydamas suggests suing for peace at once, and Hector agrees reluctantly.",
+        "Polydamas says nothing this time, having given up advising Hector."
+      ],
+      "correctIndex": 0,
+      "explanation": "Hector's refusal here, against clearly sound advice, is one of the poem's clearest signs of the overconfidence that will cost him his life."
+    },
+    {
+      "id": "iliad-18-f5",
+      "kind": "factual",
+      "prompt": "What does Vulcan forge for Achilles at Thetis's request, and what does the shield depict?",
+      "options": [
+        "New armor including an elaborately decorated shield showing scenes of ordinary human life — cities at peace and at war, weddings, farming, harvest, dancing — encircled by the ocean.",
+        "A shield depicting only scenes of Achilles' own past battles.",
+        "A plain, unadorned shield built purely for strength rather than decoration.",
+        "Armor identical to the set Hector now wears, so the two will be indistinguishable in battle."
+      ],
+      "correctIndex": 0,
+      "explanation": "Vulcan crafts the shield gladly, remembering that Thetis once sheltered him after he was cast out of heaven."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-18-i1",
+      "kind": "interpretive",
+      "prompt": "Achilles' grief for Patroclus is as overwhelming as his anger at Agamemnon was in Book I. Do these two extreme reactions come from the same part of his character, or is grief revealing something in him that wrath never did?"
+    },
+    {
+      "id": "iliad-18-i2",
+      "kind": "interpretive",
+      "prompt": "Achilles returns to the war knowing it means his own death soon after, something no gift or apology could persuade him to accept in Book IX. What does that change say about what actually matters to him more than his own life?"
+    },
+    {
+      "id": "iliad-18-i3",
+      "kind": "interpretive",
+      "prompt": "The Shield of Achilles depicts weddings, farming, and dancing — the ordinary peacetime life this war has been keeping these men from for ten years. Why might Homer put scenes of peace on the armor of the poem's most devastating warrior?"
+    },
+    {
+      "id": "iliad-18-i4",
+      "kind": "interpretive",
+      "prompt": "Hector rejects Polydamas's sound advice to withdraw, choosing instead to face Achilles in the open. Is this the same kind of overreach that killed Patroclus in Book XVI, or a different kind of mistake?"
+    },
+    {
+      "id": "iliad-18-e1",
+      "kind": "evaluative",
+      "prompt": "Achilles chooses certain death for the sake of avenging his friend, while Hector chooses to stay in the field against sound advice out of pride. Whose decision here seems more like genuine love, and whose seems more like vanity — or is that distinction too easy to draw?"
+    }
+  ]
+}

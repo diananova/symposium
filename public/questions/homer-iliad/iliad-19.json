@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-19",
+  "guiding": [
+    "Achilles finally lets go of his anger at Agamemnon in this book. Watch what it takes to end a wrath that gifts and embassies couldn't touch back in Book IX.",
+    "Notice who insists the army eat before battle, and why Achilles resists it. What does that disagreement reveal about the difference between grief and practical wisdom?",
+    "Watch what Achilles' own horse tells him as he arms for battle. Does hearing his fate stated plainly change anything about what he does next?"
+  ],
+  "factual": [
+    {
+      "id": "iliad-19-f1",
+      "kind": "factual",
+      "prompt": "What does Achilles announce to the assembled army at the start of this book?",
+      "options": [
+        "He formally renounces his anger at Agamemnon, saying it's foolish to keep quarreling over a girl when so many have died for it, and urges immediate battle.",
+        "He announces he will fight only Hector and no other Trojan.",
+        "He demands Agamemnon step down as commander before he will fight.",
+        "He refuses to fight until Patroclus is properly buried first."
+      ],
+      "correctIndex": 0,
+      "explanation": "This reversal is striking — the same wrath that drove the entire plot since Book I is simply set aside once something greater than honor is at stake."
+    },
+    {
+      "id": "iliad-19-f2",
+      "kind": "factual",
+      "prompt": "How does Agamemnon explain his own past behavior toward Achilles?",
+      "options": [
+        "He claims Ate — Blindness or Infatuation — clouded his judgment, not his own true will, and offers to make good on all the gifts promised back in Book IX.",
+        "He refuses to explain himself at all, offering only the gifts in silence.",
+        "He blames Achilles for provoking the original quarrel.",
+        "He insists he was following Jove's direct command the whole time."
+      ],
+      "correctIndex": 0,
+      "explanation": "This explanation lets Agamemnon save face while still delivering the reparation Achilles once rejected outright."
+    },
+    {
+      "id": "iliad-19-f3",
+      "kind": "factual",
+      "prompt": "Why does Ulysses insist the army eat before going into battle, against Achilles' wishes?",
+      "options": [
+        "He argues the dead must be mourned but the living must eat to fight effectively, since hungry men fight poorly.",
+        "He says the gods have forbidden fighting on an empty stomach.",
+        "He wants to delay the battle until nightfall.",
+        "He believes eating together will formally seal the reconciliation."
+      ],
+      "correctIndex": 0,
+      "explanation": "This practical counsel stands in deliberate contrast to Achilles' extremity of grief, which would have him fight without eating at all."
+    },
+    {
+      "id": "iliad-19-f4",
+      "kind": "factual",
+      "prompt": "What does Briseis do when she is returned to Achilles and sees Patroclus's body?",
+      "options": [
+        "She laments over him, recalling his kindness to her and that he had promised to make her Achilles' lawful wife.",
+        "She refuses to return to Achilles' tent at all.",
+        "She blames Achilles directly for Patroclus's death.",
+        "She says nothing, since she barely knew Patroclus."
+      ],
+      "correctIndex": 0,
+      "explanation": "This rare moment gives a captive woman her own grief and memory, rather than treating her only as a prize being exchanged."
+    },
+    {
+      "id": "iliad-19-f5",
+      "kind": "factual",
+      "prompt": "As Achilles arms for battle, what does his own horse Xanthus tell him, briefly given human speech?",
+      "options": [
+        "That they will save him this day, but his own death is near, at the hands of a god and a man together.",
+        "That the horses refuse to carry him into this battle.",
+        "That Hector has already fled the city in fear.",
+        "That Patroclus's death was actually Jove's doing alone, not Hector's."
+      ],
+      "correctIndex": 0,
+      "explanation": "Achilles accepts this prophecy without fear, already resigned to dying at Troy."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-19-i1",
+      "kind": "interpretive",
+      "prompt": "No embassy, no gift, and no apology could move Achilles in Book IX, yet grief for Patroclus ends his wrath instantly. What does that difference suggest about what actually mattered to him all along — was it ever really about the gifts or the insult?"
+    },
+    {
+      "id": "iliad-19-i2",
+      "kind": "interpretive",
+      "prompt": "Agamemnon blames Ate, a kind of divine blindness, rather than himself for wronging Achilles. Does this explanation let him off the hook fairly, or is it a convenient way to avoid real responsibility?"
+    },
+    {
+      "id": "iliad-19-i3",
+      "kind": "interpretive",
+      "prompt": "Ulysses insists on practical necessity — eating — right in the middle of the poem's rawest grief. Why might Homer include this seemingly unheroic, almost mundane disagreement at such an emotional moment?"
+    },
+    {
+      "id": "iliad-19-i4",
+      "kind": "interpretive",
+      "prompt": "Achilles hears his own death foretold plainly by his horse and does not hesitate. What does his calm in this moment suggest about how his relationship to his own life has changed since Book I?"
+    },
+    {
+      "id": "iliad-19-e1",
+      "kind": "evaluative",
+      "prompt": "Achilles' wrath dissolves the instant something he loves more than his own honor is threatened. Does this make his earlier refusal to fight in Books I and IX look smaller in hindsight, or does it show that his sense of honor was always really about the people he loved?"
+    }
+  ]
+}

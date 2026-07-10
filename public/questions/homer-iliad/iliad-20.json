@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-20",
+  "guiding": [
+    "Jove lifts his ban on divine interference right as Achilles returns to the war. Watch what he fears might happen if the gods stay out of it entirely.",
+    "Achilles faces an opponent in this book who is fated to survive him by generations. Watch how a god handles protecting someone from a hero even stronger than Hector.",
+    "Hector avoids Achilles in this book, unlike his choice in Book XVIII. Watch what makes the difference this time."
+  ],
+  "factual": [
+    {
+      "id": "iliad-20-f1",
+      "kind": "factual",
+      "prompt": "Why does Jove lift his earlier ban and allow the gods to intervene freely again?",
+      "options": [
+        "He fears Achilles alone might take Troy before its fated time if no god checks him.",
+        "He has grown bored of watching the mortals fight unaided.",
+        "Juno demands it as payment for her help back in Book XIV.",
+        "The other gods threaten rebellion if he does not lift the ban."
+      ],
+      "correctIndex": 0,
+      "explanation": "Even Jove recognizes that Achilles in this state of fury is dangerous enough to upset fate itself without some divine counterbalance."
+    },
+    {
+      "id": "iliad-20-f2",
+      "kind": "factual",
+      "prompt": "What happens when Achilles and Aeneas face each other in battle?",
+      "options": [
+        "After an exchange of boasts about their lineage, Achilles' spear pierces Aeneas's shield layers but fails to kill him.",
+        "Aeneas refuses to fight and flees before any blows are exchanged.",
+        "Aeneas wounds Achilles seriously before being driven off.",
+        "The two fight to a draw and part peacefully."
+      ],
+      "correctIndex": 0,
+      "explanation": "Aeneas's survival here matters beyond this one scene — he is fated to found a line that outlasts Priam's."
+    },
+    {
+      "id": "iliad-20-f3",
+      "kind": "factual",
+      "prompt": "How does Aeneas escape death at Achilles' hands?",
+      "options": [
+        "Neptune, despite generally favoring the Achaeans, pities Aeneas because of his fated future and spirits him away from the fight.",
+        "Apollo strikes Achilles temporarily blind to let Aeneas flee.",
+        "Aeneas outruns Achilles on foot.",
+        "Hector intervenes directly to save him."
+      ],
+      "correctIndex": 0,
+      "explanation": "Neptune's rescue is a rare moment of a god acting against his own side's interest, purely because of what fate requires for Aeneas specifically."
+    },
+    {
+      "id": "iliad-20-f4",
+      "kind": "factual",
+      "prompt": "Which of Priam's sons does Achilles kill in this book, despite the young man having been forbidden to fight?",
+      "options": [
+        "Polydorus, Priam's youngest son, known for his swiftness, who joined the battle against his father's wishes.",
+        "Paris, ending the war's original cause.",
+        "Helenus, the Trojan seer.",
+        "Deiphobus, one of Hector's brothers."
+      ],
+      "correctIndex": 0,
+      "explanation": "Polydorus's death is what enrages Hector enough to nearly face Achilles directly."
+    },
+    {
+      "id": "iliad-20-f5",
+      "kind": "factual",
+      "prompt": "Why does Hector ultimately withdraw rather than face Achilles after his brother's death?",
+      "options": [
+        "Apollo warns him that it is not yet his fate to die, and Hector avoids the confrontation for now.",
+        "Achilles himself calls off the fight out of respect.",
+        "Hector's own soldiers physically restrain him from advancing.",
+        "Priam commands him by messenger to retreat into the city."
+      ],
+      "correctIndex": 0,
+      "explanation": "This delay only postpones what both the poem and its audience know is coming in Book XXII."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-20-i1",
+      "kind": "interpretive",
+      "prompt": "Jove worries that Achilles unchecked might overturn fate itself by taking Troy too soon. What does it suggest about human greatness in this poem, that one man's rage could threaten to outrun even the gods' plan?"
+    },
+    {
+      "id": "iliad-20-i2",
+      "kind": "interpretive",
+      "prompt": "Neptune saves Aeneas purely because of a distant future the poem's first audience would have known — Aeneas's descendants ruling after Troy. What does it mean that a life gets saved here not for its own sake, but for what comes after it?"
+    },
+    {
+      "id": "iliad-20-i3",
+      "kind": "interpretive",
+      "prompt": "Aeneas and Achilles trade lengthy speeches about their ancestry before fighting. Why might warriors pause for genealogy in the middle of mortal combat — what is that pause actually accomplishing?"
+    },
+    {
+      "id": "iliad-20-i4",
+      "kind": "interpretive",
+      "prompt": "Hector avoids Achilles here on a god's warning, yet will face him directly in Book XXII regardless. What does this delay suggest about whether a hero can actually escape his fate, or only postpone the moment of meeting it?"
+    },
+    {
+      "id": "iliad-20-e1",
+      "kind": "evaluative",
+      "prompt": "Achilles' rampage in this book is described as almost superhuman, closer to a force of nature than a man. At what point, if any, does a hero's greatness in battle become something less than admirable?"
+    }
+  ]
+}

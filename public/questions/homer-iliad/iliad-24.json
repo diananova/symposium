@@ -1,0 +1,103 @@
+{
+  "bookId": "homer-iliad",
+  "sectionId": "iliad-24",
+  "guiding": [
+    "The gods finally intervene to stop Achilles' abuse of Hector's body. Watch what argument actually moves them to act, after eleven days of silence.",
+    "Priam makes an argument to Achilles unlike anything anyone else in the poem has tried. Watch exactly what he asks Achilles to remember, and why it works where gifts, threats, and honor never did.",
+    "The poem's very last scenes are almost entirely about mourning rather than fighting. Watch what that choice of ending suggests about what this whole poem has really been about."
+  ],
+  "factual": [
+    {
+      "id": "iliad-24-f1",
+      "kind": "factual",
+      "prompt": "What finally moves the gods to intervene in Achilles' treatment of Hector's body?",
+      "options": [
+        "Apollo protests that Achilles has lost all pity and shame in dishonoring the dead, and Jove agrees enough to send Thetis to make him accept ransom.",
+        "Hecuba's prayers finally reach Jove directly.",
+        "Priam threatens to curse Olympus if the gods do not intervene.",
+        "Hector's ghost appears to Jove, as Patroclus's did to Achilles."
+      ],
+      "correctIndex": 0,
+      "explanation": "It takes eleven days of continued abuse before even the gods judge that Achilles has gone too far."
+    },
+    {
+      "id": "iliad-24-f2",
+      "kind": "factual",
+      "prompt": "How does Priam safely reach Achilles' tent at night, despite Hecuba's fears for his life?",
+      "options": [
+        "Mercury, disguised as a young Myrmidon soldier, guides him past the Achaean sentries before revealing himself as a god.",
+        "Priam disguises himself as a common herald and sneaks in unnoticed.",
+        "Achilles personally invites him under a flag of truce.",
+        "Andromache negotiates safe passage on her father-in-law's behalf."
+      ],
+      "correctIndex": 0,
+      "explanation": "The divine guarantee of safe passage is what makes it possible for an old, unarmed king to walk straight into his son's killer's camp."
+    },
+    {
+      "id": "iliad-24-f3",
+      "kind": "factual",
+      "prompt": "What does Priam say to Achilles that moves him to tears, succeeding where nothing else in the poem has?",
+      "options": [
+        "He kisses the hands that killed his sons and asks Achilles to remember his own father Peleus, likely also grieving and fearing for his absent son.",
+        "He offers Achilles a share of Troy's throne in exchange for Hector's body.",
+        "He reminds Achilles that Hector once spared Achaean lives in battle.",
+        "He threatens to curse Achilles' name for all time if he refuses."
+      ],
+      "correctIndex": 0,
+      "explanation": "By drawing a parallel between two old, grieving fathers, Priam reaches something in Achilles that gifts, threats, and honor never touched."
+    },
+    {
+      "id": "iliad-24-f4",
+      "kind": "factual",
+      "prompt": "What does Achilles agree to once he is moved by Priam's plea?",
+      "options": [
+        "He orders the body washed and prepared with care, shares a meal and shelter with Priam, and agrees to an eleven-day truce for Hector's funeral.",
+        "He agrees to return the body but refuses any truce, expecting fighting to resume immediately.",
+        "He demands additional ransom beyond what Priam already brought.",
+        "He insists on attending Hector's funeral himself as a condition of the truce."
+      ],
+      "correctIndex": 0,
+      "explanation": "Achilles' hospitality toward the father of the man who killed his closest friend is one of the poem's most striking final acts."
+    },
+    {
+      "id": "iliad-24-f5",
+      "kind": "factual",
+      "prompt": "How does the poem end?",
+      "options": [
+        "With Hector's funeral: his bones gathered into a golden urn, buried under a mound, and a funeral feast held in Priam's halls.",
+        "With Achilles' own death in battle shortly afterward.",
+        "With the fall of Troy and the sack of the city.",
+        "With Achilles and Priam formally ending the war between their peoples."
+      ],
+      "correctIndex": 0,
+      "explanation": "The poem closes not with victory or defeat, but with the shared human work of grief and burial."
+    }
+  ],
+  "open": [
+    {
+      "id": "iliad-24-i1",
+      "kind": "interpretive",
+      "prompt": "Priam's appeal to Achilles works by asking him to imagine his own father's grief, not by offering gifts or invoking honor. Why might this kind of appeal succeed where every embassy, gift, and threat in the poem so far has failed?"
+    },
+    {
+      "id": "iliad-24-i2",
+      "kind": "interpretive",
+      "prompt": "Achilles and Priam weep together in the same room — one for his enemy's father, the other for his son's killer. What does it mean that the poem's final act of genuine connection happens between two people who have every reason to hate each other?"
+    },
+    {
+      "id": "iliad-24-i3",
+      "kind": "interpretive",
+      "prompt": "The poem ends with a funeral rather than a battle, a victory, or Troy's fall. What does that choice suggest the Iliad is actually a poem about, if not simply about who wins the war?"
+    },
+    {
+      "id": "iliad-24-i4",
+      "kind": "interpretive",
+      "prompt": "Achilles treats Priam with real hospitality, sharing food and shelter with him, despite everything between them. Does this final kindness redeem the cruelty he showed Hector's body for eleven days, or do both simply remain true about him at once?"
+    },
+    {
+      "id": "iliad-24-e1",
+      "kind": "evaluative",
+      "prompt": "The poem that began with Achilles' wrath in Book I ends with Achilles' compassion in Book XXIV. Looking back across the whole poem, is this ending a real change in who Achilles is, or was this capacity for grief and mercy always part of him, waiting for the right moment to appear?"
+    }
+  ]
+}
