@@ -6,11 +6,26 @@ export type SectionStatus = 'not_started' | 'in_progress' | 'completed';
 export interface Section {
   id: string;
   title: string;
+  /** True when a public-domain text exists at /texts/<bookId>/<sectionId>.json */
+  hasText?: boolean;
   /** Optional orienting metadata (Phase 2 grows this into a full context panel) */
   meta?: {
     cite?: string; // e.g. Stephanus pages
     estLength?: string; // e.g. "~15 min"
   };
+}
+
+/** Shape of the per-section text files produced by scripts/build-texts.mjs */
+export interface SectionText {
+  bookId: string;
+  sectionId: string;
+  title: string;
+  cite?: string;
+  translator: string;
+  license: string;
+  source: string;
+  sourceUrl: string;
+  paragraphs: string[];
 }
 
 export interface Book {

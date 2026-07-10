@@ -18,6 +18,9 @@ in your own words → then hear from others** ("The Company Speaks").
 - Progress rendered as the **kylix** ring motif (a symposium wine cup from
   above), overall and per section
 - Progress export as JSON
+- **In-app reading** (pilot): Plato's *Apology* is fully readable in the app
+  in Jowett's public-domain translation, split into the tracker's 7 sections
+  with source attribution
 
 Upcoming: Phase 2 (pre-reading context panels), Phase 3 (tutorial question
 loop with post-answer commentary — "Contributions" and "The Company Speaks").
@@ -28,6 +31,23 @@ loop with post-answer commentary — "Contributions" and "The Company Speaks").
 - No backend: single-user v1 persists to `localStorage`
   (`symposium.progress.v1`), JSON-exportable. Curriculum content is static
   data in [src/data/curriculum.ts](src/data/curriculum.ts).
+
+## Content pipeline
+
+Section texts are public-domain translations, fetched and split by
+[scripts/build-texts.mjs](scripts/build-texts.mjs) into one JSON file per
+section under `public/texts/<bookId>/<sectionId>.json` (each carries
+translator, license, and source attribution). To add a work: find a
+public-domain translation (Project Gutenberg, Wikisource, Perseus), verify
+the paragraph anchors where each curriculum section begins, add a config
+entry, and run:
+
+```sh
+node scripts/build-texts.mjs
+```
+
+Works without a clean public-domain English translation (e.g. Ptolemy's
+*Almagest*) stay as tracked-only entries.
 
 ## Develop
 

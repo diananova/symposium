@@ -1,5 +1,6 @@
 import type { Book, Section, SectionProgress, SectionStatus } from '../types';
 import { Kylix } from './Kylix';
+import { Reader } from './Reader';
 
 interface SectionDetailProps {
   book: Book;
@@ -66,6 +67,13 @@ export function SectionDetail({
           </button>
         ))}
       </div>
+
+      {section.hasText && (
+        <>
+          <div className="reading-label">The Reading</div>
+          <Reader bookId={book.id} sectionId={section.id} />
+        </>
+      )}
 
       <div className="notes-label">Notes</div>
       <textarea

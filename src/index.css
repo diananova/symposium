@@ -346,6 +346,56 @@ button {
   color: var(--linen);
 }
 
+/* ---------- Reader ---------- */
+.reading-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wine);
+  margin-bottom: 4px;
+  padding-top: 4px;
+  border-top: 1px solid var(--line);
+}
+.reader-status {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 24px 0 32px;
+}
+.reading {
+  margin-bottom: 34px;
+}
+.reading p {
+  font-size: 16.5px;
+  line-height: 1.72;
+  margin: 0 0 1.1em;
+  color: var(--ink);
+}
+.reading p:first-of-type::first-letter {
+  font-family: var(--serif-display);
+  font-size: 3.1em;
+  line-height: 0.85;
+  float: left;
+  padding: 4px 8px 0 0;
+  color: var(--wine);
+}
+.text-attribution {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  margin-top: 22px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  text-transform: uppercase;
+}
+.text-attribution a {
+  color: var(--olive);
+}
+
 .notes-label {
   font-family: var(--mono);
   font-size: 10px;
