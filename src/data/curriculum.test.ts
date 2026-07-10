@@ -38,6 +38,14 @@ describe('curriculum invariants', () => {
     }
   });
 
+  it('every Year 1 book carries curriculum context (background + placement)', () => {
+    const year1Books = curriculum.years[0].tracks.flatMap((t) => t.books);
+    for (const book of year1Books) {
+      expect(book.context?.background, `${book.id} missing context.background`).toBeTruthy();
+      expect(book.context?.placement, `${book.id} missing context.placement`).toBeTruthy();
+    }
+  });
+
   it('Year 1 seminar follows the documented reading order', () => {
     // Guard against accidental reorder; docs/seminar-reading-order.md is the
     // authority — update both together, deliberately.

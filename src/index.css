@@ -227,6 +227,52 @@ button {
   color: var(--gold);
   padding-top: 2px;
 }
+.track-intro {
+  font-size: 13.5px;
+  line-height: 1.55;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 2px 2px 16px;
+  max-width: 38em;
+}
+
+/* ---------- Context (orienting, before reading) ---------- */
+.context-block {
+  background: var(--card);
+  border-left: 3px solid var(--olive);
+  border-radius: 6px;
+  padding: 13px 15px;
+  margin: 18px 0 4px;
+  max-width: 34em;
+}
+.context-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--olive);
+  margin-bottom: 8px;
+}
+.context-block p {
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin: 0 0 10px;
+}
+.context-block p:last-child {
+  margin-bottom: 0;
+}
+.context-placement {
+  color: var(--ink-soft);
+}
+.context-placement::before {
+  content: 'Why here · ';
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+
 .order-note {
   font-family: var(--mono);
   font-size: 9.5px;

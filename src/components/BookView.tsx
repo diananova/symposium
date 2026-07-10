@@ -43,6 +43,14 @@ export function BookView({
       </div>
       {book.edition && <div className="book-edition">Edition: {book.edition}</div>}
 
+      {book.context && (
+        <div className="context-block">
+          <div className="context-label">Context · Before reading</div>
+          <p>{book.context.background}</p>
+          <p className="context-placement">{book.context.placement}</p>
+        </div>
+      )}
+
       <div className="section-list">
         {book.sections.map((section) => {
           const status = statusOf(progress, section);

@@ -43,6 +43,13 @@ export interface Book {
   author: string;
   sections: Section[];
   edition?: string; // recommended translation/edition
+  /** Orienting context shown BEFORE reading — factual, not interpretive.
+   * background: who/what/when. placement: why the book sits here in the
+   * sequence (see docs/curriculum-rationale.md). */
+  context?: {
+    background: string;
+    placement: string;
+  };
   /** Interpretive material (translator introductions etc.) — never mixed with the text */
   commentary?: CommentaryRef[];
 }
@@ -52,6 +59,8 @@ export type TrackName = 'Seminar' | 'Language' | 'Mathematics' | 'Music' | 'Labo
 export interface Track {
   id: string;
   name: TrackName;
+  /** One-sentence rationale for the tutorial, shown on the curriculum page */
+  intro?: string;
   books: Book[];
 }
 

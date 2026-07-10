@@ -70,6 +70,7 @@ export function Tracker({
 
       {track && track.books.length > 0 && (
         <>
+          {track.intro && <p className="track-intro">{track.intro}</p>}
           <div className="order-note">In reading order</div>
           <div className="book-grid">
             {track.books.map((book, i) => {
