@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react';
-import type { SectionText } from '../types';
+import type { TextDoc } from '../types';
 
 interface ReaderProps {
   bookId: string;
-  sectionId: string;
+  docId: string;
 }
 
-const cache = new Map<string, SectionText>();
+const cache = new Map<string, TextDoc>();
 
 type State =
   | { status: 'loading' }
   | { status: 'error' }
-  | { status: 'ready'; text: SectionText };
+  | { status: 'ready'; text: TextDoc };
 
-export function Reader({ bookId, sectionId }: ReaderProps) {
-  const key = `${bookId}/${sectionId}`;
+export function Reader({ bookId, docId }: ReaderProps) {
+  const key = `${bookId}/${docId}`;
   const cached = cache.get(key);
   const [state, setState] = useState<State>(
     cached ? { status: 'ready', text: cached } : { status: 'loading' },
@@ -31,7 +31,7 @@ export function Reader({ bookId, sectionId }: ReaderProps) {
     fetch(`${import.meta.env.BASE_URL}texts/${key}.json`)
       .then((res) => {
         if (!res.ok) throw new Error(`${res.status}`);
-        return res.json() as Promise<SectionText>;
+        return res.json() as Promise<TextDoc>;
       })
       .then((text) => {
         cache.set(key, text);

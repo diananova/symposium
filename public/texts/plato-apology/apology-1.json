@@ -1,6 +1,7 @@
 {
+  "kind": "text",
   "bookId": "plato-apology",
-  "sectionId": "apology-1",
+  "docId": "apology-1",
   "title": "I. Socrates’ Defense Begins",
   "cite": "17a–19a",
   "translator": "Benjamin Jowett",

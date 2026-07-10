@@ -269,6 +269,36 @@ button {
   font-size: 14px;
 }
 
+/* ---------- Commentary (interpretation, kept distinct from the text) ---------- */
+.item-commentary .item-title {
+  font-style: italic;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+.commentary-mark {
+  font-family: var(--serif-display);
+  font-size: 19px;
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status-interp {
+  color: var(--gold);
+}
+.interp-banner {
+  border: 1px solid var(--gold);
+  border-left-width: 3px;
+  border-radius: 6px;
+  background: var(--card);
+  padding: 12px 14px;
+  font-size: 13.5px;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 18px 0 26px;
+}
+
 /* ---------- Section detail ---------- */
 .crumb {
   font-family: var(--mono);

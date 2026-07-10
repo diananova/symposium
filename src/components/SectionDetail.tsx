@@ -71,7 +71,7 @@ export function SectionDetail({
       {section.hasText && (
         <>
           <div className="reading-label">The Reading</div>
-          <Reader bookId={book.id} sectionId={section.id} />
+          <Reader bookId={book.id} docId={section.id} />
         </>
       )}
 

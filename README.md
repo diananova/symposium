@@ -18,9 +18,13 @@ in your own words → then hear from others** ("The Company Speaks").
 - Progress rendered as the **kylix** ring motif (a symposium wine cup from
   above), overall and per section
 - Progress export as JSON
-- **In-app reading** (pilot): Plato's *Apology* is fully readable in the app
-  in Jowett's public-domain translation, split into the tracker's 7 sections
-  with source attribution
+- **In-app reading**: all twelve Year-1 Plato dialogues are fully readable
+  in the app in Jowett's public-domain translations, split into the
+  tracker's sections with source attribution
+- **Text vs. interpretation**: each edition's introduction is extracted too,
+  but kept strictly separate — commentary appears under the book marked
+  "Interpretation · not the text" and opens behind a banner saying so.
+  These commentary files will also feed Phase 3's question drafting.
 
 Upcoming: Phase 2 (pre-reading context panels), Phase 3 (tutorial question
 loop with post-answer commentary — "Contributions" and "The Company Speaks").
@@ -33,6 +37,11 @@ loop with post-answer commentary — "Contributions" and "The Company Speaks").
   data in [src/data/curriculum.ts](src/data/curriculum.ts).
 
 ## Content pipeline
+
+Adding a work is a documented, repeatable recipe — see
+[.claude/skills/add-book/SKILL.md](.claude/skills/add-book/SKILL.md)
+(inspect the source with `scripts/inspect-source.mjs`, verify section
+anchors, add a config entry, run the build).
 
 Section texts are public-domain translations, fetched and split by
 [scripts/build-texts.mjs](scripts/build-texts.mjs) into one JSON file per

@@ -15,10 +15,13 @@ export interface Section {
   };
 }
 
-/** Shape of the per-section text files produced by scripts/build-texts.mjs */
-export interface SectionText {
+/** Shape of the per-document files produced by scripts/build-texts.mjs.
+ * kind "text" is the work itself; kind "commentary" is the edition's
+ * interpretive introduction — always presented as distinct from the text. */
+export interface TextDoc {
+  kind: 'text' | 'commentary';
   bookId: string;
-  sectionId: string;
+  docId: string;
   title: string;
   cite?: string;
   translator: string;
@@ -28,12 +31,20 @@ export interface SectionText {
   paragraphs: string[];
 }
 
+/** Reference from a Book to a commentary document shipped with its edition. */
+export interface CommentaryRef {
+  id: string;
+  title: string;
+}
+
 export interface Book {
   id: string;
   title: string;
   author: string;
   sections: Section[];
   edition?: string; // recommended translation/edition
+  /** Interpretive material (translator introductions etc.) — never mixed with the text */
+  commentary?: CommentaryRef[];
 }
 
 export type TrackName = 'Seminar' | 'Language' | 'Mathematics' | 'Music' | 'Laboratory';

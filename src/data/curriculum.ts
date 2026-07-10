@@ -112,17 +112,34 @@ export const curriculum: Curriculum = {
               id: 'plato-meno',
               title: 'Meno',
               author: 'Plato',
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
               sections: [
-                { id: 'meno-1', title: 'The complete dialogue', meta: { cite: '70a–100b' } },
+                {
+                  id: 'meno-1',
+                  title: 'The complete dialogue',
+                  hasText: true,
+                  meta: { cite: '70a–100b', estLength: '~1 hr' },
+                },
               ],
             },
             {
               id: 'plato-gorgias',
               title: 'Gorgias',
               author: 'Plato',
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
               sections: [
-                { id: 'gorgias-1', title: 'Gorgias & Polus', meta: { cite: '447a–481b' } },
-                { id: 'gorgias-2', title: 'Callicles', meta: { cite: '481b–527e' } },
+                {
+                  id: 'gorgias-1',
+                  title: 'Gorgias & Polus',
+                  hasText: true,
+                  meta: { cite: '447a–481b', estLength: '~1 hr' },
+                },
+                {
+                  id: 'gorgias-2',
+                  title: 'Callicles',
+                  hasText: true,
+                  meta: { cite: '481b–527e', estLength: '~1.5 hrs' },
+                },
               ],
             },
             {
@@ -130,6 +147,7 @@ export const curriculum: Curriculum = {
               title: 'Apology',
               author: 'Plato',
               edition: 'Grube trans. (Hackett), or Jowett (public domain)',
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
               sections: [
                 {
                   id: 'apology-1',
@@ -179,70 +197,139 @@ export const curriculum: Curriculum = {
               id: 'plato-crito',
               title: 'Crito',
               author: 'Plato',
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
               sections: [
-                { id: 'crito-1', title: 'The complete dialogue', meta: { cite: '43a–54e' } },
+                {
+                  id: 'crito-1',
+                  title: 'The complete dialogue',
+                  hasText: true,
+                  meta: { cite: '43a–54e', estLength: '~25 min' },
+                },
               ],
             },
             {
               id: 'plato-phaedo',
               title: 'Phaedo',
               author: 'Plato',
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
               sections: [
-                { id: 'phaedo-1', title: 'Opening & first arguments', meta: { cite: '57a–84b' } },
-                { id: 'phaedo-2', title: 'Final argument & death scene', meta: { cite: '84c–118a' } },
+                {
+                  id: 'phaedo-1',
+                  title: 'Opening & first arguments',
+                  hasText: true,
+                  meta: { cite: '57a–84b', estLength: '~50 min' },
+                },
+                {
+                  id: 'phaedo-2',
+                  title: 'Final argument & death scene',
+                  hasText: true,
+                  meta: { cite: '84c–118a', estLength: '~1 hr' },
+                },
               ],
             },
             {
               id: 'plato-symposium',
               title: 'Symposium',
               author: 'Plato',
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
               sections: [
-                { id: 'symposium-1', title: 'The first speeches', meta: { cite: '172a–201c' } },
-                { id: 'symposium-2', title: 'Socrates & Alcibiades', meta: { cite: '201d–223d' } },
+                {
+                  id: 'symposium-1',
+                  title: 'The first speeches',
+                  hasText: true,
+                  meta: { cite: '172a–197e', estLength: '~50 min' },
+                },
+                {
+                  id: 'symposium-2',
+                  title: 'Socrates & Alcibiades',
+                  hasText: true,
+                  meta: { cite: '198a–223d', estLength: '~50 min' },
+                },
               ],
             },
             {
               id: 'plato-republic',
               title: 'Republic',
               author: 'Plato',
+              commentary: [
+                { id: 'jowett-introduction', title: 'Jowett’s Introduction and Analysis' },
+              ],
               sections: [
-                { id: 'republic-1', title: 'Book I' },
-                { id: 'republic-2', title: 'Books II–IV' },
-                { id: 'republic-3', title: 'Books V–VII' },
-                { id: 'republic-4', title: 'Books VIII–X' },
+                { id: 'republic-1', title: 'Book I', hasText: true, meta: { estLength: '~55 min' } },
+                { id: 'republic-2', title: 'Books II–IV', hasText: true, meta: { estLength: '~2.5 hrs' } },
+                { id: 'republic-3', title: 'Books V–VII', hasText: true, meta: { estLength: '~2.5 hrs' } },
+                { id: 'republic-4', title: 'Books VIII–X', hasText: true, meta: { estLength: '~2.5 hrs' } },
               ],
             },
             {
               id: 'plato-phaedrus',
               title: 'Phaedrus',
               author: 'Plato',
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
               sections: [
-                { id: 'phaedrus-1', title: 'The complete dialogue', meta: { cite: '227a–279c' } },
+                {
+                  id: 'phaedrus-1',
+                  title: 'The complete dialogue',
+                  hasText: true,
+                  meta: { cite: '227a–279c', estLength: '~1.5 hrs' },
+                },
               ],
             },
             {
               id: 'plato-parmenides',
               title: 'Parmenides',
               author: 'Plato',
-              sections: [{ id: 'parmenides-1', title: 'The complete dialogue' }],
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
+              sections: [
+                {
+                  id: 'parmenides-1',
+                  title: 'The complete dialogue',
+                  hasText: true,
+                  meta: { estLength: '~1.5 hrs' },
+                },
+              ],
             },
             {
               id: 'plato-theaetetus',
               title: 'Theaetetus',
               author: 'Plato',
-              sections: [{ id: 'theaetetus-1', title: 'The complete dialogue' }],
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
+              sections: [
+                {
+                  id: 'theaetetus-1',
+                  title: 'The complete dialogue',
+                  hasText: true,
+                  meta: { estLength: '~2 hrs' },
+                },
+              ],
             },
             {
               id: 'plato-sophist',
               title: 'Sophist',
               author: 'Plato',
-              sections: [{ id: 'sophist-1', title: 'The complete dialogue' }],
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
+              sections: [
+                {
+                  id: 'sophist-1',
+                  title: 'The complete dialogue',
+                  hasText: true,
+                  meta: { estLength: '~1.5 hrs' },
+                },
+              ],
             },
             {
               id: 'plato-timaeus',
               title: 'Timaeus',
               author: 'Plato',
-              sections: [{ id: 'timaeus-1', title: 'The complete dialogue' }],
+              commentary: [{ id: 'jowett-introduction', title: 'Jowett’s Introduction' }],
+              sections: [
+                {
+                  id: 'timaeus-1',
+                  title: 'The complete dialogue',
+                  hasText: true,
+                  meta: { estLength: '~2.5 hrs' },
+                },
+              ],
             },
             {
               id: 'aristotle-poetics',

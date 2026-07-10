@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { curriculum } from '../data/curriculum';
-import type { Book, ProgressMap, Section, SectionStatus } from '../types';
+import type { Book, CommentaryRef, ProgressMap, Section, SectionStatus } from '../types';
 import { emptyProgress } from '../progress';
 import { Kylix } from './Kylix';
 
 interface TrackerProps {
   progress: ProgressMap;
   onOpenSection: (book: Book, section: Section) => void;
+  onOpenCommentary: (book: Book, commentary: CommentaryRef) => void;
   onExport: () => void;
 }
 
@@ -20,7 +21,7 @@ function sectionFraction(status: SectionStatus): number {
   return 0;
 }
 
-export function Tracker({ progress, onOpenSection, onExport }: TrackerProps) {
+export function Tracker({ progress, onOpenSection, onOpenCommentary, onExport }: TrackerProps) {
   const [yearId, setYearId] = useState('year-1');
   const year = curriculum.years.find((y) => y.id === yearId) ?? curriculum.years[0];
   const [trackId, setTrackId] = useState(year.tracks[0]?.id ?? '');
@@ -115,6 +116,26 @@ export function Tracker({ progress, onOpenSection, onExport }: TrackerProps) {
                 </button>
               );
             })}
+          {book.commentary?.map((c) => (
+            <button
+              key={c.id}
+              className="item item-commentary"
+              onClick={() => onOpenCommentary(book, c)}
+            >
+              <div className="item-ring commentary-mark" aria-hidden="true">
+                §
+              </div>
+              <div className="item-text">
+                <div className="item-title">{c.title}</div>
+                <div className="item-sub">
+                  <span className="status-interp">Interpretation</span> · not the text
+                </div>
+              </div>
+              <span className="item-chevron" aria-hidden="true">
+                ›
+              </span>
+            </button>
+          ))}
         </section>
       ))}
 
